@@ -1,0 +1,30 @@
+service: wt-no-params
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-west-1
+  stage: test
+
+functions:
+  hello:
+    handler: handler-tarry-post-log-wrapper.hello
+    events:
+      - http:
+          path: microbmark
+          method: get
+
+  ########################################
+  ## Watchtower Functions
+  ##
+  ##
+  ##   Log Ingestion Dummy
+  watchtower-ingestion:
+    handler: dummy-ingestion.handler
+    events:
+    - cloudwatchLog:
+        logGroup: /aws/lambda/wt-no-params-${self:provider.stage}-hello
+        filter: '"#####EVENTUPDATE"'
+  ##
+  ## END of Watchtower Functions
+  ########################################

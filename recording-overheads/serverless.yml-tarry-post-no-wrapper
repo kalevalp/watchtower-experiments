@@ -1,0 +1,15 @@
+service: wt-no-params
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-west-1
+  stage: test
+
+functions:
+  hello:
+    handler: handler-tarry-post.hello
+    events:
+      - http:
+          path: microbmark
+          method: get
