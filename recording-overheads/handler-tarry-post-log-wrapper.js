@@ -12,9 +12,9 @@ function updateContext(name, event, lambdaContext) {
 
 const mock = {
     'dummy': {
-	operation: () => {
+        operation: () => {
             return publisher({name: 'DUMMY_EVENT', params: {}}, lambdaExecutionContext);
-	},
+        },
     },
 };
 

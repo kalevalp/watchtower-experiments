@@ -2,7 +2,7 @@
 const dummy = require('dummy');
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 module.exports.hello = async (event, context) => {
