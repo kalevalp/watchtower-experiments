@@ -1,4 +1,4 @@
-service: wt-no-params
+service: wtexp-rec-oh
 
 provider:
   name: aws
