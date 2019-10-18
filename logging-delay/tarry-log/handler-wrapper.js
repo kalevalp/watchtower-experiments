@@ -18,4 +18,4 @@ const mock = {
     },
 };
 
-module.exports.hello = recorder.createRecordingHandler('handler-tarry-post.js', 'hello' , mock, false, updateContext);
+module.exports.hello = recorder.createRecordingHandler('handler.js', 'hello' , mock, false, updateContext);
