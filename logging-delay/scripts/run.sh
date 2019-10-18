@@ -3,6 +3,7 @@
 export resdir=results`date +%Y%m%d%H%M%S`
 mkdir ${resdir}
 
+#for kind in {loop-kinesis,tarry-kinesis}
 for kind in {loop-kinesis,loop-log,regular-kinesis,regular-log,tarry-kinesis,tarry-log}
 do
     echo Running ${kind}
@@ -16,6 +17,7 @@ do
     fi
 
     sls deploy -v
+    sleep 60
     API_URL=`serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'`; export API_URL=$API_URL/microbmark
 
     popd
@@ -27,7 +29,7 @@ do
 
     unset API_URL
 
-    sleep 30
+    sleep 60
 
     node log-event-delay.js ${resdir}/${kind}-times
 
