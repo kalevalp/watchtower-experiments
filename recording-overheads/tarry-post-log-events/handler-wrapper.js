@@ -1,6 +1,5 @@
-const eventsStreamName = process.env['WATCHTOWER_EVENT_KINESIS_STREAM'];
 const recorder = require('watchtower-recorder');
-const publisher = recorder.createEventPublisher(eventsStreamName);
+const publisher = recorder.createEventPublisher();
 
 let context;
 let lambdaExecutionContext;
@@ -19,4 +18,4 @@ const mock = {
     },
 };
 
-module.exports.hello = recorder.createRecordingHandler('handler-tarry-pre.js', 'hello' , mock, false, updateContext);
+module.exports.hello = recorder.createRecordingHandler('handler.js', 'hello' , mock, false, updateContext);

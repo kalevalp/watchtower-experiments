@@ -27,7 +27,7 @@ functions:
   ##
   ##   Log Ingestion Dummy
   watchtower-ingestion:
-    handler: dummy-ingestion.handler
+    handler: ingestion.handler
     events:
     - stream:
         arn:

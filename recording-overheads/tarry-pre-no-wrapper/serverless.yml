@@ -8,7 +8,7 @@ provider:
 
 functions:
   hello:
-    handler: handler-tarry-pre.hello
+    handler: handler.hello
     events:
       - http:
           path: microbmark

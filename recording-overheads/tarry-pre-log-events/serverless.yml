@@ -8,7 +8,7 @@ provider:
 
 functions:
   hello:
-    handler: handler-tarry-post-log-wrapper.hello
+    handler: handler-wrapper.hello
     events:
       - http:
           path: microbmark
@@ -20,10 +20,10 @@ functions:
   ##
   ##   Log Ingestion Dummy
   watchtower-ingestion:
-    handler: dummy-ingestion.handler
+    handler: ingestion.handler
     events:
     - cloudwatchLog:
-        logGroup: /aws/lambda/wt-no-params-${self:provider.stage}-hello
+        logGroup: /aws/lambda/wtexp-rec-oh-${self:provider.stage}-hello
         filter: '"#####EVENTUPDATE"'
   ##
   ## END of Watchtower Functions

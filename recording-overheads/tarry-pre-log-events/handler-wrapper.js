@@ -1,6 +1,5 @@
-const eventsStreamName = process.env['WATCHTOWER_EVENT_KINESIS_STREAM'];
 const recorder = require('watchtower-recorder');
-const publisher = recorder.createEventPublisher(eventsStreamName);
+const publisher = recorder.createEventPublisher();
 
 let context;
 let lambdaExecutionContext;
@@ -13,9 +12,9 @@ function updateContext(name, event, lambdaContext) {
 
 const mock = {
     'dummy': {
-	operation: () => {
+        operation: () => {
             return publisher({name: 'DUMMY_EVENT', params: {}}, lambdaExecutionContext);
-	},
+        },
     },
 };
 
