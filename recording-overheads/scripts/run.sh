@@ -24,6 +24,9 @@ do
     pushd ../${kind}
 
     sls deploy -v
+
+    sleep 60
+
     API_URL=`serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'`; export API_URL=$API_URL/microbmark
 
     popd
@@ -35,7 +38,7 @@ do
     done
 
     unset API_URL
-    sleep 30
+    sleep 60
 
     node function-execution-times.js ${resdir}/${kind}-times
 
