@@ -1,34 +1,39 @@
 #! /bin/bash
 
-for kind in {no-wrapper,log-events,kinesis-events,tarry-post-kinesis-events,tarry-post-log-events,tarry-pre-kinesis-events,tarry-pre-log-events,tarry-post-no-wrapper,tarry-pre-no-wrapper}
+export resdir=results`date +%Y%m%d%H%M%S`
+mkdir ${resdir}
+
+for kind in {loop-kinesis,loop-log,regular-kinesis,regular-log,tarry-kinesis,tarry-log}
 do
     echo Running ${kind}
 
-    pushd ../
+    pushd ../${kind}
 
-    cp serverless.yml-${kind} serverless.yml
+    if [ ! -d "node_modules" ]; then
+      echo "Package not installed for experiment" ${kind}
+      echo "Run build.sh and rerun experiments. Exiting."
+      exit -1
+    fi
+
     sls deploy -v
     API_URL=`serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'`; export API_URL=$API_URL/microbmark
 
     popd
 
-    echo -n > e2e-${kind}
     for i in {1..100}
     do
-	( time curl $API_URL ) 2>> e2e-${kind}
+	    curl $API_URL
     done
 
     unset API_URL
 
     sleep 30
 
-    node function-execution-times.js ${kind}-times
+    node log-event-delay.js ${resdir}/${kind}-times
 
-    pushd ../
+    pushd ../${kind}
 
     sls remove -v
-
-    rm serverless.yml
 
     popd
 
