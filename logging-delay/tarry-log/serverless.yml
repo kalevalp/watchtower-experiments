@@ -23,7 +23,7 @@ functions:
     handler: ingestion.handler
     events:
     - cloudwatchLog:
-        logGroup: /aws/lambda/wt-no-params-${self:provider.stage}-hello
+        logGroup: /aws/lambda/wtexp-log-delay-${self:provider.stage}-hello
         filter: '"#####EVENTUPDATE"'
   ##
   ## END of Watchtower Functions

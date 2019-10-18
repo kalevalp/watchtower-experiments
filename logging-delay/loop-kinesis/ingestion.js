@@ -7,7 +7,7 @@ module.exports.handler = async (event, context) => {
 
 
     if (event.Records && event.Records.length > 0 ) {
-        for (const record in event.Records) {
+        for (const record of event.Records) {
             let dataString = Buffer.from(record.kinesis.data,'base64').toString();
             console.log(dataString);
             const data = JSON.parse(dataString);

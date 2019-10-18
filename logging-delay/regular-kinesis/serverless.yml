@@ -1,4 +1,4 @@
-service: wt-no-params
+service: wtexp-log-delay
 
 provider:
   name: aws
