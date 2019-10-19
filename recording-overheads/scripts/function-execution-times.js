@@ -10,7 +10,7 @@ function getRandFname() {
 
 async function main() {
     let lgs = await scraper.getAllLogGroups();
-    lgs = lgs.filter(item => item.match(/wt-no-params-.*-hello/));
+    lgs = lgs.filter(item => item.match(/wtexp-rec-oh-.*-hello/)); 
 
     function getRunAnalysis(logEvent) {
 
