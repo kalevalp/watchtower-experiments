@@ -6,9 +6,9 @@ do
 
     pushd ../${kind}
 
-    npm update
-    # npm install
+    # npm update
+    npm install
 
     popd
-
+    
 done
