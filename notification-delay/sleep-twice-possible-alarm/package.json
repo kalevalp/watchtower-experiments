@@ -1,0 +1,20 @@
+{
+  "name": "no-params-event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler-wrapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^3.3.3",
+    "watchtower-log-ingestion": "^1.7.8",
+    "watchtower-monitor": "^1.5.9",
+    "watchtower-recorder": "^1.5.6"
+  },
+  "devDependencies": {
+    "serverless-step-functions": "^2.11.0"
+  }
+}
