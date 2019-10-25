@@ -1,0 +1,1349 @@
+nohup: ignoring input
+Running loop
+~/watchtower-experiments/full-profile/loop ~/watchtower-experiments/full-profile/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+CloudFormation - CREATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - CREATE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.66 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - CREATE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_COMPLETE - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_COMPLETE - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - HelloLambdaVersionncRYlQiq05Q57C5CQcJu1ZUhB9KUxDCZsnbFzMu1E
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - HelloLambdaVersionncRYlQiq05Q57C5CQcJu1ZUhB9KUxDCZsnbFzMu1E
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - HelloLambdaVersionncRYlQiq05Q57C5CQcJu1ZUhB9KUxDCZsnbFzMu1E
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionbtq7TGuVqTG5Ku6JxpenehpVTtrRCJm91ouNZZdu0BQ
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionkHFeQzoFAm6ESmIBbERZFxtxeUycxOxMNbQbzXYY
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionbtq7TGuVqTG5Ku6JxpenehpVTtrRCJm91ouNZZdu0BQ
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionkHFeQzoFAm6ESmIBbERZFxtxeUycxOxMNbQbzXYY
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionkHFeQzoFAm6ESmIBbERZFxtxeUycxOxMNbQbzXYY
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionbtq7TGuVqTG5Ku6JxpenehpVTtrRCJm91ouNZZdu0BQ
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036133163
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036133163
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036133163
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion8v72BymIHxQYi8Za5oR5tvv5o81CukaCNgvUaROjCo
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion8v72BymIHxQYi8Za5oR5tvv5o81CukaCNgvUaROjCo
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion8v72BymIHxQYi8Za5oR5tvv5o81CukaCNgvUaROjCo
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://44q3koru4e.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:76
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:103
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:107
+ServiceEndpoint: https://44q3koru4e.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-gwm5m3ghjuaw
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:104
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.66 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036307092
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036307092
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036307092
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036133163
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036133163
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://44q3koru4e.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:76
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:103
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:107
+ServiceEndpoint: https://44q3koru4e.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-gwm5m3ghjuaw
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:104
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.66 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036375092
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036375092
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036375092
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036307092
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036307092
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://44q3koru4e.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:76
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:103
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:107
+ServiceEndpoint: https://44q3koru4e.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-gwm5m3ghjuaw
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:104
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.66 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036432783
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036432783
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036432783
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036375092
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036375092
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://44q3koru4e.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:76
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:103
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:107
+ServiceEndpoint: https://44q3koru4e.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-gwm5m3ghjuaw
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:104
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+~/watchtower-experiments/full-profile/scripts
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     55      0  0:00:01  0:00:01 --:--:--    55100    65  100    65    0     0     55      0  0:00:01  0:00:01 --:--:--    55
+{"message":"Done.","opid":"110d3a38-6a1c-4ef7-ab2d-34afbfd407ee"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    104      0 --:--:-- --:--:-- --:--:--   104
+{"message":"Done.","opid":"0713c81a-df85-4696-96f5-0706edac9dc5"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"6a230fe0-0fb3-48c7-a8e9-2e310a99051c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"314b0ea5-6a8f-4e0e-814a-351f7d05562c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"ea0e436e-5c50-4a6f-8745-7ca4ca96eed0"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108
+{"message":"Done.","opid":"4e9215af-4bbc-47a1-8643-fb000069c100"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    107      0 --:--:-- --:--:-- --:--:--   107
+{"message":"Done.","opid":"50af12c2-a2f0-4df5-b7bf-651855526077"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    106      0 --:--:-- --:--:-- --:--:--   106100    65  100    65    0     0    106      0 --:--:-- --:--:-- --:--:--   106
+{"message":"Done.","opid":"6beace43-6fdf-4878-88cd-8d55a154e448"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    105      0 --:--:-- --:--:-- --:--:--   105
+{"message":"Done.","opid":"b5f8fca2-33f7-4604-9826-9f1ae0bca9a9"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   108100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   108
+{"message":"Done.","opid":"38c5cef7-e828-4f66-b5cb-486d6c7bca50"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"7b2d2559-5da6-42e2-bb2f-af1906bc0e1f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    104      0 --:--:-- --:--:-- --:--:--   104
+{"message":"Done.","opid":"9bc06ed0-4d54-4a47-9b15-af9c71a0cc20"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    107      0 --:--:-- --:--:-- --:--:--   107100    65  100    65    0     0    107      0 --:--:-- --:--:-- --:--:--   107
+{"message":"Done.","opid":"fb8c3758-8366-4562-8ed4-4a50ff7c713c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"202f5bab-74f6-4164-89d1-fe123aac19ce"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"be134759-f4d4-4177-aac9-904a7e1b58bc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"63403ba7-f686-4bb7-91f6-7b68e3b0db7c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    107      0 --:--:-- --:--:-- --:--:--   107
+{"message":"Done.","opid":"4e63a259-656a-485e-8f9d-11a543005e44"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    104      0 --:--:-- --:--:-- --:--:--   104100    65  100    65    0     0    104      0 --:--:-- --:--:-- --:--:--   104
+{"message":"Done.","opid":"0372cc64-b570-4733-8dad-41b35bc8143f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"64e7fda0-20b8-4b7e-917d-b51ad7b78e19"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"4e6bb246-eaa6-4db1-b1a1-450a558d287b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    107      0 --:--:-- --:--:-- --:--:--   107100    65  100    65    0     0    107      0 --:--:-- --:--:-- --:--:--   107
+{"message":"Done.","opid":"ac4d3907-9321-4320-b7e2-e9601e64650e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108
+{"message":"Done.","opid":"bfd7abd2-8957-49b3-8caa-17b3978d8dfe"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"eaf8f446-9c19-45a7-95aa-1e82e53a20b7"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"31798e79-f82b-474d-be8e-039e7ad3794e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"979675d2-3b3a-4fd1-b9d8-a769f2375cb7"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"1a83fd9b-7c05-47a9-9972-dbf45a15b45d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"a8e417e5-f0b8-4f9b-a838-6ea25ed3f3e3"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"c9a36602-445c-47c1-90bc-ac77b4816cd6"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"01618b68-f7a8-42a6-b8b4-5520e2cb8dba"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"7b55e237-3487-40d5-83ec-4c5aa72f67e9"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    106      0 --:--:-- --:--:-- --:--:--   106100    65  100    65    0     0    106      0 --:--:-- --:--:-- --:--:--   106
+{"message":"Done.","opid":"812e39b8-699b-435a-b4d8-518c7694ba41"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    107      0 --:--:-- --:--:-- --:--:--   107
+{"message":"Done.","opid":"aa88fb2a-1015-4032-82d2-90ef34d94ee4"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"5c7db097-fc1d-417d-a6e5-799cc5ab99f8"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"07c99b12-14b7-429b-8596-7398803582f2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    101      0 --:--:-- --:--:-- --:--:--   101
+{"message":"Done.","opid":"46953665-e7ad-4ee6-b494-2ff326494845"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108
+{"message":"Done.","opid":"00b63b7a-455c-416f-b40e-dc914ae7fa08"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"4d92605b-b80a-47df-8429-db025ecc28a4"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"9f59e247-369e-41f6-a75c-6541d00118ca"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108
+{"message":"Done.","opid":"ffa3e4f7-2512-4b3f-85b5-956eaaf75063"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   107
+{"message":"Done.","opid":"27bb8ce4-e463-4166-9011-48a5321ef454"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108
+{"message":"Done.","opid":"f7bf3714-67e4-4e7f-b4c7-cbcbb056cab1"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"a9f5da26-958b-44b5-814d-90b4f939348e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    106      0 --:--:-- --:--:-- --:--:--   106100    65  100    65    0     0    106      0 --:--:-- --:--:-- --:--:--   106
+{"message":"Done.","opid":"9c5d028d-14c7-4656-98ab-f77b9adef541"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"74031da3-ba43-4014-8bc3-5952d05144ae"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"5e2df2eb-7da0-43bc-889a-4b627db0fab2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"34fff3af-b4d4-4467-aa33-72770f622c97"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"3c926c4e-0b01-42e7-9394-736453dd5851"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108
+{"message":"Done.","opid":"6b7e048d-fa62-4c45-9258-90a81b3f182e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"ae837fe8-41ea-4da8-998b-92f187e0b1a2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"6cf545d0-fe89-4def-84b1-a51d30b0ae0a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"bcbdc90e-bf0e-4f65-957a-b959bd9d0de1"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    104      0 --:--:-- --:--:-- --:--:--   104
+{"message":"Done.","opid":"9cecc305-6e25-4327-a512-935d700490fa"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"4550add9-2fe6-40d8-a11d-81ab4578faa9"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"f2a27273-f48a-49ae-9fdf-00ca74875906"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"b2f7b8dd-8652-450e-a326-37f8d1e089fa"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"b1875a6f-bc2c-41f8-a5a8-5cabe51467ca"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"ada7894b-e0b5-4afa-8df0-6e7307a689af"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"d98a1095-a0ae-4a1f-be50-5d142f61aa72"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"cc4c52ac-a9a1-445d-ba91-837d6221245c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"cf5db104-fac4-4224-b8cb-8b01bfd865cc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"96a0bac5-2a73-49fb-a1c5-366e424f3c41"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112
+{"message":"Done.","opid":"157061a3-6eb9-4819-b958-b15f6ee0e663"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112
+{"message":"Done.","opid":"f7653e9b-ff4a-4ba8-b369-622ecd704723"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"3d23ef19-bf46-456b-a0e1-25edc0a62322"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"ab68dbe6-2c43-4a76-ab75-344cc549245b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"7320130f-2ee0-4cb1-ac64-6f55dd0f2919"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112
+{"message":"Done.","opid":"4369eec8-e0d9-46d4-9758-40d664051149"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"14471be0-a40a-48bf-9d36-1f7b98a74993"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"f9aaadf9-bcdd-440b-884a-649d1f83881f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112
+{"message":"Done.","opid":"981e23d8-4f07-4498-9c9c-946bfece4827"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"92280c0f-36ab-4c33-905d-a794e4772a94"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    104      0 --:--:-- --:--:-- --:--:--   104
+{"message":"Done.","opid":"de2bfa56-9a10-4da4-98af-886fd118b62d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112
+{"message":"Done.","opid":"d1648d3b-3ac4-4b88-9ae2-86d6b1e0e3b6"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"3c088f11-b9cf-43ea-a971-740067294a36"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    107      0 --:--:-- --:--:-- --:--:--   106
+{"message":"Done.","opid":"85e0bd44-7a89-48ee-9f19-b1ae895fdbd2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112
+{"message":"Done.","opid":"bf09554b-4f3d-43f4-8741-116c89965652"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"82b3b5e6-a10f-4aca-890b-0a61dd08b5cb"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"bf4f2645-1a09-4409-a806-74eaf53ed0b0"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"0052dd0f-7ba9-4839-a9e0-55707cf6758e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112
+{"message":"Done.","opid":"cbeb9be0-8d34-4cd1-a655-aa03e02742d6"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"e0e109b2-066c-4f7d-8a60-7a3bb1ac959d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108
+{"message":"Done.","opid":"632e1a43-fa46-4d28-b85a-1218bd7d4da6"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"6fa62e44-8a30-405a-948e-78883f38206f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    101      0 --:--:-- --:--:-- --:--:--   101
+{"message":"Done.","opid":"765e54f0-4a53-4335-a358-432d2dd2afef"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"8b244b59-9e4f-48d7-bd5a-3b12cf6a1cf7"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    106      0 --:--:-- --:--:-- --:--:--   106100    65  100    65    0     0    106      0 --:--:-- --:--:-- --:--:--   106
+{"message":"Done.","opid":"79c0edfd-7ef3-4e19-80dc-dae30a0e2488"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108
+{"message":"Done.","opid":"691834b2-c1fa-4649-a851-cba9dd88320b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    107      0 --:--:-- --:--:-- --:--:--   106100    65  100    65    0     0    106      0 --:--:-- --:--:-- --:--:--   106
+{"message":"Done.","opid":"c7ee9af2-ba4c-4d8a-86cd-62ad3bc37b67"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    106      0 --:--:-- --:--:-- --:--:--   106
+{"message":"Done.","opid":"716f5a7b-69cd-49fb-bd81-b515db15ad49"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112
+{"message":"Done.","opid":"8420bed2-5a54-4d25-b6d5-9a8e5f31ac6b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   110100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"995a93da-b442-4724-8269-fe6f0aac5a58"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"710d6336-0650-423c-8c70-b792f5d92adc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109100    65  100    65    0     0    108      0 --:--:-- --:--:-- --:--:--   108
+{"message":"Done.","opid":"840ddd80-8a3e-44d3-9218-8a40fd56e248"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    109      0 --:--:-- --:--:-- --:--:--   109
+{"message":"Done.","opid":"3d113273-df15-4834-89ed-6f63f2e12e5a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    104      0 --:--:-- --:--:-- --:--:--   104
+{"message":"Done.","opid":"14ecb48f-f50e-466f-9eb8-273be14b8507"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112
+{"message":"Done.","opid":"366053d3-038d-43de-88b5-5796b497630f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"09258fd0-be8f-4652-87c6-559f8113f937"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    110      0 --:--:-- --:--:-- --:--:--   110
+{"message":"Done.","opid":"0362bdd9-460c-45af-b57e-7c79995f8869"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    111      0 --:--:-- --:--:-- --:--:--   111
+{"message":"Done.","opid":"efe7f4ff-9633-48c0-8643-b214b5481545"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    104      0 --:--:-- --:--:-- --:--:--   104
+{"message":"Done.","opid":"177c8cb4-4ba6-422c-ba0a-de79cd7015b3"}~/watchtower-experiments/full-profile/loop ~/watchtower-experiments/full-profile/scripts
+Serverless: Getting all objects in S3 bucket...
+Serverless: Removing objects in S3 bucket...
+Serverless: Removing Stack...
+Serverless: Checking Stack removal progress...
+CloudFormation - DELETE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036432783
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - HelloLambdaVersionncRYlQiq05Q57C5CQcJu1ZUhB9KUxDCZsnbFzMu1E
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion8v72BymIHxQYi8Za5oR5tvv5o81CukaCNgvUaROjCo
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionbtq7TGuVqTG5Ku6JxpenehpVTtrRCJm91ouNZZdu0BQ
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionkHFeQzoFAm6ESmIBbERZFxtxeUycxOxMNbQbzXYY
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036432783
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - DELETE_COMPLETE - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - InstancesTable
+Serverless: Stack removal finished...
+~/watchtower-experiments/full-profile/scripts
+Running sleep
+~/watchtower-experiments/full-profile/sleep ~/watchtower-experiments/full-profile/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+CloudFormation - CREATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - CREATE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.64 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_COMPLETE - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_COMPLETE - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionhWQFID7tDUGCZq1XfxjDkt6uxCyLyAOA3gd3zc4KM
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - HelloLambdaVersionTnyyzV51KMPqnhDQXqY57nksu2in4WwYkoz9e0
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionhWQFID7tDUGCZq1XfxjDkt6uxCyLyAOA3gd3zc4KM
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionhWQFID7tDUGCZq1XfxjDkt6uxCyLyAOA3gd3zc4KM
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - HelloLambdaVersionTnyyzV51KMPqnhDQXqY57nksu2in4WwYkoz9e0
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - HelloLambdaVersionTnyyzV51KMPqnhDQXqY57nksu2in4WwYkoz9e0
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionHL9sXBhq7VZMBOGZPndvyKvcwukuaSlirsRH8ZZT6Jw
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionHL9sXBhq7VZMBOGZPndvyKvcwukuaSlirsRH8ZZT6Jw
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionHL9sXBhq7VZMBOGZPndvyKvcwukuaSlirsRH8ZZT6Jw
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036741181
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036741181
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036741181
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersiondMH4SwztSugqtrm17icksg3v7Vt7qRzYbgxrFZog34A
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersiondMH4SwztSugqtrm17icksg3v7Vt7qRzYbgxrFZog34A
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersiondMH4SwztSugqtrm17icksg3v7Vt7qRzYbgxrFZog34A
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://xyq56y3ax2.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:77
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:104
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:108
+ServiceEndpoint: https://xyq56y3ax2.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-3vh8lb46zjrv
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:105
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.64 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036925100
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036925100
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036925100
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036741181
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036741181
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://xyq56y3ax2.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:77
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:104
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:108
+ServiceEndpoint: https://xyq56y3ax2.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-3vh8lb46zjrv
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:105
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.64 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036993099
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036993099
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036993099
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036925100
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036925100
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://xyq56y3ax2.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:77
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:104
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:108
+ServiceEndpoint: https://xyq56y3ax2.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-3vh8lb46zjrv
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:105
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.64 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572037050507
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572037050507
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572037050507
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036993099
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572036993099
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://xyq56y3ax2.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:77
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:104
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:108
+ServiceEndpoint: https://xyq56y3ax2.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-3vh8lb46zjrv
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:105
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+~/watchtower-experiments/full-profile/scripts
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     80      0 --:--:-- --:--:-- --:--:--    80100    65  100    65    0     0     80      0 --:--:-- --:--:-- --:--:--    80
+{"message":"Done.","opid":"e076308c-00ac-4d6e-abe6-f9d53dc36911"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    233      0 --:--:-- --:--:-- --:--:--   233
+{"message":"Done.","opid":"26d4964c-1518-4ef7-b079-0d55db4fb8e0"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    245      0 --:--:-- --:--:-- --:--:--   245
+{"message":"Done.","opid":"a085983d-e199-42ba-893f-31578085e485"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    235      0 --:--:-- --:--:-- --:--:--   234
+{"message":"Done.","opid":"d837d9f6-5e02-49de-8609-b874e7cae018"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    240      0 --:--:-- --:--:-- --:--:--   240
+{"message":"Done.","opid":"7fd3bdf2-bb37-4eac-8978-fe18cd1669e6"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    248      0 --:--:-- --:--:-- --:--:--   249
+{"message":"Done.","opid":"58596c6c-6045-43b1-a558-90eb9c7bbc3a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    237      0 --:--:-- --:--:-- --:--:--   237
+{"message":"Done.","opid":"9f2e0cd3-ec10-46a6-bd83-2930528ae24f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    247      0 --:--:-- --:--:-- --:--:--   246
+{"message":"Done.","opid":"8e288261-65e7-40de-bc30-135865e967a9"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    230      0 --:--:-- --:--:-- --:--:--   230
+{"message":"Done.","opid":"ccd6391e-38b8-423a-972e-9a002e5ae318"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    253      0 --:--:-- --:--:-- --:--:--   253
+{"message":"Done.","opid":"94354c1d-a0a8-458d-b9ed-00637c3b5706"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    246      0 --:--:-- --:--:-- --:--:--   245
+{"message":"Done.","opid":"ca5cf0e9-6500-4c4b-86b9-825dab252cfc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    247      0 --:--:-- --:--:-- --:--:--   247
+{"message":"Done.","opid":"cca57008-2ba3-4d10-aee0-c63bdacce83a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    264      0 --:--:-- --:--:-- --:--:--   264
+{"message":"Done.","opid":"cd97a37e-bba1-45a7-b465-6a39f6abdb50"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    239      0 --:--:-- --:--:-- --:--:--   239
+{"message":"Done.","opid":"fef824e0-6e72-46d6-8416-a9e6089d430e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    254      0 --:--:-- --:--:-- --:--:--   253
+{"message":"Done.","opid":"8f66b48c-dddc-46f6-94d8-21dbbe168792"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    242      0 --:--:-- --:--:-- --:--:--   242
+{"message":"Done.","opid":"77a2bb5d-e01b-4c75-a99a-3757bac8afdb"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    237      0 --:--:-- --:--:-- --:--:--   237
+{"message":"Done.","opid":"8dadbdc9-e57e-4ef3-8b85-958ea87b7197"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    253      0 --:--:-- --:--:-- --:--:--   253
+{"message":"Done.","opid":"a97c9ab7-4bdf-4b39-8c14-930c159621c0"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    263      0 --:--:-- --:--:-- --:--:--   262
+{"message":"Done.","opid":"5a7d3745-342c-45b0-8879-0330105bbf0b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    245      0 --:--:-- --:--:-- --:--:--   245
+{"message":"Done.","opid":"4ee19794-29eb-4aa9-8e4f-9ef81d45aeb2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    242      0 --:--:-- --:--:-- --:--:--   242
+{"message":"Done.","opid":"2526a0c7-e225-4de7-beeb-f44d1ecd6932"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    228      0 --:--:-- --:--:-- --:--:--   227100    65  100    65    0     0    228      0 --:--:-- --:--:-- --:--:--   227
+{"message":"Done.","opid":"0d3edfe5-c5f6-43b9-a01a-0a251071395c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    257      0 --:--:-- --:--:-- --:--:--   257
+{"message":"Done.","opid":"8d5edc71-34e8-4d78-8d3b-58150e09c385"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    260      0 --:--:-- --:--:-- --:--:--   260
+{"message":"Done.","opid":"91e24247-b7cf-4277-8b58-ace0e7bf25a5"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    239      0 --:--:-- --:--:-- --:--:--   240
+{"message":"Done.","opid":"c792ee9d-88b6-47b6-8d67-a89f9494c612"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    261      0 --:--:-- --:--:-- --:--:--   260
+{"message":"Done.","opid":"0dcc5706-552d-4e85-94da-813d9ae45aac"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    261      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"d4eb097e-ca7b-4167-9de3-f1969ee637c5"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    256      0 --:--:-- --:--:-- --:--:--   256
+{"message":"Done.","opid":"45a7c431-7ba2-4835-a8d7-f35ad9add699"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    264      0 --:--:-- --:--:-- --:--:--   264
+{"message":"Done.","opid":"9c5f0499-1cdd-43c5-9f43-869da10ee78c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    246      0 --:--:-- --:--:-- --:--:--   245
+{"message":"Done.","opid":"bbc63d65-a35f-4cc7-bac7-e0f7b969a5f9"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    261      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"f29848e5-5bca-4179-a748-91cd8d5f47f2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    247      0 --:--:-- --:--:-- --:--:--   247
+{"message":"Done.","opid":"61e03043-f3b4-4c92-a44a-3474406acd4a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    263      0 --:--:-- --:--:-- --:--:--   263
+{"message":"Done.","opid":"37df4a70-0a5d-4702-9d82-a4fea99f4b67"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    257      0 --:--:-- --:--:-- --:--:--   256
+{"message":"Done.","opid":"a6434825-1441-4350-86b8-330da22b3268"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    250      0 --:--:-- --:--:-- --:--:--   250
+{"message":"Done.","opid":"1aa04e09-e459-420e-ad3e-f5c16351b1a3"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    265      0 --:--:-- --:--:-- --:--:--   265
+{"message":"Done.","opid":"b140a042-b92b-410c-944f-fd17d808487c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    263      0 --:--:-- --:--:-- --:--:--   262100    65  100    65    0     0    262      0 --:--:-- --:--:-- --:--:--   262
+{"message":"Done.","opid":"15d0b576-27d5-401f-afd0-50440eeb9a9f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    258      0 --:--:-- --:--:-- --:--:--   258
+{"message":"Done.","opid":"2a5c4735-21e9-4879-8711-eae3ced9236d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    261      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"b479586c-acb0-4e46-be36-6dd606fa555d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    261      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"e4e6888c-9c2d-4d2a-9e68-888d3f500bac"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    247      0 --:--:-- --:--:-- --:--:--   246100    65  100    65    0     0    247      0 --:--:-- --:--:-- --:--:--   246
+{"message":"Done.","opid":"98391c38-4de6-4904-8e30-c86bf0fef5f5"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    244      0 --:--:-- --:--:-- --:--:--   245
+{"message":"Done.","opid":"dc311de4-3250-4e00-8ef8-b949058ec4b3"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    254      0 --:--:-- --:--:-- --:--:--   254
+{"message":"Done.","opid":"39cb4c52-c47f-4990-8c8b-e09d8ad27603"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    257      0 --:--:-- --:--:-- --:--:--   257
+{"message":"Done.","opid":"12e83d6f-5399-4ad2-b1fc-2112680ffa81"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    260      0 --:--:-- --:--:-- --:--:--   258
+{"message":"Done.","opid":"73f6dee1-28bd-4a63-9f44-a725c1d52f46"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    261      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"d13655ee-9a78-490c-8ce4-5e736279f19c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    258      0 --:--:-- --:--:-- --:--:--   258
+{"message":"Done.","opid":"22bad89f-3fff-49b1-b774-919c88cd5a4c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    262      0 --:--:-- --:--:-- --:--:--   262
+{"message":"Done.","opid":"e3eac4ea-a48a-4194-b001-2f6ab18f0d55"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    260      0 --:--:-- --:--:-- --:--:--   258
+{"message":"Done.","opid":"924ecc56-3833-4aaa-a8b7-e81e1b6bfaac"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    251      0 --:--:-- --:--:-- --:--:--   251
+{"message":"Done.","opid":"f70e281e-c57d-46d5-b6e3-e1e1ad7e9e54"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    260      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"5edf6d97-e11b-44e7-a4f0-230b958037f8"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    237      0 --:--:-- --:--:-- --:--:--   237
+{"message":"Done.","opid":"866fb153-76bd-4fac-9038-4f4b24b19b8d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    257      0 --:--:-- --:--:-- --:--:--   256
+{"message":"Done.","opid":"ac794e83-f061-4458-aa00-ea3fa828fa78"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    258      0 --:--:-- --:--:-- --:--:--   258
+{"message":"Done.","opid":"13c60638-b933-4859-a1e4-fbefbe846a0b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    265      0 --:--:-- --:--:-- --:--:--   265
+{"message":"Done.","opid":"ef3b0574-3ed6-4d82-b85b-0430971397cd"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    247      0 --:--:-- --:--:-- --:--:--   246100    65  100    65    0     0    247      0 --:--:-- --:--:-- --:--:--   246
+{"message":"Done.","opid":"d02b5d2c-b33e-4836-bc10-d32724843a81"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    243      0 --:--:-- --:--:-- --:--:--   243
+{"message":"Done.","opid":"c2baf8a3-9eaf-43ca-9c36-7810d539e39f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    258      0 --:--:-- --:--:-- --:--:--   258
+{"message":"Done.","opid":"2fa043fc-11ed-4dee-bbe7-674d87284f83"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    258      0 --:--:-- --:--:-- --:--:--   258
+{"message":"Done.","opid":"7700423f-91a2-43e9-b88d-fe2d09ca3df4"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    255      0 --:--:-- --:--:-- --:--:--   255
+{"message":"Done.","opid":"21f368dc-1358-4c9b-83d5-b84c043ba2a2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    221      0 --:--:-- --:--:-- --:--:--   221
+{"message":"Done.","opid":"e6680e2f-ca3a-4d0f-be4d-bb7aafca8cc2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    261      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"4580c7d6-15cd-40ed-a5c4-3a6fc4e9c3b2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    258      0 --:--:-- --:--:-- --:--:--   258
+{"message":"Done.","opid":"16c9468a-2106-4aae-a06a-1dfddcf2d424"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    263      0 --:--:-- --:--:-- --:--:--   262
+{"message":"Done.","opid":"4661c287-a83c-481a-b26c-15179043ee7f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    267      0 --:--:-- --:--:-- --:--:--   267
+{"message":"Done.","opid":"a106b975-600f-45d4-9712-02917b2cb24b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    263      0 --:--:-- --:--:-- --:--:--   263
+{"message":"Done.","opid":"66f4cc2e-f8b6-4e4a-ad87-1f5484047008"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    265      0 --:--:-- --:--:-- --:--:--   265
+{"message":"Done.","opid":"2c0bc149-367b-4ad4-bd01-86d42789157a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    247      0 --:--:-- --:--:-- --:--:--   246
+{"message":"Done.","opid":"410f2b14-7438-494f-a4e4-1962a2923f36"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    254      0 --:--:-- --:--:-- --:--:--   254
+{"message":"Done.","opid":"c5ee3eb6-8e73-4766-a70d-f83208999178"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    232      0 --:--:-- --:--:-- --:--:--   232
+{"message":"Done.","opid":"4900dc1d-d45f-4409-a05b-ad3acffc6a2f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    255      0 --:--:-- --:--:-- --:--:--   255
+{"message":"Done.","opid":"5a51fe0c-e8c7-4a82-9108-67f818a9270a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    264      0 --:--:-- --:--:-- --:--:--   263
+{"message":"Done.","opid":"d72e11a9-a3c0-4492-9800-46f9f5750414"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    261      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"a04f5226-3075-4521-b00a-a31c8f62afa8"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    257      0 --:--:-- --:--:-- --:--:--   257
+{"message":"Done.","opid":"21859979-b544-48a2-ad80-da34659cc992"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    264      0 --:--:-- --:--:-- --:--:--   263100    65  100    65    0     0    264      0 --:--:-- --:--:-- --:--:--   263
+{"message":"Done.","opid":"ccf529e5-3738-4997-a56a-336eb3cfd57f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    245      0 --:--:-- --:--:-- --:--:--   245
+{"message":"Done.","opid":"a07b071e-f731-4ee9-9ae4-a51588c93882"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    263      0 --:--:-- --:--:-- --:--:--   263
+{"message":"Done.","opid":"96684719-1f64-4439-8e72-f7bfad2c3506"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    262      0 --:--:-- --:--:-- --:--:--   262
+{"message":"Done.","opid":"edb61b8a-c42a-4532-9ce9-070cd0ea9e91"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    262      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"734d92c8-5461-4507-b899-8ad2d7b91341"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    262      0 --:--:-- --:--:-- --:--:--   262
+{"message":"Done.","opid":"a8a1de0e-cb71-4f66-95fa-3134920c1e14"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    258      0 --:--:-- --:--:-- --:--:--   258
+{"message":"Done.","opid":"a17ee760-5e3e-410f-965b-931beae71f5b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    254      0 --:--:-- --:--:-- --:--:--   254
+{"message":"Done.","opid":"192338a9-0dcd-47c3-841f-7673b071ca31"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    262      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"79154fbf-2c23-470e-a9a3-b25d83ade01d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    260      0 --:--:-- --:--:-- --:--:--   260
+{"message":"Done.","opid":"82bad7b6-a25a-45e1-aec1-db814b5cc118"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    263      0 --:--:-- --:--:-- --:--:--   263
+{"message":"Done.","opid":"9864d648-56f2-411b-ba5c-b9ced90a601b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    265      0 --:--:-- --:--:-- --:--:--   265
+{"message":"Done.","opid":"965ef2b6-6b51-4820-a6cd-8140340cfb1b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    262      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"96baac68-b3c7-424f-8aea-0a53e6856af9"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    255      0 --:--:-- --:--:-- --:--:--   255
+{"message":"Done.","opid":"3e3a8194-c029-48c6-8f1e-09a84dae03db"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    262      0 --:--:-- --:--:-- --:--:--   262
+{"message":"Done.","opid":"1e789d4e-c468-457d-a136-525c9b24ccd6"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    264      0 --:--:-- --:--:-- --:--:--   264
+{"message":"Done.","opid":"088aa1bb-7762-420d-b113-93d41b4cc263"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    248      0 --:--:-- --:--:-- --:--:--   247
+{"message":"Done.","opid":"761ebd6a-966f-4f32-aa2a-aac703809e52"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    262      0 --:--:-- --:--:-- --:--:--   262
+{"message":"Done.","opid":"608e11fd-c166-41b1-b40c-be7b0c693135"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    252      0 --:--:-- --:--:-- --:--:--   252
+{"message":"Done.","opid":"bf5ac6ec-c0c6-4755-9db6-2bc2e69c112e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    257      0 --:--:-- --:--:-- --:--:--   257
+{"message":"Done.","opid":"fc0f78c5-acdb-4c66-9f6e-c7532f929d8d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    263      0 --:--:-- --:--:-- --:--:--   262
+{"message":"Done.","opid":"7b2fc0a5-3a86-4339-beac-260dc85bd685"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    262      0 --:--:-- --:--:-- --:--:--   262
+{"message":"Done.","opid":"e40d240c-627f-432c-9c47-9011f3f9097b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    256      0 --:--:-- --:--:-- --:--:--   256
+{"message":"Done.","opid":"27d7fe5f-94d2-4884-bafa-cd411aa9ca34"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    257      0 --:--:-- --:--:-- --:--:--   257
+{"message":"Done.","opid":"7702d687-0eaa-4b56-a141-cadeb0a5e6bf"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    255      0 --:--:-- --:--:-- --:--:--   254
+{"message":"Done.","opid":"a6ef8a48-b141-4be2-b0ef-d343d2ef67f2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    261      0 --:--:-- --:--:-- --:--:--   261
+{"message":"Done.","opid":"13960235-973b-4939-b2d2-2662d5ef757b"}~/watchtower-experiments/full-profile/sleep ~/watchtower-experiments/full-profile/scripts
+Serverless: Getting all objects in S3 bucket...
+Serverless: Removing objects in S3 bucket...
+Serverless: Removing Stack...
+Serverless: Checking Stack removal progress...
+CloudFormation - DELETE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572037050507
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionhWQFID7tDUGCZq1XfxjDkt6uxCyLyAOA3gd3zc4KM
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersiondMH4SwztSugqtrm17icksg3v7Vt7qRzYbgxrFZog34A
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionHL9sXBhq7VZMBOGZPndvyKvcwukuaSlirsRH8ZZT6Jw
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - HelloLambdaVersionTnyyzV51KMPqnhDQXqY57nksu2in4WwYkoz9e0
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572037050507
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - DELETE_COMPLETE - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+Serverless: Stack removal finished...
+~/watchtower-experiments/full-profile/scripts
