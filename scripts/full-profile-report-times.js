@@ -25,16 +25,15 @@ async function main() {
 
     if (initial.length == 0) {
 
-	fullReports = stablePhase.map(rep =>
-				      [rep.eventOccuredTimestamp - rep.eventOccuredTimestamp,
-				       rep.eventKinesisArrivedTimestamp - rep.eventOccuredTimestamp,
-				       rep.ingestionFunctionStartTime - rep.eventOccuredTimestamp,
-				       rep.ddbWriteTime - rep.eventOccuredTimestamp,
-				       rep.instanceTriggerKinesisTime - rep.eventOccuredTimestamp,
-				       rep.checkerFunctionInvokeTime - rep.eventOccuredTimestamp,
-				       rep.violationDetectionTime - rep.eventOccuredTimestamp]
-				     )
-
+	fullReports = stable.map(rep =>
+				 [rep.eventOccuredTimestamp - rep.eventOccuredTimestamp,
+				  rep.eventKinesisArrivedTimestamp - rep.eventOccuredTimestamp,
+				  rep.ingestionFunctionStartTime - rep.eventOccuredTimestamp,
+				  rep.ddbWriteTime - rep.eventOccuredTimestamp,
+				  rep.instanceTriggerKinesisTime - rep.eventOccuredTimestamp,
+				  rep.checkerFunctionInvokeTime - rep.eventOccuredTimestamp,
+				  rep.violationDetectionTime - rep.eventOccuredTimestamp]
+				)
     } else {
 
 	fullReports = initial.map(rep => {
