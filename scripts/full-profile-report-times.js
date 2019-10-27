@@ -21,21 +21,39 @@ async function main() {
     const initial = reports.filter(item => item.phase === 'initialPhase');
     const stable  = reports.filter(item => item.phase === 'stablePhase');
 
-    const fullReports = initial.map(rep => {
-        const matchingStable = stable.find(item => JSON.stringify(rep.instance) === JSON.stringify(item.instance));
-        rep.stableCheckerFunctionInvokeTime = matchingStable.checkerFunctionInvokeTime;
-        rep.stableViolationDetectionTime = matchingStable.violationDetectionTime;
+    let fullReports;
 
-        return [rep.eventOccuredTimestamp - rep.eventOccuredTimestamp, 
-                rep.eventKinesisArrivedTimestamp - rep.eventOccuredTimestamp, 
-                rep.ingestionFunctionStartTime - rep.eventOccuredTimestamp, 
-                rep.ddbWriteTime - rep.eventOccuredTimestamp, 
-                rep.instanceTriggerKinesisTime - rep.eventOccuredTimestamp, 
-                rep.checkerFunctionInvokeTime - rep.eventOccuredTimestamp, 
-                rep.violationDetectionTime - rep.eventOccuredTimestamp, 
-                rep.stableCheckerFunctionInvokeTime - rep.eventOccuredTimestamp, 
-                rep.stableViolationDetectionTime - rep.eventOccuredTimestamp];
-    });
+    if (initial.length == 0) {
+
+	fullReports = stablePhase.map(rep =>
+				      [rep.eventOccuredTimestamp - rep.eventOccuredTimestamp,
+				       rep.eventKinesisArrivedTimestamp - rep.eventOccuredTimestamp,
+				       rep.ingestionFunctionStartTime - rep.eventOccuredTimestamp,
+				       rep.ddbWriteTime - rep.eventOccuredTimestamp,
+				       rep.instanceTriggerKinesisTime - rep.eventOccuredTimestamp,
+				       rep.checkerFunctionInvokeTime - rep.eventOccuredTimestamp,
+				       rep.violationDetectionTime - rep.eventOccuredTimestamp]
+				     )
+
+    } else {
+
+	fullReports = initial.map(rep => {
+            const matchingStable = stable.find(item => JSON.stringify(rep.instance) === JSON.stringify(item.instance));
+            rep.stableCheckerFunctionInvokeTime = matchingStable.checkerFunctionInvokeTime;
+            rep.stableViolationDetectionTime = matchingStable.violationDetectionTime;
+
+            return [rep.eventOccuredTimestamp - rep.eventOccuredTimestamp,
+                    rep.eventKinesisArrivedTimestamp - rep.eventOccuredTimestamp,
+                    rep.ingestionFunctionStartTime - rep.eventOccuredTimestamp,
+                    rep.ddbWriteTime - rep.eventOccuredTimestamp,
+                    rep.instanceTriggerKinesisTime - rep.eventOccuredTimestamp,
+                    rep.checkerFunctionInvokeTime - rep.eventOccuredTimestamp,
+                    rep.violationDetectionTime - rep.eventOccuredTimestamp,
+                    rep.stableCheckerFunctionInvokeTime - rep.eventOccuredTimestamp,
+                    rep.stableViolationDetectionTime - rep.eventOccuredTimestamp];
+	});
+
+    }
 
     let outputfname = getRandFname();
 
@@ -47,4 +65,3 @@ async function main() {
 }
 
 main();
-
