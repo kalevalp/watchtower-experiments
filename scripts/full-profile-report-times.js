@@ -14,7 +14,7 @@ async function main() {
     const fullRepRE = /@@@@WT_PROF: FULL REPORT ---(.*)---/;
 
     const logGroup = '/aws/lambda/wt-full-flow-test-watchtower-monitor';
-    const logItems = await scraper.getAllLogItemsForGroup(logGroup, fullRepPattern);
+    const logItems = await scraper.getAllLogItemsForGroupMatching(logGroup, fullRepPattern);
 
     const reports = logItems.filter(item => item.message.match(fullRepRE)).map(item => JSON.parse(item.message.match(fullRepRE)[1]));
 
