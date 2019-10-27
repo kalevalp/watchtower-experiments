@@ -31,6 +31,7 @@ async function main() {
 				  rep.ingestionFunctionStartTime - rep.eventOccuredTimestamp,
 				  rep.ddbWriteTime - rep.eventOccuredTimestamp,
 				  rep.instanceTriggerKinesisTime - rep.eventOccuredTimestamp,
+				  rep.triggerStartTime - rep.eventOccuredTimestamp,
 				  rep.checkerFunctionInvokeTime - rep.eventOccuredTimestamp,
 				  rep.violationDetectionTime - rep.eventOccuredTimestamp]
 				)
@@ -46,6 +47,7 @@ async function main() {
                     rep.ingestionFunctionStartTime - rep.eventOccuredTimestamp,
                     rep.ddbWriteTime - rep.eventOccuredTimestamp,
                     rep.instanceTriggerKinesisTime - rep.eventOccuredTimestamp,
+		    rep.triggerStartTime - rep.eventOccuredTimestamp,
                     rep.checkerFunctionInvokeTime - rep.eventOccuredTimestamp,
                     rep.violationDetectionTime - rep.eventOccuredTimestamp,
                     rep.stableCheckerFunctionInvokeTime - rep.eventOccuredTimestamp,
