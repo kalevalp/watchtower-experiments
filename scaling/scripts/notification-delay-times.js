@@ -10,8 +10,9 @@ function getRandFname() {
 
 async function main() {
     const notificationDelayRE = /@@@@WT_PROF: VIOLATION REPORT DELAY: ([0-9]*)\(ms\)/;
+    const dalayPattern = 'WT_PROF VIOLATION REPORT DELAY';
     const logGroup = '/aws/lambda/wt-full-flow-test-watchtower-monitor';
-    const logItems = await scraper.getAllLogItemsForGroup(logGroup);
+    const logItems = await scraper.getAllLogItemsForGroupMatching(logGroup);
 
     const times = logItems.filter(item => item.message.match(notificationDelayRE)).map(item => Number(item.message.match(notificationDelayRE)[1]));
 
