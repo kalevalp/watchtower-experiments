@@ -153,14 +153,14 @@ resources:
       Type: 'AWS::Kinesis::Stream'
       Properties:
         Name: Watchtower${self:provider.stage}InvocationStream
-        ShardCount: 10
+        ShardCount: 50
     ##
     ##   Events Kinesis Stream
     EventsStream:
       Type: 'AWS::Kinesis::Stream'
       Properties:
         Name: Watchtower${self:provider.stage}EventsStream
-        ShardCount: 10
+        ShardCount: 50
     ##
     ##   Events DynamoDB Table
     EventsTable:

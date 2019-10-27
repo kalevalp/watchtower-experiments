@@ -39,9 +39,10 @@ do
     unset pre
     unset post
 
-    sleep 60
+    sleep 300
 
-    node notification-delay-times.js ${resdir}/par-runs-${parexec}-notif-delay
+    node ../../scripts/notification-delay-times.js ${resdir}/par-runs-${parexec}-notif-delay
+    node ../../scripts/full-profile-report-times.js ${resdir}/par-runs-${parexec}-prof-report
 
     pushd ../app
 
