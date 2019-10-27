@@ -1,6 +1,6 @@
 #! /bin/bash
 
-for kind in {app,scripts}
+for kind in {app,../scripts}
 do
     echo Building ${kind}
 
