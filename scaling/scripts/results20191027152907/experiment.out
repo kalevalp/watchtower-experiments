@@ -1,0 +1,628 @@
+nohup: ignoring input
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+CloudFormation - CREATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - CREATE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.69 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - CREATE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_COMPLETE - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_COMPLETE - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - HelloLambdaVersion7QAO1tM99rOGkK7TjO3hOMGIsqLdr8gM6vbHLxB2Nc
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionOJGDYhViS1NxSn4aQgj0FfVzdh3fRtwVBfwUHhKvbJk
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - HelloLambdaVersion7QAO1tM99rOGkK7TjO3hOMGIsqLdr8gM6vbHLxB2Nc
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionOJGDYhViS1NxSn4aQgj0FfVzdh3fRtwVBfwUHhKvbJk
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - HelloLambdaVersion7QAO1tM99rOGkK7TjO3hOMGIsqLdr8gM6vbHLxB2Nc
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionOJGDYhViS1NxSn4aQgj0FfVzdh3fRtwVBfwUHhKvbJk
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190150264
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190150264
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190150264
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionxPbcghMvKDsbhQHLWjI5E9VMA6EbK0WXXDopOk8MA
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionxPbcghMvKDsbhQHLWjI5E9VMA6EbK0WXXDopOk8MA
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionxPbcghMvKDsbhQHLWjI5E9VMA6EbK0WXXDopOk8MA
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion43xd6ZIYZjUXZpvq3oZ1UDCBgsn6iFxhzNGLQ3920U
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion43xd6ZIYZjUXZpvq3oZ1UDCBgsn6iFxhzNGLQ3920U
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion43xd6ZIYZjUXZpvq3oZ1UDCBgsn6iFxhzNGLQ3920U
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://k6bpfimi3m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:101
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:128
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:132
+ServiceEndpoint: https://k6bpfimi3m.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-1ezmzu2jpr3zh
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:129
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.69 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190329420
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190329420
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190329420
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190150264
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190150264
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://k6bpfimi3m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:101
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:128
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:132
+ServiceEndpoint: https://k6bpfimi3m.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-1ezmzu2jpr3zh
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:129
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.69 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190383449
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190383449
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190383449
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190329420
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190329420
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://k6bpfimi3m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:101
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:128
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:132
+ServiceEndpoint: https://k6bpfimi3m.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-1ezmzu2jpr3zh
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:129
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.69 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190440828
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190440828
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190440828
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190383449
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190383449
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://k6bpfimi3m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:101
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:128
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:132
+ServiceEndpoint: https://k6bpfimi3m.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-1ezmzu2jpr3zh
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:129
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+~/watchtower-experiments/scaling/scripts
+Calling function at url: https://k6bpfimi3m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+{"message":"Done.","opid":"3a43e34b-a7a5-4465-baf0-05c5f01e1fd8"}{"message":"Done.","opid":"f4b5e465-7e47-4ee6-ade0-4392a573c063"}{"message":"Done.","opid":"2056cf76-1ba0-4b37-8e92-ca209a07a3a6"}{"message":"Done.","opid":"d19d28de-ea6e-4267-a497-437282da013c"}{"message":"Done.","opid":"41c269d1-bc7e-4952-8c4b-4e6dce4b47a3"}{"message":"Done.","opid":"8581918a-a4e0-467d-b7ed-df649db184d9"}{"message":"Done.","opid":"a92e33e0-2c4f-4f58-a5f9-7b1d6b7b558b"}{"message":"Done.","opid":"f30592c7-f017-4786-8aec-bbcc56a144b5"}{"message":"Done.","opid":"342ecc1b-b58b-4d42-9824-4fb61c4faf75"}{"message":"Done.","opid":"e3bc0c57-14fb-432d-b5a1-b8b9c301a947"}{"message":"Done.","opid":"e7eccfc3-bdd6-4a63-9e45-cc71213db36a"}{"message":"Done.","opid":"deeff2e7-b451-4fa1-b8a8-8c3d3f301915"}{"message":"Done.","opid":"ce689faa-206b-4ed5-8c3c-45fa25e54078"}{"message":"Done.","opid":"641b07ab-afb5-4e60-98df-a5dfd4e1b4a0"}{"message":"Done.","opid":"5cf312d6-39bc-4cac-a058-c2d5fbd7c2dc"}{"message":"Done.","opid":"d560229e-95bd-4d03-bb82-2881754ecf5f"}{"message":"Done.","opid":"a35e4cd1-2dd4-44c4-b0d2-c3ecab7cc949"}{"message":"Done.","opid":"1dcdb1f7-6d06-42b4-9ecc-9d5e700e1724"}{"message":"Done.","opid":"f1ff3d25-26be-4ac1-bc0a-492ab04b6008"}{"message":"Done.","opid":"0a45fd02-0da0-41f1-b729-e111f7157a14"}{"message":"Done.","opid":"99e29031-1c55-499b-89f0-a64ccd8f1a66"}{"message":"Done.","opid":"5c61044b-b138-435d-89d0-950f015c373a"}{"message":"Done.","opid":"13051999-98bc-47fa-ba08-74949206f9a6"}{"message":"Done.","opid":"ead110f2-e227-4a9c-a374-012ea9f89131"}{"message":"Done.","opid":"c3d05fa3-8723-403d-8641-2477acc0b080"}{"message":"Done.","opid":"452a35ca-d7b6-41f3-871b-a68b20d7acdf"}{"message":"Done.","opid":"28406054-dcc5-449e-9753-dad645610973"}{"message":"Done.","opid":"aee9caa5-1180-4367-b419-e7a45efc9607"}{"message":"Done.","opid":"d6921b63-2d6b-4c7c-a326-3febdbd38d88"}{"message":"Done.","opid":"7f39a737-70b5-42a9-a6f5-a25eda2fe8c1"}{"message":"Done.","opid":"4b2d64e1-50c1-4432-ab1a-9917a789a21c"}{"message":"Done.","opid":"5e7a349c-9956-4c6c-82b4-d51f041c7973"}{"message":"Done.","opid":"c77b7c79-71e0-4cd5-a23f-27a953fc558b"}{"message":"Done.","opid":"8ef85d52-ce2c-4ebd-9fdd-553eb8a68004"}{"message":"Done.","opid":"ccdace29-7d80-43b1-9097-87fa1558b569"}{"message":"Done.","opid":"0388e85d-bd2f-453c-84ba-410955d7b0bf"}{"message":"Done.","opid":"dd947113-e6d7-4e6e-bc25-8c62421913e6"}{"message":"Done.","opid":"9081fff4-728f-4941-a612-b4f5f65f00bf"}{"message":"Done.","opid":"4bdccf10-b4f0-4cf8-b147-4f63ca5d88df"}{"message":"Done.","opid":"92ae4f06-8e8d-4ec3-bb89-259ec5a4b711"}{"message":"Done.","opid":"5b6aa69a-6084-4527-916d-1ce9b860d4fb"}{"message":"Done.","opid":"1374f641-fdc2-4663-8262-91cf3caeb9c5"}{"message":"Done.","opid":"0dffdd01-3079-4a35-a2b0-b6afb7fc0b0c"}{"message":"Done.","opid":"395b719b-b465-47db-891c-1844589614c5"}{"message":"Done.","opid":"bfdb5ffc-bd4c-4848-913f-6f1336f5e2d1"}{"message":"Done.","opid":"d0a02ff3-2e33-4c17-8b8e-d8084b1b1b29"}{"message":"Done.","opid":"c45cc4fb-9ae2-458b-a7be-3f1bda7d4a94"}{"message":"Done.","opid":"5620dbf1-178a-435a-a277-69c484de53f8"}{"message":"Done.","opid":"55ca937f-b7f5-423b-9804-2854c302f9f6"}{"message":"Done.","opid":"369d4eb0-9ba9-4d14-b1da-fe10b8536c8c"}{"message":"Done.","opid":"8c812a2b-ef97-4f04-acdc-7869822f13a9"}{"message":"Done.","opid":"d01f824e-233b-4cd4-a03c-7cb5824e5a3a"}{"message":"Done.","opid":"6a6c29cc-8fac-4169-becd-1dbbbafbe134"}{"message":"Done.","opid":"771a7210-ac4f-43e1-b650-030c9a7449fb"}{"message":"Done.","opid":"78cfae7b-dfa8-4a96-b681-7c59bac60709"}{"message":"Done.","opid":"1cc775f8-bc03-47ff-8491-1ef93d1b250a"}{"message":"Done.","opid":"d3427789-e2e1-4527-bdce-a4a1ff00829f"}{"message":"Done.","opid":"eef5a4b8-05c9-41e8-bb8c-eceea2cc7eba"}{"message":"Done.","opid":"3032a67a-c2a3-45a5-a0d7-827420b4f0a6"}{"message":"Done.","opid":"6ec796f3-dade-4157-a609-ae5d455c90a5"}Elapsed call time is 37333(ms)
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Getting all objects in S3 bucket...
+Serverless: Removing objects in S3 bucket...
+Serverless: Removing Stack...
+Serverless: Checking Stack removal progress...
+CloudFormation - DELETE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190440828
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionxPbcghMvKDsbhQHLWjI5E9VMA6EbK0WXXDopOk8MA
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion43xd6ZIYZjUXZpvq3oZ1UDCBgsn6iFxhzNGLQ3920U
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionOJGDYhViS1NxSn4aQgj0FfVzdh3fRtwVBfwUHhKvbJk
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - HelloLambdaVersion7QAO1tM99rOGkK7TjO3hOMGIsqLdr8gM6vbHLxB2Nc
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190440828
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - DELETE_COMPLETE - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+Serverless: Stack removal finished...
+~/watchtower-experiments/scaling/scripts
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+CloudFormation - CREATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - CREATE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - CREATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.69 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_COMPLETE - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - CREATE_COMPLETE - AWS::Kinesis::Stream - EventsStream
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - EventsTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventsStreamWriter
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - CREATE_COMPLETE - AWS::DynamoDB::Table - InstancesTable
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - HelloLambdaVersion7QAO1tM99rOGkK7TjO3hOMGIsqLdr8gM6vbHLxB2Nc
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - HelloLambdaVersion7QAO1tM99rOGkK7TjO3hOMGIsqLdr8gM6vbHLxB2Nc
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionxPbcghMvKDsbhQHLWjI5E9VMA6EbK0WXXDopOk8MA
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - HelloLambdaVersion7QAO1tM99rOGkK7TjO3hOMGIsqLdr8gM6vbHLxB2Nc
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionxPbcghMvKDsbhQHLWjI5E9VMA6EbK0WXXDopOk8MA
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionxPbcghMvKDsbhQHLWjI5E9VMA6EbK0WXXDopOk8MA
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190960737
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190960737
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190960737
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionOJGDYhViS1NxSn4aQgj0FfVzdh3fRtwVBfwUHhKvbJk
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionOJGDYhViS1NxSn4aQgj0FfVzdh3fRtwVBfwUHhKvbJk
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionOJGDYhViS1NxSn4aQgj0FfVzdh3fRtwVBfwUHhKvbJk
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - IamRoleStateMachineExecution
+CloudFormation - CREATE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - PropInstanceWriterRole
+CloudFormation - CREATE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion43xd6ZIYZjUXZpvq3oZ1UDCBgsn6iFxhzNGLQ3920U
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - CREATE_IN_PROGRESS - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion43xd6ZIYZjUXZpvq3oZ1UDCBgsn6iFxhzNGLQ3920U
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - CREATE_COMPLETE - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersion43xd6ZIYZjUXZpvq3oZ1UDCBgsn6iFxhzNGLQ3920U
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://1flts6sgjh.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:102
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:129
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:133
+ServiceEndpoint: https://1flts6sgjh.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-1ln8nq1amhtaw
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:130
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.69 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572191129019
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572191129019
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572191129019
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190960737
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572190960737
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://1flts6sgjh.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:102
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:129
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:133
+ServiceEndpoint: https://1flts6sgjh.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-1ln8nq1amhtaw
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:130
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (405.69 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+CloudFormation - UPDATE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572191191635
+CloudFormation - CREATE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572191191635
+CloudFormation - CREATE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572191191635
+CloudFormation - UPDATE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - UPDATE_COMPLETE_CLEANUP_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572191129019
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1572191129019
+CloudFormation - UPDATE_COMPLETE - AWS::CloudFormation::Stack - wt-full-flow-test
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 32
+api keys:
+  None
+endpoints:
+  GET - https://1flts6sgjh.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+
+Stack Outputs
+WtDashmonitorDashtriggerLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-wt-monitor-trigger:102
+WtCheckerMachineArn: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+HelloLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-hello:129
+WatchtowerDashmonitorLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-monitor:133
+ServiceEndpoint: https://1flts6sgjh.execute-api.eu-west-1.amazonaws.com/test
+ServerlessDeploymentBucketName: wt-full-flow-test-serverlessdeploymentbucket-1ln8nq1amhtaw
+WatchtowerDashingestionLambdaFunctionQualifiedArn: arn:aws:lambda:eu-west-1:432356059652:function:wt-full-flow-test-watchtower-ingestion:130
+WTCheckerMachine: arn:aws:states:eu-west-1:432356059652:stateMachine:wtCheckerMachine
+
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
