@@ -17,24 +17,15 @@ async function main() {
 
     const reports = logItems.filter(item => item.message.match(fullRepRE)).map(item => JSON.parse(item.message.match(fullRepRE)[1]));
 
-    const initial = reports.filter(item => item.phase === 'initialPhase');
-    const stable  = reports.filter(item => item.phase === 'stablePhase');
-
-    const fullReports = initial.map(rep => {
-        const matchingStable = stable.find(item => JSON.stringify(rep.instance) === JSON.stringify(item.instance));
-        rep.stableCheckerFunctionInvokeTime = matchingStable.checkerFunctionInvokeTime;
-        rep.stableViolationDetectionTime = matchingStable.violationDetectionTime;
-
-        return [rep.eventOccuredTimestamp - rep.eventOccuredTimestamp, 
-                rep.eventKinesisArrivedTimestamp - rep.eventOccuredTimestamp, 
-                rep.ingestionFunctionStartTime - rep.eventOccuredTimestamp, 
-                rep.ddbWriteTime - rep.eventOccuredTimestamp, 
-                rep.instanceTriggerKinesisTime - rep.eventOccuredTimestamp, 
-                rep.checkerFunctionInvokeTime - rep.eventOccuredTimestamp, 
-                rep.violationDetectionTime - rep.eventOccuredTimestamp, 
-                rep.stableCheckerFunctionInvokeTime - rep.eventOccuredTimestamp, 
-                rep.stableViolationDetectionTime - rep.eventOccuredTimestamp];
-    });
+    const fullReports = reports.map(rep =>
+                                    [rep.eventOccuredTimestamp - rep.eventOccuredTimestamp,
+                                     rep.eventKinesisArrivedTimestamp - rep.eventOccuredTimestamp,
+                                     rep.ingestionFunctionStartTime - rep.eventOccuredTimestamp,
+                                     rep.ddbWriteTime - rep.eventOccuredTimestamp,
+                                     rep.instanceTriggerKinesisTime - rep.eventOccuredTimestamp,
+                                     rep.checkerFunctionInvokeTime - rep.eventOccuredTimestamp,
+                                     rep.violationDetectionTime - rep.eventOccuredTimestamp]
+                                   );
 
     let outputfname = getRandFname();
 
@@ -46,4 +37,3 @@ async function main() {
 }
 
 main();
-

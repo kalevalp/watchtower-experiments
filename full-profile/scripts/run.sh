@@ -9,15 +9,11 @@ do
 
     pushd ../${kind}
 
-    sls deploy -v
-    sleep 5
-    sls deploy -v
-    sleep 5
-    sls deploy -v
-    sleep 5
-    sls deploy -v
-
     sleep 60
+    sls deploy
+    sleep 60
+
+
     API_URL=`serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'`; export API_URL=$API_URL/microbmark
 
     popd
@@ -35,7 +31,7 @@ do
 
     pushd ../${kind}
 
-    sls remove -v
+    sls remove
 
     popd
 
