@@ -3,19 +3,15 @@
 export resdir=results`date +%Y%m%d%H%M%S`
 mkdir ${resdir}
 
-for kind in {loop-once,loop-twice,loop-twice-possible-alarm,sleep-once,sleep-twice,sleep-twice-possible-alarm}
+for kind in {loop,sleep}
 do
     echo Running ${kind}
 
     pushd ../${kind}
 
-    sls deploy -v
-    sleep 5
-    sls deploy -v
-    sleep 5
-    sls deploy -v
-
+    sls deploy
     sleep 60
+
     API_URL=`serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'`; export API_URL=$API_URL/microbmark
 
     popd
