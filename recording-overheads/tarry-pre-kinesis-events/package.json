@@ -9,6 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "watchtower-recorder": "^1.5.5"
+    "watchtower-recorder": "^2.7.3"
   }
 }
