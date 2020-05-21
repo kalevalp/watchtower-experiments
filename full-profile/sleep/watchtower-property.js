@@ -1,4 +1,4 @@
-const property = {
+const property = [{
     name: 'dummy',
     quantifiedVariables: ['eventid'],
     projections: [['eventid']],
@@ -31,6 +31,6 @@ const property = {
 	    },
 	},
     },
-};
+}];
 
 module.exports = property;
