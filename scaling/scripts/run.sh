@@ -11,13 +11,8 @@ for parexec in {1,2,4,6,8,10}
 do
     pushd ../app
 
-    sls deploy -v
-    sleep 5
-    sls deploy -v
-    sleep 5
-    sls deploy -v
-    sleep 5
-    sls deploy -v
+    sleep 60
+    sls deploy
 
     sleep 60
     API_URL=`serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'`; export API_URL=$API_URL/microbmark
@@ -55,4 +50,3 @@ do
 	cat ${resdir}/e2e-${i}_of_${parexec} >> ${resdir}/e2e-${parexec}
     done
 done
-
