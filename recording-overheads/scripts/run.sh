@@ -23,7 +23,9 @@ do
 
     pushd ../${kind}
 
-    sls deploy -v
+    sleep 60
+
+    sls deploy
 
     sleep 60
 
@@ -43,7 +45,7 @@ do
     node function-execution-times.js ${resdir}/${kind}-times
 
     pushd ../${kind}
-    sls remove -v
+    sls remove
     popd
 
 done
