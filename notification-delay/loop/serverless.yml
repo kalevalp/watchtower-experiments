@@ -19,6 +19,9 @@ provider:
         Fn::GetAtt: [EventsStream, Arn]
 
 
+custom:
+  wtPathPrefix: ''
+
 functions:
   hello:
     handler: handler-wrapper.hello
@@ -26,9 +29,6 @@ functions:
       - http:
           path: microbmark
           method: get
-
-custom:
-  wtPathPrefix: ''
 
   ########################################
   ## Watchtower Functions
