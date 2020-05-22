@@ -15,8 +15,7 @@ function updateContext(name, event, lambdaContext) {
 
 const mock = {
     'dummy': (op, id, fp) => {
-        const forProp = fp ? fp : Math.floor(Math.random() * propertyCount);
-        return publisher({name: `EVENT_TYPE_${op}`, params: {someid: id, forProp}}, lambdaExecutionContext);
+        return publisher({name: `EVENT_TYPE_${op}`, params: {someid: id}}, lambdaExecutionContext);
     },
 };
 
