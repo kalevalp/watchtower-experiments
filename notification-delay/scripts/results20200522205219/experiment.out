@@ -1,0 +1,797 @@
+nohup: ignoring input
+Running loop
+~/watchtower-experiments/notification-delay/loop ~/watchtower-experiments/notification-delay/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+........
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (866.48 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+.............................................................................................
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 31
+api keys:
+  None
+endpoints:
+  GET - https://yymt73n4kf.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+~/watchtower-experiments/notification-delay/scripts
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100    65  100    65    0     0     47      0  0:00:01  0:00:01 --:--:--    47
+{"message":"Done.","opid":"4df85df4-5500-45bb-a031-a339742be500"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"8e51a220-3560-4bde-919f-803161d04a97"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100    65  100    65    0     0     48      0  0:00:01  0:00:01 --:--:--    48
+{"message":"Done.","opid":"49aefe9a-824e-48ac-aefe-f534d34953eb"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100    65  100    65    0     0     41      0  0:00:01  0:00:01 --:--:--    41100    65  100    65    0     0     41      0  0:00:01  0:00:01 --:--:--    41
+{"message":"Done.","opid":"764c6b3f-2895-484c-81fa-acb5dc242252"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     92      0 --:--:-- --:--:-- --:--:--    92
+{"message":"Done.","opid":"edc9ee17-c1ad-4b9b-97b9-e72ba429b2e1"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"9aab402c-9970-4a50-8d2b-28b97b83ba82"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93
+{"message":"Done.","opid":"220c8157-8c0e-4efa-b8e4-d2614e7e9b41"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"95752816-85ee-438d-878c-bb21c02bc35e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     83      0 --:--:-- --:--:-- --:--:--    83
+{"message":"Done.","opid":"b2e1031c-47fc-4602-8cef-2e29525eaaad"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     91      0 --:--:-- --:--:-- --:--:--    91100    65  100    65    0     0     91      0 --:--:-- --:--:-- --:--:--    91
+{"message":"Done.","opid":"2f47fcdc-dc0a-4a3c-85f2-953fe2feb42e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100    65  100    65    0     0     44      0  0:00:01  0:00:01 --:--:--    44
+{"message":"Done.","opid":"04cc0488-7fad-4808-a38f-4fb7de3473b3"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"eceed816-d5f3-4c99-afa3-626c4a74021a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     94      0 --:--:-- --:--:-- --:--:--    94100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93
+{"message":"Done.","opid":"e5f8ecee-7cbf-4f56-b308-df1b16962d42"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"989fde65-28d8-4ffe-b79e-72e7930a88da"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"8cb979bd-9e2f-490c-98dd-1e522d0eb9d3"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    92
+{"message":"Done.","opid":"afb41ca4-da01-40ac-9cc8-b47750e53d29"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    96100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"28e5317e-f9b9-4c13-bdb6-16b461f74513"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"824518e6-1fdb-4d6f-a13a-6b141207b619"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100    65  100    65    0     0     46      0  0:00:01  0:00:01 --:--:--    46100    65  100    65    0     0     46      0  0:00:01  0:00:01 --:--:--    46
+{"message":"Done.","opid":"36d41f41-7251-4b47-aade-c462d65e7690"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     92      0 --:--:-- --:--:-- --:--:--    92
+{"message":"Done.","opid":"f3ddaeae-3e50-4f6e-8238-2ce45b3e4033"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"1937f1ea-c505-4c9d-ace3-19fc05edbe61"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93
+{"message":"Done.","opid":"f6cbebdb-c7b0-4139-8aa5-8831a76b78cc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"85e2ba3c-b753-4bfb-b113-273293823181"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"415f79cd-2df8-45dc-a954-919a2f88de36"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     92      0 --:--:-- --:--:-- --:--:--    91100    65  100    65    0     0     91      0 --:--:-- --:--:-- --:--:--    91
+{"message":"Done.","opid":"84083c2e-eb25-4165-8098-af20ba6358a7"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    97100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"538bd7bc-3ca2-4bd9-b837-12bf6b913910"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"0b10dbb3-8782-4a01-a7e4-af7c4c3c8ea0"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     94      0 --:--:-- --:--:-- --:--:--    93100    65  100    65    0     0     94      0 --:--:-- --:--:-- --:--:--    93
+{"message":"Done.","opid":"b703a136-ba8a-436b-aacd-31029a76c5d3"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"bfe44840-3083-4016-9cb8-c412fce96c48"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"9e73b3d5-6f54-4ade-9e97-7a960fa200b3"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"f8ca0828-969a-4695-bb3b-51ff838d81fa"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"199f0612-83d1-4741-830c-4542a1c97969"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93
+{"message":"Done.","opid":"43779ffa-4558-416b-9fd2-bdefbbd4653b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"3ec61e54-13f4-4e47-9680-8b4b547c819d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    97100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"9bee94f8-9dfc-4ac6-903f-a85c92a36ce8"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"c722a971-8813-4dd0-96a0-29db91b8bebc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     91      0 --:--:-- --:--:-- --:--:--    91
+{"message":"Done.","opid":"da4f36ce-e40d-4ce5-9833-3f4c16db520b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"5be92244-0fd3-49e1-ab29-6627e1c98e6c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"014bd4f7-7ce3-4d50-b618-5d3c40d71f8b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"77c5d0c6-097d-4179-846d-9eabf5382057"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100    65  100    65    0     0     45      0  0:00:01  0:00:01 --:--:--    45100    65  100    65    0     0     44      0  0:00:01  0:00:01 --:--:--    44
+{"message":"Done.","opid":"6329eb33-faca-4037-a9c5-dff1f31bf6e2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"d43d6fba-8000-4aca-b7bc-91276270edf7"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"3541c3f6-d44b-48b9-9a29-1001ea67fc1f"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     94      0 --:--:-- --:--:-- --:--:--    94100    65  100    65    0     0     94      0 --:--:-- --:--:-- --:--:--    94
+{"message":"Done.","opid":"afeebb87-db15-443b-9b0f-f45ab339b849"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"511818cb-6de5-4117-a29b-60c560ba1029"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"9e317e3b-2f5c-4572-b0df-dea51eabd5a8"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"a1b2723a-f607-4735-bb90-d092fadfcb73"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"d80a90ba-703f-4264-9517-98c88ac57bc5"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"d37767eb-ba51-4e2e-8a3b-cbad7a683f02"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"cf058c6c-6453-4c8e-9760-de01fd16de8d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     91      0 --:--:-- --:--:-- --:--:--    91
+{"message":"Done.","opid":"7b22080e-483a-4c92-bc0b-9511a89f37e0"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     90      0 --:--:-- --:--:-- --:--:--    90
+{"message":"Done.","opid":"5d60cc90-e873-4685-ac0f-bcd1eacec005"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"143bb3f4-a401-45d1-b89a-fbaf4b4b7592"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"024a9973-2a57-4400-8860-18a0f27dac1e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"1ae260a3-b6d1-4605-8d73-7b24bce3a8b4"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     88      0 --:--:-- --:--:-- --:--:--    87100    65  100    65    0     0     87      0 --:--:-- --:--:-- --:--:--    87
+{"message":"Done.","opid":"773ac898-ce71-4368-a1a4-91e9d60de6d8"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"085e370d-8268-41ef-9f60-2a3c69689c98"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"5669770d-e637-41de-b42d-8f8ac7e32262"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"be1d7f38-018b-43ef-81d1-02c0d5aca376"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    95100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"24f2bfc1-b99e-46de-b5bf-9759b01a62b7"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"057154c5-58e2-4417-905b-06947d476108"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"90451ec0-2d91-44f6-ba36-cde5fbf040b7"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95100    65  100    65    0     0     94      0 --:--:-- --:--:-- --:--:--    94
+{"message":"Done.","opid":"6540a3e0-3e8b-41a7-b574-e3e24b31c9b6"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"3bd65d1c-bdff-4d4c-a693-33bb9fc9ff21"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"6468717b-7dff-43fa-806a-143f49b8b9e2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    97100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"f561ed66-0643-4a03-a3c5-b62afbdbe6f1"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"0f007636-cd49-4194-8c0d-3f1fd4e17e08"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"c561a725-4ba9-4147-b563-f9f9d7989a72"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     86      0 --:--:-- --:--:-- --:--:--    86100    65  100    65    0     0     86      0 --:--:-- --:--:-- --:--:--    86
+{"message":"Done.","opid":"462ee44f-17a5-4b64-8c4b-720e20112869"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"2016f6b1-b7f9-4767-bbe6-72fb8be7b3e8"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"862043ac-f15d-438a-b78b-9688ba191a01"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100    65  100    65    0     0     46      0  0:00:01  0:00:01 --:--:--    46100    65  100    65    0     0     46      0  0:00:01  0:00:01 --:--:--    46
+{"message":"Done.","opid":"f3f30b78-7e27-4948-92dc-882c3f7031ac"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     86      0 --:--:-- --:--:-- --:--:--    86
+{"message":"Done.","opid":"f018c738-20fc-47c0-aa55-e0ec0ee8e574"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"77240223-029d-4c28-9669-e48b22ea0537"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"e07c7021-6fcc-4821-9169-b6dca2fe3e2e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"be5973bc-ef42-4e5d-936b-0def55c353fc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"ea1e0441-29e5-413f-ac83-48ddc4366402"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    95100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"1116fca3-4f92-4b3a-ad4b-c7e5b9aef0fa"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     99      0 --:--:-- --:--:-- --:--:--    99
+{"message":"Done.","opid":"0c80c71d-84db-4f9f-92cc-63cfb41de071"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"ca3c518e-f298-4333-9f05-768d70eee459"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    95100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"587cd155-a47f-4845-a773-eefb6af97463"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93
+{"message":"Done.","opid":"6b9020fd-693b-414b-b943-1da0943f1964"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     95      0 --:--:-- --:--:-- --:--:--    95
+{"message":"Done.","opid":"1ae2902f-b36f-4b7e-8a2f-46521f310cf8"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"dcc8ba62-7dc4-4f17-aa07-ff5f925d8ff6"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     92      0 --:--:-- --:--:-- --:--:--    92100    65  100    65    0     0     92      0 --:--:-- --:--:-- --:--:--    92
+{"message":"Done.","opid":"054e6d39-5de1-4deb-8ea6-51fe8d51d5fe"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"147cca2a-ce0d-4739-96c7-3b57705634cb"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93
+{"message":"Done.","opid":"934f90b4-d4f4-4fc9-9ed3-6520c983cad3"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     94      0 --:--:-- --:--:-- --:--:--    94100    65  100    65    0     0     94      0 --:--:-- --:--:-- --:--:--    94
+{"message":"Done.","opid":"08ebc8f1-25bc-45bd-b3c4-6098043f635e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"26246b26-f6ec-4b74-9e71-5e950fad407a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"62100773-eefb-4228-9f97-69d41bc77a66"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     99      0 --:--:-- --:--:-- --:--:--    99100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"9777c8ea-7ab0-45aa-8c84-4f4dd01ec2e4"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     93      0 --:--:-- --:--:-- --:--:--    93
+{"message":"Done.","opid":"d12e2703-1acc-4ee9-8d86-4d854bda8af4"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100    65  100    65    0     0     47      0  0:00:01  0:00:01 --:--:--    47
+{"message":"Done.","opid":"f844ff11-a465-4e05-af76-9408165e8544"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"0cbd85ab-bda2-4f3c-b199-3c5c975c131c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    97
+{"message":"Done.","opid":"daec29be-a2f7-493b-8a61-1045632b8eb3"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    97100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"66d5a6bb-7547-42ef-8dd1-b3d8ed0cfb90"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     92      0 --:--:-- --:--:-- --:--:--    92100    65  100    65    0     0     92      0 --:--:-- --:--:-- --:--:--    92
+{"message":"Done.","opid":"35f506a5-c8d9-4ba2-b4c0-7acdc394e657"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     98      0 --:--:-- --:--:-- --:--:--    98
+{"message":"Done.","opid":"f8b14c2a-2d6f-41ce-9337-b9e1d60c81d5"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     90      0 --:--:-- --:--:-- --:--:--    90100    65  100    65    0     0     90      0 --:--:-- --:--:-- --:--:--    90
+{"message":"Done.","opid":"365bb719-66b7-44c2-9f77-e4e06f4b1568"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     97      0 --:--:-- --:--:-- --:--:--    96100    65  100    65    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{"message":"Done.","opid":"1ca976f2-7007-4e91-ada1-984bf382a537"}~/watchtower-experiments/notification-delay/loop ~/watchtower-experiments/notification-delay/scripts
+Serverless: Getting all objects in S3 bucket...
+Serverless: Removing objects in S3 bucket...
+Serverless: Removing Stack...
+Serverless: Checking Stack removal progress...
+CloudFormation - DELETE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590180740161
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersiontJqZ2WxkyuhFnJtEQP5VtrnkvjlK7Pf1C4LpB9niwA
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - HelloLambdaVersionoeyvV09lV7y1S6jEBGqU7kNuXJy0lPYBQe6xpMRM7bU
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersionnJmx0DCtuIpSeQMdWU3ZGf5IcZnQCCMGb3JCuRITVU0
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionTkznGg8sAcHH5X9GjXDCQjlTNtvyZQsXMEtvs0rfBCw
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590180740161
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+Serverless: Stack removal finished...
+~/watchtower-experiments/notification-delay/scripts
+Running sleep
+~/watchtower-experiments/notification-delay/sleep ~/watchtower-experiments/notification-delay/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+........
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (866.46 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+..........................................................................................
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 31
+api keys:
+  None
+endpoints:
+  GET - https://qgpbgef508.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+~/watchtower-experiments/notification-delay/scripts
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0     63      0  0:00:01  0:00:01 --:--:--    63
+{"message":"Done.","opid":"cc632281-a375-445a-b3d6-cdbf8016c36a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    185      0 --:--:-- --:--:-- --:--:--   184
+{"message":"Done.","opid":"575d3dfe-fdb5-489a-a0bf-bac4d6327a0c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    166      0 --:--:-- --:--:-- --:--:--   166
+{"message":"Done.","opid":"e21028bc-c111-49e3-848f-001e0f9e0116"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    186      0 --:--:-- --:--:-- --:--:--   186
+{"message":"Done.","opid":"2a804928-dacb-4617-a930-3ab125fb23b9"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    157      0 --:--:-- --:--:-- --:--:--   156
+{"message":"Done.","opid":"08ef56c7-1d53-4acc-924d-5394491dba34"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    178      0 --:--:-- --:--:-- --:--:--   179
+{"message":"Done.","opid":"3c115a66-b25f-4b2a-be3f-be668ef4ee4b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    186      0 --:--:-- --:--:-- --:--:--   186100    65  100    65    0     0    185      0 --:--:-- --:--:-- --:--:--   185
+{"message":"Done.","opid":"12a21356-329d-4857-8095-c5643a32b077"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    187      0 --:--:-- --:--:-- --:--:--   187
+{"message":"Done.","opid":"94a16850-635d-40b7-a913-73cf4db834d0"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    179      0 --:--:-- --:--:-- --:--:--   179
+{"message":"Done.","opid":"a25ed48f-7f63-4408-aba3-615ee70b52cb"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    195      0 --:--:-- --:--:-- --:--:--   195
+{"message":"Done.","opid":"8843fed8-f160-4e12-82a6-e1110c828faa"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    185      0 --:--:-- --:--:-- --:--:--   185
+{"message":"Done.","opid":"d202e72b-c7cd-4777-858e-fd8e4d9ff414"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    200      0 --:--:-- --:--:-- --:--:--   200
+{"message":"Done.","opid":"e475829f-b318-4085-900f-d97bd2d84a41"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    186      0 --:--:-- --:--:-- --:--:--   185
+{"message":"Done.","opid":"80f54c22-431e-457a-8c43-8f1f757431a5"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    176      0 --:--:-- --:--:-- --:--:--   176
+{"message":"Done.","opid":"81f67c14-ba1f-4cec-891e-8f897d72e4d9"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    182      0 --:--:-- --:--:-- --:--:--   182
+{"message":"Done.","opid":"59e17fb7-42e6-49b8-b23e-09255846847d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    188      0 --:--:-- --:--:-- --:--:--   187
+{"message":"Done.","opid":"d221e379-a64b-45e7-ae79-b3d66c027f84"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    180      0 --:--:-- --:--:-- --:--:--   180
+{"message":"Done.","opid":"f9f98f81-197c-4522-9fcd-53aea6bad0fb"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    192      0 --:--:-- --:--:-- --:--:--   191100    65  100    65    0     0    191      0 --:--:-- --:--:-- --:--:--   191
+{"message":"Done.","opid":"91526629-dd23-4d12-bbbb-373480e086ed"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    188      0 --:--:-- --:--:-- --:--:--   188
+{"message":"Done.","opid":"7af1d096-359b-4697-9cb8-90514d5b5d47"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    182      0 --:--:-- --:--:-- --:--:--   182
+{"message":"Done.","opid":"c32c8bf1-3ed7-4965-85be-96b1c6218259"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    198      0 --:--:-- --:--:-- --:--:--   198100    65  100    65    0     0    198      0 --:--:-- --:--:-- --:--:--   198
+{"message":"Done.","opid":"1bc3073d-182e-42af-84ad-b12f16d2e27a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    182      0 --:--:-- --:--:-- --:--:--   182
+{"message":"Done.","opid":"a584dfad-a462-4394-8c93-ec6af43e1860"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    172      0 --:--:-- --:--:-- --:--:--   172
+{"message":"Done.","opid":"5b7e2538-ed2d-4085-8f86-07b4e29dddae"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    190      0 --:--:-- --:--:-- --:--:--   189
+{"message":"Done.","opid":"2ad30410-f8d4-4d5e-963b-773cd000ddfd"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    203      0 --:--:-- --:--:-- --:--:--   203
+{"message":"Done.","opid":"99642997-b16c-471d-b03e-a4976ef8bb47"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    184      0 --:--:-- --:--:-- --:--:--   184
+{"message":"Done.","opid":"3a3a1276-af00-4122-a942-67457346789a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    184      0 --:--:-- --:--:-- --:--:--   184
+{"message":"Done.","opid":"54bc8e3e-a332-4a39-8e90-394b4a6746e0"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    184      0 --:--:-- --:--:-- --:--:--   184
+{"message":"Done.","opid":"bb10224d-74ef-4f7a-8e8d-f4574e2ff75a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    196      0 --:--:-- --:--:-- --:--:--   196
+{"message":"Done.","opid":"cbf2a7f9-12d6-4fe2-ac17-6d5d21b0204b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    187      0 --:--:-- --:--:-- --:--:--   187
+{"message":"Done.","opid":"aa6e62fb-3f88-4191-8990-db5d1ae7dfc4"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    201      0 --:--:-- --:--:-- --:--:--   201
+{"message":"Done.","opid":"aacaca2c-3f2c-48eb-8148-81c389f47ec1"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    192      0 --:--:-- --:--:-- --:--:--   192
+{"message":"Done.","opid":"e189caf7-e284-4c20-b0f9-19fdfbe0b5f1"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    201      0 --:--:-- --:--:-- --:--:--   200
+{"message":"Done.","opid":"d2081205-db37-4c23-9192-2e6e7c5a80aa"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    183      0 --:--:-- --:--:-- --:--:--   183
+{"message":"Done.","opid":"a513fdc2-a155-4abc-9520-3cd5a8ea0a9c"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    184      0 --:--:-- --:--:-- --:--:--   184100    65  100    65    0     0    184      0 --:--:-- --:--:-- --:--:--   184
+{"message":"Done.","opid":"02ad66cb-fc3f-4f9f-9128-3c89b8e34607"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    198      0 --:--:-- --:--:-- --:--:--   198
+{"message":"Done.","opid":"7cb40692-1aef-4b73-8fdc-146c9bee8cb7"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    190      0 --:--:-- --:--:-- --:--:--   190
+{"message":"Done.","opid":"a47e7db2-55ff-4e36-b2c0-dfbb285f9004"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    198      0 --:--:-- --:--:-- --:--:--   197100    65  100    65    0     0    196      0 --:--:-- --:--:-- --:--:--   196
+{"message":"Done.","opid":"6fb70b27-72bc-4405-824b-b8a37afdcbdb"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    199      0 --:--:-- --:--:-- --:--:--   199
+{"message":"Done.","opid":"2ba32e4c-10fc-4e55-a39f-d76dfc1f9811"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    198      0 --:--:-- --:--:-- --:--:--   199
+{"message":"Done.","opid":"fc9efe32-2ae7-479a-be3b-3b7dab30cb8e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    184      0 --:--:-- --:--:-- --:--:--   184100    65  100    65    0     0    184      0 --:--:-- --:--:-- --:--:--   183
+{"message":"Done.","opid":"04ebd7a4-74c7-4d16-9653-e004447a9045"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    179      0 --:--:-- --:--:-- --:--:--   179
+{"message":"Done.","opid":"80f0cc85-18ef-4f84-94c1-9b9ad685d366"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    198      0 --:--:-- --:--:-- --:--:--   198
+{"message":"Done.","opid":"d5d8d74d-bfbf-4ca2-a20e-fcf4ae317a26"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    192      0 --:--:-- --:--:-- --:--:--   191
+{"message":"Done.","opid":"62e0dcec-53f1-4667-842f-49b3ecafcdc2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    112      0 --:--:-- --:--:-- --:--:--   112
+{"message":"Done.","opid":"4b0b7463-33b7-47c4-ad18-b327c993a9fc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    170      0 --:--:-- --:--:-- --:--:--   169100    65  100    65    0     0    169      0 --:--:-- --:--:-- --:--:--   168
+{"message":"Done.","opid":"a5364fab-52ca-49fb-a4c9-7ee1d0385dd4"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    197      0 --:--:-- --:--:-- --:--:--   197
+{"message":"Done.","opid":"cf1ce1a5-0665-4ecf-b189-8652f576c87b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    197      0 --:--:-- --:--:-- --:--:--   197
+{"message":"Done.","opid":"570aaeb8-3e83-4f43-921d-03284d3694af"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    182      0 --:--:-- --:--:-- --:--:--   181
+{"message":"Done.","opid":"19b03e8c-3532-48fa-abff-8ce72a996ddf"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    182      0 --:--:-- --:--:-- --:--:--   182
+{"message":"Done.","opid":"cf5e1290-b4d1-4dc9-b323-04fe5e8445fb"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    188      0 --:--:-- --:--:-- --:--:--   188
+{"message":"Done.","opid":"aabe1171-f7e9-470c-8d8b-64384aa9b127"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    181      0 --:--:-- --:--:-- --:--:--   180
+{"message":"Done.","opid":"dcb85d95-86b0-432c-89d9-6bd8830b9aca"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    194      0 --:--:-- --:--:-- --:--:--   194
+{"message":"Done.","opid":"9a87f9f2-9a5f-4ace-959b-a0ffb730648e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    189      0 --:--:-- --:--:-- --:--:--   189
+{"message":"Done.","opid":"5b25690c-3ff3-4339-b94f-0be9cfc55cc3"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    189      0 --:--:-- --:--:-- --:--:--   188
+{"message":"Done.","opid":"af89e82e-f238-467a-80c8-52af589adc4a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    172      0 --:--:-- --:--:-- --:--:--   172
+{"message":"Done.","opid":"3cbf14a6-c054-4749-904e-0d469d4be541"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    195      0 --:--:-- --:--:-- --:--:--   195100    65  100    65    0     0    194      0 --:--:-- --:--:-- --:--:--   194
+{"message":"Done.","opid":"458f10dc-541f-4773-aec8-518d0e00c6e8"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    188      0 --:--:-- --:--:-- --:--:--   189
+{"message":"Done.","opid":"44465774-5f93-413c-aace-91489b02aaca"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    188      0 --:--:-- --:--:-- --:--:--   189
+{"message":"Done.","opid":"93cb1272-d601-4205-9f8a-19ee23b74950"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    195      0 --:--:-- --:--:-- --:--:--   194100    65  100    65    0     0    195      0 --:--:-- --:--:-- --:--:--   194
+{"message":"Done.","opid":"8b01dbf0-11fb-4019-9b45-80fe56ccc481"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    190      0 --:--:-- --:--:-- --:--:--   190
+{"message":"Done.","opid":"7970083d-eb86-4645-a75a-35c88e40fb05"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    200      0 --:--:-- --:--:-- --:--:--   200
+{"message":"Done.","opid":"40ecf3f3-5772-405a-a300-010e1e499e8d"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    182      0 --:--:-- --:--:-- --:--:--   182
+{"message":"Done.","opid":"66a9c323-4a83-4d0c-94e2-e18a58f635fa"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    185      0 --:--:-- --:--:-- --:--:--   185
+{"message":"Done.","opid":"1678358c-d79f-4286-8f3b-f58c53b8f083"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    173      0 --:--:-- --:--:-- --:--:--   173
+{"message":"Done.","opid":"849356ec-9a31-47c2-a7a9-deb2728b8df1"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    182      0 --:--:-- --:--:-- --:--:--   182
+{"message":"Done.","opid":"7d427ec0-20f2-49cc-82ac-447d721925fc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    189      0 --:--:-- --:--:-- --:--:--   189
+{"message":"Done.","opid":"cb4a41a7-0905-476d-88d3-89f4019b475b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    179      0 --:--:-- --:--:-- --:--:--   179
+{"message":"Done.","opid":"9e02986f-f43d-419c-9ee3-393d1dbd2489"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    190      0 --:--:-- --:--:-- --:--:--   190
+{"message":"Done.","opid":"5fa63a38-6d55-4538-bf51-f513224c49e2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    163      0 --:--:-- --:--:-- --:--:--   163
+{"message":"Done.","opid":"3b7e6ab1-cec4-4dcd-acd5-79a6d2cc7770"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    201      0 --:--:-- --:--:-- --:--:--   200100    65  100    65    0     0    201      0 --:--:-- --:--:-- --:--:--   200
+{"message":"Done.","opid":"130a7310-09ef-41bd-9f85-430626f94f9b"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    189      0 --:--:-- --:--:-- --:--:--   190
+{"message":"Done.","opid":"35ce519d-5ce8-4920-8e66-c48b53043294"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    191      0 --:--:-- --:--:-- --:--:--   191
+{"message":"Done.","opid":"c5d16c77-1d43-4cc9-b9cc-00824bf6e2be"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    178      0 --:--:-- --:--:-- --:--:--   177100    65  100    65    0     0    177      0 --:--:-- --:--:-- --:--:--   177
+{"message":"Done.","opid":"67208176-f354-45fd-89ef-3f76ef362ad4"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    176      0 --:--:-- --:--:-- --:--:--   176
+{"message":"Done.","opid":"ca68dad4-474d-4815-bdf4-88f16c4161fd"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    150      0 --:--:-- --:--:-- --:--:--   150
+{"message":"Done.","opid":"7406e64e-f7c5-4ad4-a951-86f28a46c6ad"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    192      0 --:--:-- --:--:-- --:--:--   192
+{"message":"Done.","opid":"16283d56-493f-4485-b517-ac309ab51a69"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    184      0 --:--:-- --:--:-- --:--:--   184
+{"message":"Done.","opid":"1b4ec923-ec4c-46f8-9040-658de42bd9d2"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    200      0 --:--:-- --:--:-- --:--:--   199100    65  100    65    0     0    198      0 --:--:-- --:--:-- --:--:--   197
+{"message":"Done.","opid":"a19e30af-fb34-4ffc-ba08-693f60bf4ad8"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    171      0 --:--:-- --:--:-- --:--:--   171
+{"message":"Done.","opid":"6f5470d2-fdd4-493e-8494-9f8b423b8001"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    197      0 --:--:-- --:--:-- --:--:--   197
+{"message":"Done.","opid":"61b653d5-f78a-4615-b145-f27ece0a0b33"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    197      0 --:--:-- --:--:-- --:--:--   196100    65  100    65    0     0    197      0 --:--:-- --:--:-- --:--:--   196
+{"message":"Done.","opid":"8de2bb92-ca5b-4b56-9113-7b5dac7492cc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    190      0 --:--:-- --:--:-- --:--:--   190
+{"message":"Done.","opid":"60d0b7c2-f2e2-4de8-8858-61ca2641de24"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    196      0 --:--:-- --:--:-- --:--:--   196
+{"message":"Done.","opid":"beff966c-0bac-48ea-ac5d-2880c0d1f3ef"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    200      0 --:--:-- --:--:-- --:--:--   199100    65  100    65    0     0    198      0 --:--:-- --:--:-- --:--:--   198
+{"message":"Done.","opid":"49e5a969-7ce3-4e09-bc2b-c5e7515352e7"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    194      0 --:--:-- --:--:-- --:--:--   194
+{"message":"Done.","opid":"05039191-5bb3-42b9-b139-5f2f1087f4bc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    190      0 --:--:-- --:--:-- --:--:--   190
+{"message":"Done.","opid":"bdc52692-1aee-4113-a9e9-f609f5d8f910"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    183      0 --:--:-- --:--:-- --:--:--   183
+{"message":"Done.","opid":"b9110672-5ec8-46b5-b3ce-6c1d64cc5405"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    198      0 --:--:-- --:--:-- --:--:--   198
+{"message":"Done.","opid":"e9bff85b-7e34-42e7-8182-9984beecedcd"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    198      0 --:--:-- --:--:-- --:--:--   198
+{"message":"Done.","opid":"d0c3759e-5163-4b8d-9d71-3ebd24039331"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    196      0 --:--:-- --:--:-- --:--:--   196
+{"message":"Done.","opid":"43e8fce2-5d7b-4711-8f7a-7e2cb351201a"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    192      0 --:--:-- --:--:-- --:--:--   192
+{"message":"Done.","opid":"06194a90-3563-48e2-b3ae-fa214fd5a6df"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    195      0 --:--:-- --:--:-- --:--:--   195
+{"message":"Done.","opid":"a9446320-4735-466c-b256-a93ba7bfbbf6"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    200      0 --:--:-- --:--:-- --:--:--   200
+{"message":"Done.","opid":"b81f95b2-3c64-4f7e-865e-1368590d6720"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    182      0 --:--:-- --:--:-- --:--:--   182
+{"message":"Done.","opid":"16832b8b-5233-4fd8-bba9-7b252c9ccef9"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    191      0 --:--:-- --:--:-- --:--:--   191
+{"message":"Done.","opid":"bf4d183d-1860-4e80-8f79-73ebc66a51dc"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    192      0 --:--:-- --:--:-- --:--:--   192
+{"message":"Done.","opid":"1098ac5c-68d8-4a4b-954a-86aad2574d7e"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    194      0 --:--:-- --:--:-- --:--:--   194
+{"message":"Done.","opid":"80b11d5a-7cb6-44c1-b80d-f4b413bd2e20"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    171      0 --:--:-- --:--:-- --:--:--   172
+{"message":"Done.","opid":"05174f8e-ac1e-48e8-9a3e-ee3e477bd684"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    65  100    65    0     0    195      0 --:--:-- --:--:-- --:--:--   195
+{"message":"Done.","opid":"dd038cc8-c931-47c9-85fd-ab950000901e"}~/watchtower-experiments/notification-delay/sleep ~/watchtower-experiments/notification-delay/scripts
+Serverless: Getting all objects in S3 bucket...
+Serverless: Removing objects in S3 bucket...
+Serverless: Removing Stack...
+Serverless: Checking Stack removal progress...
+CloudFormation - DELETE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionvnPouuqL08S8DC486JzI0GJXBi1nifWorEAuuKbGA
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590181181736
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - HelloLambdaVersionreYdBgDt12elOTC2vep5BMgURuzmhKNPpXe1lNxqc
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionSvJm6xOrqb2RwDPRnexsZYensALH6eayNlqcNZ4AI
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersionSloRtFk32qm5X0cHuuESsg5snpzfYzfmwzWRQ4Gsfs
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590181181736
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+Serverless: Stack removal finished...
+~/watchtower-experiments/notification-delay/scripts
