@@ -1,0 +1,450 @@
+nohup: ignoring input
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+........
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (865.92 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+.............................................................................................
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 31
+api keys:
+  None
+endpoints:
+  GET - https://hpk92o2b57.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+~/watchtower-experiments/scaling/scripts
+Calling function at url: https://hpk92o2b57.execute-api.eu-west-1.amazonaws.com/test/microbmark
+{"message":"Done.","opid":"e878983e-9852-47c3-85bf-1cadaa9692ba"}{"message":"Done.","opid":"9845eadf-79e6-4cad-a292-3fa62ce4c507"}{"message":"Done.","opid":"d60a02f6-3430-4752-8d0d-ffe857ef3b7a"}{"message":"Done.","opid":"bc3d4249-56ed-4e38-9ae0-3538c904b7fb"}{"message":"Done.","opid":"2d8b6acd-455c-4603-8eeb-5f5b57ee9110"}{"message":"Done.","opid":"685ef1b3-8ede-43a4-ab18-b1ce5a098d6d"}{"message":"Done.","opid":"aa797662-a28d-4f37-a95b-c99afcd52731"}{"message":"Done.","opid":"72539b8a-7b75-4934-a907-7a01bac74eea"}{"message":"Done.","opid":"0519b10f-b799-4fdb-867c-9b24781dcb74"}{"message":"Done.","opid":"ab403b41-2adf-40e8-be13-7be5b377e135"}{"message":"Done.","opid":"a20a08a3-8f2c-466b-afe5-b1ae378d63a3"}{"message":"Done.","opid":"b7779722-d992-4a11-92a3-f1b24156f016"}{"message":"Done.","opid":"a967fcd7-ba39-404b-9d21-e297540da388"}{"message":"Done.","opid":"02abac0f-6468-48f8-8fe8-19cde4d99712"}{"message":"Done.","opid":"d11ebf91-3359-4521-a022-9a460d524004"}{"message":"Done.","opid":"190d69ec-4e14-47b4-9531-77db7cdfb9ec"}{"message":"Done.","opid":"316286b3-de4b-498b-974b-457472ddf851"}{"message":"Done.","opid":"b32fe08c-f405-44e2-b828-ba3e6f35a37f"}{"message":"Done.","opid":"e2a66ba8-50d8-4550-bbf6-bcf279eca219"}{"message":"Done.","opid":"fc2f0a95-5090-43aa-bd56-4b4f8d7a764e"}{"message":"Done.","opid":"1442c019-81db-4a51-b407-c203c328de57"}{"message":"Done.","opid":"76fb6bb7-4bb5-4b1f-abae-c81710c8a7a3"}{"message":"Done.","opid":"79696025-97c8-43cc-a540-c56117c9df1a"}{"message":"Done.","opid":"bcbc3343-c55c-4f18-a8a1-32967e283c2d"}{"message":"Done.","opid":"1a32a6af-46e7-429a-8fb4-3e26176e08e9"}{"message":"Done.","opid":"041c45d1-8b6c-4175-aeec-9d9e07dbef13"}{"message":"Done.","opid":"165f5bae-03ca-4198-82df-ee8eb919efa6"}{"message":"Done.","opid":"bb7a7ed8-f8ad-4e17-81fb-881fc4a458ca"}{"message":"Done.","opid":"04933b3b-77a7-4c58-a49e-0011f87c09e4"}{"message":"Done.","opid":"33b166d9-949c-4ed2-9b5a-4d60e3a3713f"}{"message":"Done.","opid":"5dd51e36-c6ce-4ce1-8b84-614a57224a0e"}{"message":"Done.","opid":"d51ed03b-d9b7-44de-9837-ef183047acd8"}{"message":"Done.","opid":"c71ee02d-171a-4309-a2dc-0a937b82fd77"}{"message":"Done.","opid":"96b46cb8-ca9e-4be7-a1b7-7297cff227f8"}{"message":"Done.","opid":"e2257b13-ae47-4452-820c-8b5350134336"}{"message":"Done.","opid":"c8b6131d-1344-4ab4-9bbb-c0e1590b411e"}{"message":"Done.","opid":"76595596-11f5-45b2-9112-4cd5db1886b0"}{"message":"Done.","opid":"df3d867c-c033-49d7-b2f7-8e674315e62b"}{"message":"Done.","opid":"9462ac43-7539-49ba-97b7-70158c962d96"}{"message":"Done.","opid":"59cc7c37-83c3-4e69-8158-816f999698f2"}{"message":"Done.","opid":"61712e11-e327-4469-aa1a-03f5a436e20d"}{"message":"Done.","opid":"9cccbbe5-b0a5-4917-9c30-5da246a65b3b"}{"message":"Done.","opid":"6351773d-a6bc-4e5f-81c4-6692736de3a8"}{"message":"Done.","opid":"16589442-00c3-450b-9c78-95b01dbaf142"}{"message":"Done.","opid":"a6b22c47-fa6a-48ea-91f7-826322350235"}{"message":"Done.","opid":"10de3468-30ac-4528-b47c-2408b16713ad"}{"message":"Done.","opid":"32c1a166-d989-44f9-ad97-85d8eedb9b35"}{"message":"Done.","opid":"3de099e7-7643-4f64-8bad-8364b9f61732"}{"message":"Done.","opid":"976e22d6-1025-4e23-94d1-8468f4817304"}{"message":"Done.","opid":"9ea1d4c2-3483-4b05-83ac-ed38d23921b2"}{"message":"Done.","opid":"5d3a286e-9927-469e-9c04-4e0f375bfc63"}{"message":"Done.","opid":"8fd87667-142b-4425-87bc-18be97a2d5bd"}{"message":"Done.","opid":"c1c99fef-433c-438d-a8c2-21bdf72e5c2f"}{"message":"Done.","opid":"aad283ac-b31b-4920-8dfd-9d4f3edf9f95"}{"message":"Done.","opid":"5be0e248-f6f9-4d53-bb1c-2f0c496b72ff"}{"message":"Done.","opid":"13f44625-0a29-4420-83ce-5035f5d37b11"}{"message":"Done.","opid":"79dff1bf-5291-4163-af35-a2bf0c29e30c"}{"message":"Done.","opid":"b8e9d422-eee8-4ac0-8f92-1e90cbc32bb9"}{"message":"Done.","opid":"fac3b1e1-7eb3-468e-9736-e0e44a45feba"}{"message":"Done.","opid":"6ba2e3b7-7a99-46e0-835c-eb99ef220dc4"}Elapsed call time is 45220(ms)
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Getting all objects in S3 bucket...
+Serverless: Removing objects in S3 bucket...
+Serverless: Removing Stack...
+Serverless: Checking Stack removal progress...
+CloudFormation - DELETE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590096107015
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersionNjPGRniXcCqclj6x77qlJnKghawKJjLC33Ojw8GvU
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - HelloLambdaVersiont0FiEo3eMjB5sfjy5tpd15bDJv77jfWHnZAdx6ubk
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionY7CDsyizFo8sCHWsZiohKWidHmOQJ0lIdS5tpuLbM
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionyNcANc1pwWlZbXruZawEVZHd1ekuabduLhVWZTZvy4
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590096107015
+CloudFormation - DELETE_COMPLETE - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+Serverless: Stack removal finished...
+~/watchtower-experiments/scaling/scripts
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+........
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (865.92 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+.............................................................................................
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 31
+api keys:
+  None
+endpoints:
+  GET - https://rwp568w193.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+~/watchtower-experiments/scaling/scripts
+Calling function at url: https://rwp568w193.execute-api.eu-west-1.amazonaws.com/test/microbmark
+Calling function at url: https://rwp568w193.execute-api.eu-west-1.amazonaws.com/test/microbmark
+{"message":"Done.","opid":"680c34b9-231b-4150-a032-7ace3bb3b536"}{"message":"Done.","opid":"1dc92f48-6849-4381-9923-bafeae906714"}{"message":"Done.","opid":"920a3fc9-a5e5-4302-860a-988101c934be"}{"message":"Done.","opid":"fb1ba1c4-0ea0-45f2-995e-a82c1ef92799"}{"message":"Done.","opid":"a781e74d-8f71-425f-87e6-b3e321735bb5"}{"message":"Done.","opid":"b84f5b9a-87f9-4143-855e-b6f6e6cf5a93"}{"message":"Done.","opid":"0981bdf8-c1a0-44c7-bee4-e46ba4f68a3f"}{"message":"Done.","opid":"316e0471-154f-4495-b7dc-22125837203a"}{"message":"Done.","opid":"83495cd9-62dc-4ed4-91c4-d1eff7964eee"}{"message":"Done.","opid":"f2a87a15-23c5-4ed0-babe-6c34e60a9d6a"}{"message":"Done.","opid":"3260f019-b275-49d6-a3f1-9acbc8f91184"}{"message":"Done.","opid":"ba261640-9541-4eb1-8bdf-d4d9e18ceb37"}{"message":"Done.","opid":"84684000-126d-4cf8-8de7-5e4ec1fc6f40"}{"message":"Done.","opid":"eedd3d6a-73f3-4797-8ba0-3f864f8cc3e4"}{"message":"Done.","opid":"641cfee0-dc64-4cd4-aa28-33e363df1d73"}{"message":"Done.","opid":"0e2740e3-431e-4a9f-af81-abe45c58a28a"}{"message":"Done.","opid":"5504de4c-0044-4967-8ee8-d953188408d1"}{"message":"Done.","opid":"ff95044b-4083-4531-b3f6-c878cc854056"}{"message":"Done.","opid":"eb43345b-0d37-48ce-9ead-2a23601a774a"}{"message":"Done.","opid":"4e51d393-5484-4480-8ce7-9b345605aa01"}{"message":"Done.","opid":"ceab310d-c511-4953-ae68-3234bba557a7"}{"message":"Done.","opid":"fe1fb928-fae7-42f1-8bf6-102db1527532"}{"message":"Done.","opid":"497f8830-d69c-43b5-92a2-05389281d0fb"}{"message":"Done.","opid":"349a63f0-bbb1-443c-afe3-07dabb2cca74"}{"message":"Done.","opid":"8b0e5e6c-c871-4e7d-b034-5126a366daf0"}{"message":"Done.","opid":"3c2414f5-665a-41e7-a7a5-6fc406a69d14"}{"message":"Done.","opid":"2313939b-4701-4f40-b7ea-bb1ae8b1ae1e"}{"message":"Done.","opid":"c2cd6c50-bad2-4e82-8775-0454aa7f1f74"}{"message":"Done.","opid":"fcf53066-5c8c-470e-b87e-e080cab00b74"}{"message":"Done.","opid":"93f6ea59-ff2d-44a2-b50c-ccf9c6e55a38"}{"message":"Done.","opid":"0b05e171-060b-47ea-b352-9c8281e5a53b"}{"message":"Done.","opid":"38517f2a-4dbb-480a-8ea7-aa4f23d32fa3"}{"message":"Done.","opid":"15171ad0-d5e2-41ca-9b2d-29db23203c18"}{"message":"Done.","opid":"92d791ef-c4e0-43db-afb4-3e8c83a20041"}{"message":"Done.","opid":"b05623d9-e294-4870-9ad2-584fcc1280d3"}{"message":"Done.","opid":"df68d004-3b9d-41a3-9dda-39ff9cd59e80"}{"message":"Done.","opid":"d2faf90b-c5b6-4d10-a3fc-bda43efd748d"}{"message":"Done.","opid":"5b34dfd8-0044-4561-bc72-4d7448477619"}{"message":"Done.","opid":"abf668b7-a2b1-48c8-b621-437f58459a15"}{"message":"Done.","opid":"ea15e20a-1432-4871-b7c5-3805c4cda5d3"}{"message":"Done.","opid":"dc72e292-4c17-4a5e-9306-7cd2f54cd3e2"}{"message":"Done.","opid":"2dc0bc18-0326-43d8-8720-7428d1b3d284"}{"message":"Done.","opid":"88500024-edda-480b-8df9-fdf53fc9b9bc"}{"message":"Done.","opid":"75da1f66-95c8-4f7d-8492-38497deb3a87"}{"message":"Done.","opid":"ea2ece71-bab9-48dc-825b-17f4b8eab7da"}{"message":"Done.","opid":"2b77762f-02eb-4e3f-bdb7-b75218ca6fe3"}{"message":"Done.","opid":"2c0a5af0-7d59-469a-87aa-adaa198bcac4"}{"message":"Done.","opid":"7ddc541a-09fb-46d4-b92c-8c437128cc88"}{"message":"Done.","opid":"93b92d1a-f1da-44aa-a426-8e905fc87bfa"}{"message":"Done.","opid":"21be074c-70b8-48dc-be63-1e58285671ec"}{"message":"Done.","opid":"5740dfbe-3b53-4523-96d5-99dd9f3e1d61"}{"message":"Done.","opid":"802bc5f1-6c66-4f26-9dea-5a5e0362db30"}{"message":"Done.","opid":"142e95e5-a4af-49a7-8688-40175e5989ba"}{"message":"Done.","opid":"41425e75-ea7c-4844-9f03-6645b0072ba0"}{"message":"Done.","opid":"dee332e4-6a44-45ce-a211-f0e8f0b11850"}{"message":"Done.","opid":"c9c8d093-2680-4505-9a4f-83754f57a353"}{"message":"Done.","opid":"122c4977-8ee9-4d70-9cd6-3778140b8489"}{"message":"Done.","opid":"c569b588-0352-47de-b9b3-42ea3d7193d0"}{"message":"Done.","opid":"37cdfe38-bfcd-4da3-aaf3-ef4a1fe6667f"}{"message":"Done.","opid":"21dfe3b8-ef40-41ab-ba41-ded02b55a0e2"}{"message":"Done.","opid":"93feb427-d202-4778-92e1-d68f0e5d9f57"}{"message":"Done.","opid":"872b84fd-2454-49bd-aa33-8c5352dcd701"}{"message":"Done.","opid":"371eed70-387a-4949-adfe-59ab8199a8f1"}{"message":"Done.","opid":"f12d5a5e-7b6c-4579-a3f4-c37f8de9880b"}{"message":"Done.","opid":"a60a08af-4845-486b-b115-2e127efc1df6"}{"message":"Done.","opid":"cb1c811a-587b-44a4-b084-7280e82ccb37"}{"message":"Done.","opid":"e4d85cde-33e2-4349-b1a0-48ae298115e0"}{"message":"Done.","opid":"ce339f5b-a7b1-4618-9964-1d8acf35f373"}{"message":"Done.","opid":"7938ff68-e3c6-4d24-ba04-d148efec083c"}{"message":"Done.","opid":"ba4efe5f-13dc-4b40-bf5e-cb0506dc49f3"}{"message":"Done.","opid":"fd138fea-aa17-487c-9788-dbfbfce3baba"}{"message":"Done.","opid":"aed22502-386b-4de6-ac93-4808b8f64734"}{"message":"Done.","opid":"c89522dc-21fe-4f70-9a15-988609c79477"}{"message":"Done.","opid":"670f7b88-9c30-498e-bedb-cc51f43e4444"}{"message":"Done.","opid":"79adcc72-3f6a-4ed2-9829-855c647b65f7"}{"message":"Done.","opid":"2b54787d-da57-4165-aeb5-9f01f0040689"}{"message":"Done.","opid":"b514f9e9-1b5c-4cdb-852e-522fd6730691"}{"message":"Done.","opid":"b5ca0a41-77cd-4cff-a5e9-9edc9c82b3c5"}{"message":"Done.","opid":"b94b3043-f56e-4d52-be35-856ec97751f7"}{"message":"Done.","opid":"b827d2a2-f916-4da1-8345-82d283f38a72"}{"message":"Done.","opid":"85eb2ae7-d947-46e0-9ff7-78d1b3593c06"}{"message":"Done.","opid":"632f3354-516f-4c71-aa1a-3f43eea618f3"}{"message":"Done.","opid":"243db20e-dad3-46cd-a066-e8a6413b1a5e"}{"message":"Done.","opid":"f1944730-efec-4842-b577-96d21052592d"}{"message":"Done.","opid":"bc5ed6f6-4297-4184-a0ad-edc2a80e72a5"}{"message":"Done.","opid":"b2eac2e1-f2f5-4b91-8dff-df100bacae2c"}{"message":"Done.","opid":"fdf8bec6-ff26-417f-b04d-f01bab82ef83"}{"message":"Done.","opid":"d3070381-e3db-4e4a-a487-b7426974d198"}{"message":"Done.","opid":"8c37750f-e747-4246-a657-d4ccf6dea455"}{"message":"Done.","opid":"61a62892-75fd-45d5-89d9-97f57585e294"}{"message":"Done.","opid":"fc9fb022-52e3-40f8-ae54-aae9cb17dc76"}{"message":"Done.","opid":"6fedfc7d-b284-48bd-96a3-b554c265f560"}{"message":"Done.","opid":"ac8af46f-230c-4af3-9987-360d74aeca5c"}{"message":"Done.","opid":"d9e12b64-12b5-42b0-bacf-c7c0ce2922a2"}{"message":"Done.","opid":"037dd577-bd1f-4b8a-a551-7468fe7d2c07"}{"message":"Done.","opid":"93d32ca9-a47a-46e2-aca8-499c281dbe6f"}{"message":"Done.","opid":"f15d8c79-13ec-4fd4-8309-e59629d94b28"}{"message":"Done.","opid":"6eba6143-aa4e-4d65-94ec-54699dc11725"}{"message":"Done.","opid":"71a03827-503f-4269-af5d-b1581e97997a"}{"message":"Done.","opid":"128b42e4-e9de-4e24-9253-65ae909439c5"}{"message":"Done.","opid":"48fcb8cb-494b-45eb-8b44-51d1a5010e08"}{"message":"Done.","opid":"518be42f-6d7d-4608-b166-a5e2e93d5e01"}{"message":"Done.","opid":"ce8e07c0-ad69-4890-a377-7dd97b899b48"}{"message":"Done.","opid":"98808437-7c49-43b4-ab7f-af7812051df2"}{"message":"Done.","opid":"62842f6e-d80c-4113-9a2c-f75d137e5e4f"}{"message":"Done.","opid":"a0356c5c-ebe6-40fe-8e7d-85f1bfb6e862"}{"message":"Done.","opid":"fc5bdbc4-ef8c-4064-a213-60862ed7de22"}{"message":"Done.","opid":"7a15644b-1f83-4a8e-ac5d-a482abc4ae79"}{"message":"Done.","opid":"717bf5c6-b329-42eb-bde3-c8aa16daab9d"}{"message":"Done.","opid":"895c1547-5778-4626-9810-d1a569e59a8d"}{"message":"Done.","opid":"f8b1054f-0f84-4704-9faa-c232abd2a114"}{"message":"Done.","opid":"7e450caa-eeb3-406a-8519-a864c1a44d3e"}{"message":"Done.","opid":"3429be4f-8e04-4a26-8eb2-9c8fb2c68aaa"}{"message":"Done.","opid":"b64a8d59-55c0-4380-a0a0-1a3c3cefebc6"}{"message":"Done.","opid":"c2bcec90-6a87-43ef-91e5-8fed19a18f7d"}{"message":"Done.","opid":"03d6eee0-4b92-46e6-b6ae-da705b994f98"}{"message":"Done.","opid":"61fc11a5-9e3d-4edd-9d88-10c6b48dc0c7"}{"message":"Done.","opid":"35258664-27c7-4783-bd18-f7aab9e1a8d1"}Elapsed call time is 42277(ms)
+{"message":"Done.","opid":"74401c2b-8ccd-476a-b583-19fe60974dae"}{"message":"Done.","opid":"0515def9-9dc3-4ad6-bb6a-8fa3b846243f"}~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Getting all objects in S3 bucket...
+Serverless: Removing objects in S3 bucket...
+Serverless: Removing Stack...
+Serverless: Checking Stack removal progress...
+CloudFormation - DELETE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590096829050
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionY7CDsyizFo8sCHWsZiohKWidHmOQJ0lIdS5tpuLbM
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - HelloLambdaVersiont0FiEo3eMjB5sfjy5tpd15bDJv77jfWHnZAdx6ubk
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersionNjPGRniXcCqclj6x77qlJnKghawKJjLC33Ojw8GvU
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionyNcANc1pwWlZbXruZawEVZHd1ekuabduLhVWZTZvy4
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590096829050
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+Serverless: Stack removal finished...
+~/watchtower-experiments/scaling/scripts
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+........
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (865.92 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+...........................................................................................
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 31
+api keys:
+  None
+endpoints:
+  GET - https://llrprd7mv9.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+~/watchtower-experiments/scaling/scripts
+Calling function at url: https://llrprd7mv9.execute-api.eu-west-1.amazonaws.com/test/microbmark
+Calling function at url: https://llrprd7mv9.execute-api.eu-west-1.amazonaws.com/test/microbmark
+Calling function at url: https://llrprd7mv9.execute-api.eu-west-1.amazonaws.com/test/microbmark
+Calling function at url: https://llrprd7mv9.execute-api.eu-west-1.amazonaws.com/test/microbmark
+{"message":"Done.","opid":"fbada974-42aa-4136-9c2d-69371b7a53d9"}{"message":"Done.","opid":"9ed1a2f0-dabb-45da-8234-4832b0406892"}{"message":"Done.","opid":"98b58e8e-1e3a-45e0-9837-e07ee45331b7"}{"message":"Done.","opid":"b4ac0c2b-0d1d-4717-b115-6fb5deecfef1"}{"message":"Done.","opid":"ded8a5af-21a6-4f0b-8bf6-9bd307166743"}{"message":"Done.","opid":"501a9a17-ee43-46bc-a666-35d4638ef24d"}{"message":"Done.","opid":"08bea9a8-6599-40c8-9fe1-7478d304e770"}{"message":"Done.","opid":"12569e4e-daf7-438e-8149-164e2ef5b3fa"}{"message":"Done.","opid":"218082a5-3095-4bdb-abc9-13f21f48d981"}{"message":"Done.","opid":"885673cb-9e95-404e-b619-fb63e864c11e"}{"message":"Done.","opid":"168b683d-cfc5-4086-9545-2486fb529525"}{"message":"Done.","opid":"d0a24f17-2b55-493c-ad99-eef42820425e"}{"message":"Done.","opid":"fe939f36-ef4c-4ca4-830b-b5d9313d66f5"}{"message":"Done.","opid":"31136613-3833-4ef6-8277-f2099c95175f"}{"message":"Done.","opid":"29bf2e45-b8f8-4ab2-a946-725ec9bc3479"}{"message":"Done.","opid":"5d1f5098-9f02-4b6c-bd6c-9802bd1acaee"}{"message":"Done.","opid":"614f7b77-da3f-4472-9b95-aafdaab9a6ea"}{"message":"Done.","opid":"9340be0a-6882-4fad-9a47-717f82aac4fd"}{"message":"Done.","opid":"5cc2d812-6e46-4dee-8131-e8b9a6dfeaca"}{"message":"Done.","opid":"d77a44e6-dc13-4f68-9dce-02164a095f73"}{"message":"Done.","opid":"435b4360-3a23-4d79-9d36-eaa4a27023b0"}{"message":"Done.","opid":"b26c8310-ac4a-41ec-95d2-ad829cc20b30"}{"message":"Done.","opid":"c1836a5f-b653-4df5-9b20-0dfc1859ee6a"}{"message":"Done.","opid":"1144d059-193c-4461-bf4c-f48a54cc48b3"}{"message":"Done.","opid":"1c0ebd04-2c70-4651-a7ab-0d277f015222"}{"message":"Done.","opid":"5646cc7c-e9c3-4ac4-bb72-9fa0621fa947"}{"message":"Done.","opid":"21d98786-a6c2-4fb9-bc84-571a52cb3b88"}{"message":"Done.","opid":"603c36f8-3001-4c04-8566-26af057c4b64"}{"message":"Done.","opid":"ff021860-8cce-4b0c-bef7-e3d5b1d3f3cc"}{"message":"Done.","opid":"3851b204-f642-4335-b126-d8ffc313f095"}{"message":"Done.","opid":"6298e518-7a92-4f79-aaaf-166cd5633958"}{"message":"Done.","opid":"aebff3ab-1cca-401d-a26a-c73ff1d95309"}{"message":"Done.","opid":"41c6f9b8-afdc-4c59-907f-75754b1e100e"}{"message":"Done.","opid":"5b1e3549-76c8-4aef-af82-919c9a59aa56"}{"message":"Done.","opid":"f1722277-eb51-4b07-b76f-bbd25c778466"}{"message":"Done.","opid":"95fa65e1-cada-48a6-8230-bfde181b81b5"}{"message":"Done.","opid":"95c0e74a-a4e4-4920-a0d0-1014d9e9d13b"}{"message":"Done.","opid":"bdd728cc-336b-42b2-82d9-42826db4de54"}{"message":"Done.","opid":"c94c9ed7-f6c2-458e-b8df-7e6a7be5a683"}{"message":"Done.","opid":"e3c2ef76-07a5-42c8-8e98-409b7a0df990"}{"message":"Done.","opid":"5619710c-c1a8-4133-9a78-4aa3d8b06269"}{"message":"Done.","opid":"812371e6-12b3-4941-b5f6-3a2b24fef897"}{"message":"Done.","opid":"6d0f996f-9be0-4ab9-af05-9194b727e88a"}{"message":"Done.","opid":"67349c67-e85d-49f7-8d03-8bdb9981b424"}{"message":"Done.","opid":"d7b0cff8-2e78-4afc-a337-0052ce43bc1e"}{"message":"Done.","opid":"5b2718bc-1a27-4edf-a139-86b125e9a222"}{"message":"Done.","opid":"55f7ebae-8ece-471b-867b-9b86b04eb38d"}{"message":"Done.","opid":"54e2889e-a8c5-4270-87e7-57e85ff96f85"}{"message":"Done.","opid":"deddc5ac-8f18-4744-9ee2-395b651c5442"}{"message":"Done.","opid":"5d030958-6f82-45dd-a23d-1704fe838d84"}{"message":"Done.","opid":"9de8a50a-4f97-48b6-85c0-3057b3134eab"}{"message":"Done.","opid":"aefc77b8-187d-4dd1-bdad-095fcaa42513"}{"message":"Done.","opid":"a0c0a2ee-83db-4c03-b4e8-e58871b7a24c"}{"message":"Done.","opid":"5b00b9bf-5364-41e3-8903-750297e76dfc"}{"message":"Done.","opid":"a6721747-9061-433d-a95d-b5221604d86d"}{"message":"Done.","opid":"d75b6eba-7091-4e17-b9c9-c075f5f2d77b"}{"message":"Done.","opid":"127c83e0-a47f-453d-b39b-fc3126bf5eaa"}{"message":"Done.","opid":"e8d62ff7-0550-4ae4-b65c-fcc28e36d428"}{"message":"Done.","opid":"c9620829-19c6-4ec1-95b9-127e75e46623"}{"message":"Done.","opid":"b142c9cd-dc7b-4971-93f3-3cccf21ab58d"}{"message":"Done.","opid":"7a1b7188-aeab-4f5d-8f8d-a86bd424a68e"}{"message":"Done.","opid":"6a912de9-0f85-43f0-bc71-4b6491d0ffd6"}{"message":"Done.","opid":"b9a9a53c-d5e7-4060-99a2-81d3be536825"}{"message":"Done.","opid":"06064ebb-c2f4-4e66-a4c3-1d85ff7ba764"}{"message":"Done.","opid":"c623ce10-f7b9-46ae-816f-261183ffded0"}{"message":"Done.","opid":"ee5c2c93-0143-46c8-9666-d90ddb2e5c47"}{"message":"Done.","opid":"206a3bbc-091a-4b39-bb3b-3fa3a04deafd"}{"message":"Done.","opid":"928d152d-a3d9-4fbb-bc75-7522f8b5055c"}{"message":"Done.","opid":"a7cd3511-f042-461b-b8cc-a97ce4cf8d1a"}{"message":"Done.","opid":"e34db1c7-a34a-4208-8e27-3aca435f1046"}{"message":"Done.","opid":"ffc4b78a-7dc4-497e-b723-c713e378025c"}{"message":"Done.","opid":"dc6a3cc3-2f33-47dd-94a2-33e6e3d087d1"}{"message":"Done.","opid":"e337b9a8-81db-4cb5-b4ca-6dec285de648"}{"message":"Done.","opid":"5860e06e-00ff-47b8-b979-4d6cb7ab0516"}{"message":"Done.","opid":"ec5d5344-fe3d-4b12-8ebc-60a7ca182614"}{"message":"Done.","opid":"2c695182-6608-4b73-a3aa-2eb979ad1644"}{"message":"Done.","opid":"d35ef40e-ccea-4214-a82d-7cf61cebc431"}{"message":"Done.","opid":"a3f6eca0-a2ec-4b0f-916e-a64541bd1465"}{"message":"Done.","opid":"74d18a40-1acc-47a0-8cc2-bab4b1dded76"}{"message":"Done.","opid":"593a4c18-1eac-484a-ba47-448f0da9b690"}{"message":"Done.","opid":"6e714703-e112-4d3f-97d6-368ad6916851"}{"message":"Done.","opid":"5c5c01f5-424c-4bca-9eeb-728da0ec65c0"}{"message":"Done.","opid":"f45634bd-359f-44e7-9907-ff7629875f98"}{"message":"Done.","opid":"991bba15-5e29-4e4e-872b-3df110327e21"}{"message":"Done.","opid":"40cd7a0a-191a-427e-baf0-129a9d083d82"}{"message":"Done.","opid":"8a69321c-f03e-48cc-bbca-43e2c7e99b9d"}{"message":"Done.","opid":"46725526-b96b-406d-b338-27ce8f2b3af9"}{"message":"Done.","opid":"407dc7fd-5537-4057-9813-40a7f6d95eb3"}{"message":"Done.","opid":"4f290369-011b-4bf2-a530-c0fa1347cead"}{"message":"Done.","opid":"b8d8ed3b-c1d3-45a5-b45f-3b98da11a3bc"}{"message":"Done.","opid":"72b7080a-9882-48f1-b13e-e9421e014d8e"}{"message":"Done.","opid":"b26d234c-8d4e-4f75-8cd5-d4efab5abfd1"}{"message":"Done.","opid":"8494caa5-a52e-47f2-b5e5-d9191c409c82"}{"message":"Done.","opid":"5b821756-3324-41ed-a35a-bf1eba3d0ecf"}{"message":"Done.","opid":"3be2f978-0ed0-4781-9b6e-1f7e297ba28d"}{"message":"Done.","opid":"bbe3e290-d085-4b0a-a6a8-91914ec09105"}{"message":"Done.","opid":"dbddf1c5-3e49-47b4-bce1-63f0dd092ecc"}{"message":"Done.","opid":"954c5fbd-ae9b-4060-8ab2-320c422fbb01"}{"message":"Done.","opid":"1fec98d9-28cb-4876-a285-f3694a71ae0f"}{"message":"Done.","opid":"a303340e-bc03-4608-889f-73c8d6348a36"}{"message":"Done.","opid":"aa27d27b-da97-4ad3-874a-ae587ca6cdfc"}{"message":"Done.","opid":"43d223d7-2083-4cea-8d0a-eb21752a3b20"}{"message":"Done.","opid":"16a95ec8-a83f-4691-a893-8bcc5898e49a"}{"message":"Done.","opid":"fcc29b00-9a06-4035-8a5d-62ba25069258"}{"message":"Done.","opid":"7107cadf-3126-4b0a-b8fa-5d0ea5fd3349"}{"message":"Done.","opid":"d45f62f3-1dc1-4c82-8673-2bf0739302eb"}{"message":"Done.","opid":"e34720ea-f472-400d-8f18-6932025845e1"}{"message":"Done.","opid":"6715c374-1b52-42b7-817a-2a8cec5aad82"}{"message":"Done.","opid":"488620ae-7e12-425a-b89f-765686b99553"}{"message":"Done.","opid":"cc62edf0-9a25-45d2-b2c3-b57d39439bf0"}{"message":"Done.","opid":"7f293d18-cb09-4dd2-8ab1-103dcece163b"}{"message":"Done.","opid":"ee40ba54-bdc1-414b-884a-b0e036258313"}{"message":"Done.","opid":"1848fff0-5217-4c11-8320-a12f6b48374d"}{"message":"Done.","opid":"5329abeb-2569-480f-8958-62bfc73309c6"}{"message":"Done.","opid":"d217bc20-9e07-4709-aa47-0d13126727d1"}{"message":"Done.","opid":"80d0747a-1a2e-4352-9281-1cec46117278"}{"message":"Done.","opid":"eb4a8794-3fb9-4398-b269-0225db98e3fc"}{"message":"Done.","opid":"fd0297f1-d6d8-4cdd-95b1-b9656065de68"}{"message":"Done.","opid":"cfa167bd-0134-4278-aa96-20442a836e93"}{"message":"Done.","opid":"468b0ea0-5d3a-4863-81d5-88b521b8c4ed"}{"message":"Done.","opid":"9ee642bb-11fe-4352-930e-466ad7a7d053"}{"message":"Done.","opid":"5e948628-0b48-4b14-8258-e900c98a53e2"}{"message":"Done.","opid":"23e1ed06-2a15-43b1-9c06-2347dce30c5d"}{"message":"Done.","opid":"970064a4-5ca0-4585-a17e-f19eff748c22"}{"message":"Done.","opid":"dc24e39c-a41a-4e75-be3e-657d20c8702a"}{"message":"Done.","opid":"d07bf418-0d2e-40ec-8062-9160bdd3d9c5"}{"message":"Done.","opid":"ae190851-bcbe-4c80-bfd5-29b1dab19b9f"}{"message":"Done.","opid":"9f9ab189-08aa-4b91-966f-3324b0b0742a"}{"message":"Done.","opid":"db9ae918-c566-4130-b00c-537cebfcfb99"}{"message":"Done.","opid":"054787de-3e81-4a14-92fe-f35a3c4f08a6"}{"message":"Done.","opid":"33cf18ff-2bf6-4ab0-ac4f-82f16a6055c3"}{"message":"Done.","opid":"9c37f136-d450-4b51-a8a7-3e00c363e4c5"}{"message":"Done.","opid":"d6002b95-69c8-42fe-be0f-31c9ec247d59"}{"message":"Done.","opid":"c7cf2eee-252d-4dd9-a186-9e5c6955d82e"}{"message":"Done.","opid":"34930d18-f267-44a1-87ed-ba9b5e7f3557"}{"message":"Done.","opid":"b11780af-867c-4418-bb37-c51d072db796"}{"message":"Done.","opid":"72b07568-d68a-4730-97de-f429ea48f0be"}{"message":"Done.","opid":"b0f1a51b-dac2-4ca1-b35a-b30bdcbd5fb6"}{"message":"Done.","opid":"bce6a0c8-22fd-4b22-9d82-51ca988c8cb1"}{"message":"Done.","opid":"bf5febde-43f4-4980-88f9-4533ea31d744"}{"message":"Done.","opid":"48dbae38-eea8-410e-a09b-c400b286afad"}{"message":"Done.","opid":"c4990269-258c-4657-81cb-16f034f22055"}{"message":"Done.","opid":"c4190609-fe97-4353-9342-52a832ff55e6"}{"message":"Done.","opid":"c0cd1b51-af11-4567-81f2-987801786ce6"}{"message":"Done.","opid":"36a2c628-f761-4a46-beaa-3d6efa4013fb"}{"message":"Done.","opid":"7497d50a-6231-46c5-8435-ea800c1c2478"}{"message":"Done.","opid":"57a47dc1-2256-4ba0-974c-4fd9c2d07787"}{"message":"Done.","opid":"f048ef5d-69d9-4c82-b39f-c048b66a3462"}{"message":"Done.","opid":"3d0b3149-7291-43c3-bc8c-a0678bd9a869"}{"message":"Done.","opid":"e3469784-d792-4779-a949-dca4b0ca4582"}{"message":"Done.","opid":"777a71ba-7cdc-47fc-903c-2049fa60f82a"}{"message":"Done.","opid":"c7abc99c-f33e-4159-8e64-ffd92aef15f9"}{"message":"Done.","opid":"a480c393-f426-42ff-8b81-ea8cd6dc6ae0"}{"message":"Done.","opid":"6f02e4d8-5c4b-4611-96de-d39a29f04a3a"}{"message":"Done.","opid":"542203af-7a15-4a24-86c9-cbbb4edffc4e"}{"message":"Done.","opid":"814dd7f1-07e1-4e5f-aa71-02b138f9ff5a"}{"message":"Done.","opid":"58e122f6-56df-4111-b4bc-cadf9a328da3"}{"message":"Done.","opid":"0e4f227e-35a6-45b3-bebc-c32c4c7285d0"}{"message":"Done.","opid":"0a2fcf08-adaf-4534-81b4-4a46ba1af767"}{"message":"Done.","opid":"154a41c5-acf2-4921-8e4f-50f36fa921a1"}{"message":"Done.","opid":"7264db94-8944-4283-a3a1-57111aa85663"}{"message":"Done.","opid":"5c2dad45-d84a-41a1-b76e-eca7eda2fcbb"}{"message":"Done.","opid":"11c8c5a4-3cab-4500-a74c-7334c5b12c61"}{"message":"Done.","opid":"68478636-2c66-467f-aca6-2b775f8cad31"}{"message":"Done.","opid":"dc27fd5d-0765-4427-872e-a1b1ac90fe05"}{"message":"Done.","opid":"4a2f680c-6f74-4c82-bc21-56a78f27c097"}{"message":"Done.","opid":"6e76ef8a-9d4b-4c98-bbbb-18e4296d8a90"}{"message":"Done.","opid":"11eb0c0e-a5e0-4eac-a126-1f18843cc296"}{"message":"Done.","opid":"fdb02f3b-32d0-4d13-9ea2-4529189e7217"}{"message":"Done.","opid":"9e9e8832-54fd-4c8e-b133-ccd690548090"}{"message":"Done.","opid":"80a7e9b4-ff64-4f61-a995-1e8196b2e5b8"}{"message":"Done.","opid":"442d9533-4467-4e10-bc49-5587c95dc45a"}{"message":"Done.","opid":"88ea2f08-0858-48a8-8037-ef81096160b6"}{"message":"Done.","opid":"e180301f-1233-4e90-9b2e-5b18d3eb20e0"}{"message":"Done.","opid":"b855de87-1f6c-4e20-bc3d-87048ae16882"}{"message":"Done.","opid":"26301106-f598-4093-a424-d2ad7d3d16c9"}{"message":"Done.","opid":"7cc352ab-bb20-423c-8be2-e7d3baef06d2"}{"message":"Done.","opid":"23631661-3b06-470d-b06d-934ecfba4241"}{"message":"Done.","opid":"481fa56c-94e2-433d-a922-237e4e5ee84e"}{"message":"Done.","opid":"f82c8174-7ce8-440f-8305-a9a340f31bc6"}{"message":"Done.","opid":"1148ef6f-f731-4c08-a68c-978455d99c60"}{"message":"Done.","opid":"2a3262c2-0ccb-406b-b0cc-760d8e142f21"}{"message":"Done.","opid":"b6a8784b-c19a-42bf-bedf-c297e1a78ef7"}{"message":"Done.","opid":"fab70915-4a4e-4956-a359-357f9cffeef0"}{"message":"Done.","opid":"2e7e7710-f41b-4a22-a86a-abdc318bc710"}{"message":"Done.","opid":"0718d640-0992-4f82-b399-826612b2a977"}{"message":"Done.","opid":"e027a841-a699-4751-a50e-5823ada24d79"}{"message":"Done.","opid":"0c6bd320-26a9-41ee-a8f8-24ee3a594c81"}{"message":"Done.","opid":"d7910238-84a8-4625-8885-b597ecef4375"}{"message":"Done.","opid":"977b27fb-c25b-424d-931d-31389e6341e4"}{"message":"Done.","opid":"eb3101bd-22a1-42fb-8f61-2401fa6e8b11"}{"message":"Done.","opid":"5edd2281-00f0-4671-a2ed-9f079de61c0c"}{"message":"Done.","opid":"a47bfcea-17dc-4812-bd0e-3997f42d2946"}{"message":"Done.","opid":"e59c6ab9-194e-41fa-86d8-95434e86da80"}{"message":"Done.","opid":"474e971e-acb1-4f47-bc46-6e33c7a9497d"}{"message":"Done.","opid":"b2dcbedb-1301-4be6-beb4-f6fa4c7f00d8"}{"message":"Done.","opid":"049cf71c-415d-4d33-9f9d-70d5c12da026"}{"message":"Done.","opid":"dc2e67e3-7737-4490-9483-4fefc86f2bca"}{"message":"Done.","opid":"24767f60-e975-4268-821b-bd4233213cfc"}{"message":"Done.","opid":"be225170-333e-41df-aec9-87ef474d97f7"}{"message":"Done.","opid":"e1b1ec1d-05e5-49c8-a5eb-23b2d53a5f85"}{"message":"Done.","opid":"11307f64-7282-4d4c-934b-763641725c16"}{"message":"Done.","opid":"ce5abd84-24cc-4377-9f10-5012aa9abf3a"}{"message":"Done.","opid":"4ebfc47b-4d12-45f3-b330-0992d170480d"}{"message":"Done.","opid":"6a59e5d5-deb7-40a1-9650-214a0fa31dff"}{"message":"Done.","opid":"01304e21-9357-488c-9724-9ad20fdd7acb"}{"message":"Done.","opid":"8f46ff5b-6052-49d4-bc03-76bbb17b8a7d"}{"message":"Done.","opid":"24069a7b-ff29-4a48-90d4-80fcae0260d3"}{"message":"Done.","opid":"f18a75ad-919d-481d-956a-23c8b28e510f"}{"message":"Done.","opid":"87e342f9-8b6b-4d08-af82-106f37874ae2"}{"message":"Done.","opid":"21e53f51-8f57-4a08-9015-9241306f3629"}{"message":"Done.","opid":"52b1ec4b-8394-40e1-a8de-112afaa43539"}{"message":"Done.","opid":"3043c68e-8a6f-4e4a-b25d-0df1d8910a41"}{"message":"Done.","opid":"fa025927-5b78-4747-a8f8-3b37cd46c24f"}{"message":"Done.","opid":"ecf8cd5a-92a4-4b19-9548-b0b699173d72"}{"message":"Done.","opid":"bd20e992-02ec-4f0a-8652-8141650eca88"}{"message":"Done.","opid":"95a14c21-3ba8-4f87-aa7b-e1b2bf45476d"}{"message":"Done.","opid":"51911898-5a22-466f-b2e3-28b9b0891aba"}{"message":"Done.","opid":"54fabb23-33bd-458a-bb5c-2834df593c20"}{"message":"Done.","opid":"605e7f55-7e46-4462-9925-2d8e34041413"}{"message":"Done.","opid":"b9a6ce3d-d36e-4d5e-8319-88884bafc6d9"}{"message":"Done.","opid":"2e39b528-2481-4178-8d8a-7b605713f6b9"}{"message":"Done.","opid":"52bf6015-4b51-4287-9d7e-09b39aae9c13"}{"message":"Done.","opid":"a700488f-f5c4-457b-9ded-abe0f931a4ac"}{"message":"Done.","opid":"50642a45-5132-44a0-b335-47810ad8ce35"}{"message":"Done.","opid":"284f391e-46ab-4c02-a8d6-4fbf38ab663d"}{"message":"Done.","opid":"2cdebc07-633a-4e46-a0e3-27205fc724d8"}{"message":"Done.","opid":"4a7b15ae-fccf-4427-bd7f-5f28c66d81c9"}{"message":"Done.","opid":"5511a4bd-31ba-49c7-be43-0d4ae1335384"}{"message":"Done.","opid":"b01452a9-ba5f-443d-98c2-c49544dbef46"}{"message":"Done.","opid":"53906499-7f2c-4c3d-913a-cd89490b3d7a"}{"message":"Done.","opid":"5a1f5501-e057-4c1d-9d6f-6316c96320a1"}{"message":"Done.","opid":"a093097f-0ea0-40fa-826f-108a04c9269c"}{"message":"Done.","opid":"b8ae7c41-1b92-4235-8ca7-6aab68a72442"}{"message":"Done.","opid":"c59f7fc7-177c-457f-bd91-45bbf835bc54"}{"message":"Done.","opid":"1ac3001a-cec9-4ce6-b117-bdc655cdf281"}{"message":"Done.","opid":"e592a9f3-d43c-45e1-9b45-7dd1676e3a75"}{"message":"Done.","opid":"89693e03-7e59-4770-92d6-ae0516b2fcdc"}{"message":"Done.","opid":"3fbe119b-f8dd-4e44-86a6-c44674eae100"}{"message":"Done.","opid":"7a4e0462-d7de-4e94-90d1-6b5016277f45"}Elapsed call time is 47520(ms)
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Getting all objects in S3 bucket...
+Serverless: Removing objects in S3 bucket...
+Serverless: Removing Stack...
+Serverless: Checking Stack removal progress...
+CloudFormation - DELETE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590097543366
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionyNcANc1pwWlZbXruZawEVZHd1ekuabduLhVWZTZvy4
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - HelloLambdaVersiont0FiEo3eMjB5sfjy5tpd15bDJv77jfWHnZAdx6ubk
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersionNjPGRniXcCqclj6x77qlJnKghawKJjLC33Ojw8GvU
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionY7CDsyizFo8sCHWsZiohKWidHmOQJ0lIdS5tpuLbM
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590097543366
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_COMPLETE - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+Serverless: Stack removal finished...
+~/watchtower-experiments/scaling/scripts
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+........
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (865.92 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+.............................................................................................
+Serverless: Stack update finished...
+Service Information
+service: wt-full-flow
+stage: test
+region: eu-west-1
+stack: wt-full-flow-test
+resources: 31
+api keys:
+  None
+endpoints:
+  GET - https://onnt33ys5m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+functions:
+  hello: wt-full-flow-test-hello
+  watchtower-ingestion: wt-full-flow-test-watchtower-ingestion
+  watchtower-monitor: wt-full-flow-test-watchtower-monitor
+  wt-monitor-trigger: wt-full-flow-test-wt-monitor-trigger
+layers:
+  None
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+~/watchtower-experiments/scaling/scripts
+Calling function at url: https://onnt33ys5m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+Calling function at url: https://onnt33ys5m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+Calling function at url: https://onnt33ys5m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+Calling function at url: https://onnt33ys5m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+Calling function at url: https://onnt33ys5m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+Calling function at url: https://onnt33ys5m.execute-api.eu-west-1.amazonaws.com/test/microbmark
+{"message":"Done.","opid":"fe92a0f8-c64c-48d2-9dfc-3b60df1c63a8"}{"message":"Done.","opid":"9587e3f4-63bd-4bf4-9d62-f3dd098c5216"}{"message":"Done.","opid":"c9dd4822-c17b-4bc1-a722-586dd9a7b51f"}{"message":"Done.","opid":"00a06c6d-ab3d-4b10-836c-05b82aa1879d"}{"message":"Done.","opid":"d9fb5df9-3848-4125-8a42-94bfd16a2b60"}{"message":"Done.","opid":"3698e15c-8882-49e1-aa17-55cdbe0c8184"}{"message":"Done.","opid":"b5da3640-7218-4538-8849-8aba6518fa0a"}{"message":"Done.","opid":"2accd5bc-aecd-4448-9c4b-14ce091e0066"}{"message":"Done.","opid":"e691e9b4-d12a-4652-a4a2-8f4584b56020"}{"message":"Done.","opid":"26090e79-b601-4ad8-a488-19cd8f80fcb7"}{"message":"Done.","opid":"dd41a3dd-ec39-480d-adf3-a4eaab801f8a"}{"message":"Done.","opid":"ea66a5b5-bbe7-4555-94ab-78be877d91bf"}{"message":"Done.","opid":"5fdaad8c-e8b7-4760-9d3a-62c5da9bc9aa"}{"message":"Done.","opid":"788eb214-c7e2-49b6-a02e-5400792c0547"}{"message":"Done.","opid":"5d5ad47d-53e5-4dee-af32-9cb5db3afa21"}{"message":"Done.","opid":"a1a5aa2f-e46b-4604-9baa-1c701cfe6790"}{"message":"Done.","opid":"30c437e0-1769-4674-b2c8-65b0680de12f"}{"message":"Done.","opid":"3f18fb7b-f309-4440-aff3-4653c9206a1e"}{"message":"Done.","opid":"0df4d9d5-e10f-4be0-b95b-0e0bb64fc6ea"}{"message":"Done.","opid":"14b133de-ada9-4683-b48a-466d533bd5f5"}{"message":"Done.","opid":"2f9ced99-2880-4ac7-b4c2-fed6786269e7"}{"message":"Done.","opid":"11fe59a0-3562-484d-b769-a7694779c0b0"}{"message":"Done.","opid":"b782d5ec-60cb-4a0f-9e81-91b80ceb4eba"}{"message":"Done.","opid":"020f7c33-6d1c-435a-ad8a-7a796b97043d"}{"message":"Done.","opid":"a0a6c76f-c390-44a7-b72b-0984ac6136e8"}{"message":"Done.","opid":"faf32fbd-71d4-4e95-bb13-f3cbe1936cc8"}{"message":"Done.","opid":"64b0a977-a2e0-43fc-9be2-3c98c1c18eb7"}{"message":"Done.","opid":"2340ca6e-3d27-47a0-b332-ed7da3b1de8b"}{"message":"Done.","opid":"62f4bb2a-1c5c-4734-886a-689662807f87"}{"message":"Done.","opid":"0218f4c5-5222-4d5e-ae9a-d3f04741059a"}{"message":"Done.","opid":"10b38af1-91f2-479b-acdd-19cc1585b525"}{"message":"Done.","opid":"854eeca3-6009-4709-9c8f-a080b6dd45e8"}{"message":"Done.","opid":"b0255f8c-be3c-4266-8197-a38753752ec4"}{"message":"Done.","opid":"3375fe61-9e47-4077-8992-28a6863f4b96"}{"message":"Done.","opid":"9b7b6bad-6582-4814-b930-4ecf8cadf48f"}{"message":"Done.","opid":"2dd13c37-8354-4c31-a77a-3d19fa3ef7e2"}{"message":"Done.","opid":"d65b0d17-921c-487b-8407-525eddeaa0cc"}{"message":"Done.","opid":"6899dfe6-ff87-448e-aa03-c3ba6394b04a"}{"message":"Done.","opid":"d6c56706-be57-4ee0-950d-0ef7a8950789"}{"message":"Done.","opid":"54f6f698-13a2-40ff-956a-3b88769ff283"}{"message":"Done.","opid":"827bbb54-bad4-431e-b1ed-d75d407e8394"}{"message":"Done.","opid":"0d7ffced-d1f9-4269-a65d-67a88ef41a10"}{"message":"Done.","opid":"e166a24f-de19-45b0-a0a3-e5eb54113a22"}{"message":"Done.","opid":"583d3c8e-4aa3-418d-93eb-0858fdfd3925"}{"message":"Done.","opid":"ae5591dd-b1a7-4a4c-86fd-9aa61fd30cf9"}{"message":"Done.","opid":"f9857a44-1d63-48f1-85f4-3117a432dc86"}{"message":"Done.","opid":"32386a3c-db4c-4c20-a229-fc2e1aae2645"}{"message":"Done.","opid":"ae1fc604-4abb-4fac-b2b7-5ba031c99e35"}{"message":"Done.","opid":"4272cc4f-75ac-427e-8b82-0b6863936765"}{"message":"Done.","opid":"ff7f08f1-3ce5-4955-b64f-5c7cc1a0b10b"}{"message":"Done.","opid":"1dfd4fb7-ec85-4d94-ad5d-97d412003141"}{"message":"Done.","opid":"f88affbd-450c-484d-b0d0-4e4e9e4121e5"}{"message":"Done.","opid":"543fb9f0-07bc-4802-8132-bf37c95d7b11"}{"message":"Done.","opid":"abb5886a-a780-4f91-a3b4-3b16523c4778"}{"message":"Done.","opid":"2dc97d28-f403-46a5-aad8-e86c9c3b2d37"}{"message":"Done.","opid":"fdd4e49b-97e0-49e5-a0da-04ee9ecedf93"}{"message":"Done.","opid":"5c96988f-9f67-4b8f-8d3b-89d799a5cb19"}{"message":"Done.","opid":"f89de2d0-12e7-458e-aa1a-74b25092394a"}{"message":"Done.","opid":"8701914c-c668-44f3-a50d-afe0d6ee2dc3"}{"message":"Done.","opid":"10c791b2-1e1e-4f10-a6fb-89ebc423d390"}{"message":"Done.","opid":"3adf50c1-9971-4429-861c-11a4b5678802"}{"message":"Done.","opid":"a122b665-03a4-4e0a-be71-8cd6d8299de0"}{"message":"Done.","opid":"2684ce8f-d999-41ef-b3b7-efac644410bb"}{"message":"Done.","opid":"472f8aa1-5799-43fa-b341-ce0b8acd666a"}{"message":"Done.","opid":"cc119097-5848-42ee-8e5d-5ee0fbbb1423"}{"message":"Done.","opid":"31eb1e1b-2d02-4065-b3a0-5cac67c48a50"}{"message":"Done.","opid":"8093fca9-539c-45a2-8ce1-e5687be44d5c"}{"message":"Done.","opid":"289b63da-c685-4d25-ad44-9675660b0adc"}{"message":"Done.","opid":"64293664-aee8-4544-b167-79cca8ffbc93"}{"message":"Done.","opid":"109cce5d-7365-4655-9a4e-9190be52bd18"}{"message":"Done.","opid":"b22821be-030b-402a-820b-7bc6bfd08f01"}{"message":"Done.","opid":"bd39f3a9-58a5-4d68-9da1-def178761e55"}{"message":"Done.","opid":"9a63eaa4-759b-40b3-8160-21791b951c0f"}{"message":"Done.","opid":"cfd74d7f-683a-4610-bc9f-52a72cc22d7e"}{"message":"Done.","opid":"5c1cf886-0518-49ce-88ab-ba312ad56f81"}{"message":"Done.","opid":"06d10e46-0542-4094-a3f3-d1e985ee7488"}{"message":"Done.","opid":"24b81277-5b93-412a-be3d-58592b7472dc"}{"message":"Done.","opid":"8561bc04-ed5e-4f1b-9ac5-d61319fafda1"}{"message":"Done.","opid":"048c2845-4328-4ccd-b9d6-b84c41eff461"}{"message":"Done.","opid":"4b9192fc-9975-49cb-830f-01e53ca63c0e"}{"message":"Done.","opid":"b6132545-c2dd-4bf7-8047-3855c1215925"}{"message":"Done.","opid":"014c7d33-ccc6-4058-bfa5-da9b2ec552f0"}{"message":"Done.","opid":"b0202ab4-39ee-4eba-aadb-64259ccd344d"}{"message":"Done.","opid":"659669af-306d-4868-87d6-c923462c68bf"}{"message":"Done.","opid":"96c0b7fd-e811-4103-a54c-c410804ddcff"}{"message":"Done.","opid":"9cbd6ec3-fc90-4f84-a002-d0611ea9084b"}{"message":"Done.","opid":"ad2adfff-04e2-46d7-8997-1d39ce5a08c9"}{"message":"Done.","opid":"6d9b05fe-b377-4209-9bda-a5585632fbaa"}{"message":"Done.","opid":"ea1b90a5-c91f-4cda-8f6e-1f47a47087e5"}{"message":"Done.","opid":"d5c920da-4665-4eb2-96ff-3c010c58412c"}{"message":"Done.","opid":"038b2c80-d423-4e86-abe6-9bd2f45631bf"}{"message":"Done.","opid":"9df44047-163c-45e6-8a9a-9cc941471e06"}{"message":"Done.","opid":"71424f71-1f6c-4bd4-97db-b7018b25c8dc"}{"message":"Done.","opid":"63e1b781-cb91-4256-aadd-560ef8b7dd1a"}{"message":"Done.","opid":"fbc6385c-c31b-40e3-bf3b-29985d14bd53"}{"message":"Done.","opid":"72bc2173-ca8c-41d1-9d36-1e64c2b0ff75"}{"message":"Done.","opid":"ed06847e-64c2-4871-96b3-1b38c99dc584"}{"message":"Done.","opid":"6f87bdd3-e70c-49b1-a10c-1eabfe808cea"}{"message":"Done.","opid":"1a7ee128-0b98-48ea-9a0f-37bf56830e95"}{"message":"Done.","opid":"d4e49bb2-e10d-4bf1-b4b9-9efc65aaa1ef"}{"message":"Done.","opid":"dd877d7b-54e6-4736-989a-fe88819d8a24"}{"message":"Done.","opid":"9595cd8c-5e2c-41c9-af4d-9c122e3f57a3"}{"message":"Done.","opid":"9c3282b4-21cd-4de2-961a-5bdef1c0a116"}{"message":"Done.","opid":"8a315a41-b444-4001-906d-c3dfe85c440c"}{"message":"Done.","opid":"65ebedbb-a406-4676-8a45-9b9741111203"}{"message":"Done.","opid":"5d56bba9-88c2-4404-bb4d-95731415aa44"}{"message":"Done.","opid":"44dfd601-2eee-4383-92ec-9c345291994c"}{"message":"Done.","opid":"d1714090-1c96-4597-9a2e-7f0a459cd918"}{"message":"Done.","opid":"fb1a5110-42e0-40aa-bef1-ff391375bf77"}{"message":"Done.","opid":"20cf5dd3-db54-405b-9975-1e89089954d0"}{"message":"Done.","opid":"37e3fba9-45f9-4f05-9372-883aa1282296"}{"message":"Done.","opid":"7446777b-e12e-4a24-8a87-281519dd77cd"}{"message":"Done.","opid":"b9f635d6-7c61-4c95-b8f6-6a902dc87e56"}{"message":"Done.","opid":"b815ebfa-9acb-4fa1-ad58-01979b314f82"}{"message":"Done.","opid":"25b8a5f6-fe4d-4c34-a606-3849e4bf0c5c"}{"message":"Done.","opid":"a3179c0a-516d-40a9-9e99-fa0eba0a4a6a"}{"message":"Done.","opid":"b065a5cc-67de-401c-afec-24092f1885ee"}{"message":"Done.","opid":"aed435ca-e1c5-4f47-8350-c9dfdcb58184"}{"message":"Done.","opid":"00de5c86-881a-47fb-93d4-623eeb7f0144"}{"message":"Done.","opid":"9f3d8b4b-859c-48af-baca-7c0f95239042"}{"message":"Done.","opid":"ac63a976-0e7b-4ba0-be50-9e6c77f9534a"}{"message":"Done.","opid":"2532f864-10bc-4b8c-b96b-12ec62260dd0"}{"message":"Done.","opid":"89f74766-ff90-411c-94b9-3663bd6ec264"}{"message":"Done.","opid":"d069764d-8c5a-4865-9d54-e16889b87b84"}{"message":"Done.","opid":"43a8f1a7-cf5f-4551-8767-0341c019f553"}{"message":"Done.","opid":"a71de67d-c508-42e0-be67-47fecba0e457"}{"message":"Done.","opid":"aa98c4a9-a5a8-4a09-9ffd-5721ec9caa38"}{"message":"Done.","opid":"58a0c89f-6736-4f69-b217-8787ea7562fb"}{"message":"Done.","opid":"0e8b8a81-42df-4960-a9dd-708074897375"}{"message":"Done.","opid":"7e651911-f448-47c9-9b8a-eb2025ba9532"}{"message":"Done.","opid":"d87bc4e8-1de5-467c-8102-acc0d78d8592"}{"message":"Done.","opid":"3d9e7cd0-77f6-44f2-8557-36c7ccf2e508"}{"message":"Done.","opid":"11c70c37-bb9a-4d74-a42c-3dd3cc17d124"}{"message":"Done.","opid":"3b4c0af3-4c75-4e3b-98d4-4ca220567d68"}{"message":"Done.","opid":"d6528a85-0cdd-4e0d-9264-879f458daaa4"}{"message":"Done.","opid":"82eb4c65-da41-4adc-9a85-32a66b8cae36"}{"message":"Done.","opid":"5e5aab06-0513-41af-8167-10fe6e8e2c91"}{"message":"Done.","opid":"f18e0b18-abce-4967-9e50-41f41f52118b"}{"message":"Done.","opid":"c9d52950-e8e7-46fe-bf06-ac8a0a75b000"}{"message":"Done.","opid":"d0abddb2-7ebf-4a91-bdb8-60dc5c7c1c6f"}{"message":"Done.","opid":"934fdcf0-8e99-4567-84ef-487d3d24909c"}{"message":"Done.","opid":"72b0fd97-6162-4e9f-b3c1-b9ecf0028a0c"}{"message":"Done.","opid":"ad0535f9-2df3-4e5f-b83c-c6607f7a6191"}{"message":"Done.","opid":"3a064773-5078-474f-bf5b-4b41f96dac93"}{"message":"Done.","opid":"5f999d33-db5a-4282-a6c0-7b2ab723aae7"}{"message":"Done.","opid":"e56c7c4a-f02e-4d29-b357-df127a919fb7"}{"message":"Done.","opid":"6f196069-97b4-469d-9f32-a782daa333a4"}{"message":"Done.","opid":"ef8f6e4e-d7cd-4070-a317-d1fede5d1476"}{"message":"Done.","opid":"c56a6148-79fd-45ac-9e06-19464bcc6788"}{"message":"Done.","opid":"93952efa-739b-42e1-af01-4e076b261404"}{"message":"Done.","opid":"9fcc8fd1-5d1f-497e-9808-08cdc55bcd9a"}{"message":"Done.","opid":"51c59ec8-1e3a-4e1e-88c7-bc541f8f662c"}{"message":"Done.","opid":"bf042c49-661c-473c-928f-2fb7dcadb94d"}{"message":"Done.","opid":"d9f03767-5552-4453-9c5f-1e1e7b967f4a"}{"message":"Done.","opid":"050a94c0-0db3-480d-a22e-6dcedd644b47"}{"message":"Done.","opid":"65ada342-8ee3-4cc5-a024-c170b6ddec80"}{"message":"Done.","opid":"b2c1789f-69f9-4ea1-906b-1de9da38011d"}{"message":"Done.","opid":"d4fa2c72-167f-47cb-bd69-2784c27e8632"}{"message":"Done.","opid":"1b7109c3-8064-48ff-93c9-8060bea23d95"}{"message":"Done.","opid":"1035beb1-c834-471a-9cb4-0adb953f1c78"}{"message":"Done.","opid":"46ef2510-712c-4163-876d-02fa2be9dd8a"}{"message":"Done.","opid":"3f94d201-998e-4a07-9f15-550b3db0035b"}{"message":"Done.","opid":"9651756a-9c04-40b3-a60c-46dfba2dd48b"}{"message":"Done.","opid":"50bdd731-8841-478b-965c-5a98a2680621"}{"message":"Done.","opid":"4f519b9e-8034-473b-8e93-b132cb10310a"}{"message":"Done.","opid":"e2314e53-6a76-4500-95d5-8b1fd2c4df20"}{"message":"Done.","opid":"f142092d-a459-4a1a-acca-1a08e50771f4"}{"message":"Done.","opid":"ac3218b8-b508-4f33-b660-8305ab166e07"}{"message":"Done.","opid":"5983876c-839b-4264-b5cf-e3043de23849"}{"message":"Done.","opid":"6b88167e-7a39-44a0-8d66-bff471e9253a"}{"message":"Done.","opid":"3b6aa8c6-6d3e-45ae-a35c-ba7a0478a7f7"}{"message":"Done.","opid":"f0e62679-1bc1-41e8-9120-1c3d557636b3"}{"message":"Done.","opid":"324a8277-3fe1-4f14-994e-035e364298b8"}{"message":"Done.","opid":"3205283f-9a1a-43d1-baa5-0c78de99d967"}{"message":"Done.","opid":"912996dd-152e-4c42-9538-fe32135b5bf9"}{"message":"Done.","opid":"968544a8-1426-40a3-932d-935ffa67331d"}{"message":"Done.","opid":"b72252d8-cfe6-47e0-a957-7f9a835ca8c1"}{"message":"Done.","opid":"5081b882-3c18-4178-a3e6-c6fa9f32c24a"}{"message":"Done.","opid":"913b830f-b09e-4aff-8201-7d25ccd72be2"}{"message":"Done.","opid":"4d4c542d-0499-48b5-9061-e11b3a43abdb"}{"message":"Done.","opid":"5b408a8b-6444-424c-8a51-3e1d4bada738"}{"message":"Done.","opid":"ad91c747-88ad-4b09-8609-99a657ae70c6"}{"message":"Done.","opid":"4f4f907c-1866-426e-921a-18cf3a809384"}{"message":"Done.","opid":"17177f91-2ef0-4eb0-b1e2-87592e545e63"}{"message":"Done.","opid":"44fcd7d6-d51f-40b0-9c90-b0b7688622c9"}{"message":"Done.","opid":"21660d3f-a1bf-430b-8b04-a104d7267dd5"}{"message":"Done.","opid":"8c3e091e-0d70-4396-b6be-71bc24b323aa"}{"message":"Done.","opid":"eb982367-afe7-4a87-907f-416e4867ae76"}{"message":"Done.","opid":"7cbb0ab2-5ebd-4f05-b81a-85c3069fa877"}{"message":"Done.","opid":"8f55a2b7-5a88-4908-8ff6-ef29a8391848"}{"message":"Done.","opid":"3eccbfe0-5c10-4e6c-8d6b-a3b492984df3"}{"message":"Done.","opid":"d1188433-69b4-45af-a3fc-338a14d6ff4e"}{"message":"Done.","opid":"e3fc19d3-b1db-4bcd-b5a6-dfd1cc04c677"}{"message":"Done.","opid":"ca0f40f7-15f8-4a8e-b072-6f08dafd897e"}{"message":"Done.","opid":"1fb04a35-636e-46ca-b07a-c07061ae8fae"}{"message":"Done.","opid":"f327467a-b98d-483d-8b81-b9b761943285"}{"message":"Done.","opid":"d1f50c62-9617-41a1-9088-ab828df2695c"}{"message":"Done.","opid":"95a7ac81-e82c-4c99-8803-51adfb54b45c"}{"message":"Done.","opid":"407552b1-7832-436a-8bb6-e4281bd1c7df"}{"message":"Done.","opid":"9ae65065-7d13-45fb-afd0-31abd92c4377"}{"message":"Done.","opid":"8b92b9b5-bb50-4fb0-925f-f685776ccdea"}{"message":"Done.","opid":"c7606ffd-5950-47c8-8f84-9f6b5d766335"}{"message":"Done.","opid":"8e180402-32bb-4e75-9838-3eec583d2c71"}{"message":"Done.","opid":"6c04b88d-cb7b-413e-aec7-20e31cb5631c"}{"message":"Done.","opid":"15c34272-fbfc-43e7-b12f-aa9d148b9c65"}{"message":"Done.","opid":"cfe2d00c-4646-4b97-9a8a-bf235f77b755"}{"message":"Done.","opid":"db18367a-f6b5-48e5-bfdf-4a37f3ae2215"}{"message":"Done.","opid":"5c51d320-6c9d-4bef-9390-46b2cdc2fa17"}{"message":"Done.","opid":"da85a5da-53b1-4aa9-b758-ced00281a1e3"}{"message":"Done.","opid":"483dd42f-5a54-4103-968b-aff41c712db5"}{"message":"Done.","opid":"9dd8e514-9e0a-4f1d-a215-f6a4ea8408af"}{"message":"Done.","opid":"f3e21f09-ba54-44eb-9c24-ba22ead3ce4e"}{"message":"Done.","opid":"7d54724e-d508-45de-a0cc-10adc45024b5"}{"message":"Done.","opid":"3899f899-fdd9-4030-b14e-5308f96c85b6"}{"message":"Done.","opid":"03f470ae-ee5d-49ab-90f8-24134b788347"}{"message":"Done.","opid":"3d8d9b9e-ffb6-4f3e-b26f-e0b8f4535bfa"}{"message":"Done.","opid":"1982ab15-b36d-46db-b33d-94212d02842a"}{"message":"Done.","opid":"7608586a-3f9e-44de-9fc5-03db8dcec83e"}{"message":"Done.","opid":"b81777c8-d627-4f87-bbf9-d21e97c22c77"}{"message":"Done.","opid":"cf33c3a6-c1d9-4606-b184-d44a8365182d"}{"message":"Done.","opid":"271a7051-ea37-4212-b7c3-d604850a881f"}{"message":"Done.","opid":"67835d3f-0fad-455d-97b4-77661188a66a"}{"message":"Done.","opid":"df70f18e-0260-49f7-8644-2cd7615ad025"}{"message":"Done.","opid":"853b2bba-1f06-487c-a33d-853a883f36f5"}{"message":"Done.","opid":"180bf2ce-09fe-4295-a753-1c63ef969bc9"}{"message":"Done.","opid":"fad1f749-a24e-469d-b1bb-9b8a6619779b"}{"message":"Done.","opid":"ac16f231-2071-4ac4-a69b-bcbcfa19cfd6"}{"message":"Done.","opid":"92ac5244-bf5f-4ef3-b2c9-b6ba21e4b10d"}{"message":"Done.","opid":"2120323c-4f7c-4fe9-810d-d8ff9f823e4f"}{"message":"Done.","opid":"3f7b9843-915f-4724-b7f6-ee66133e571b"}{"message":"Done.","opid":"842c5b27-704b-4ce5-8eef-0ca98ac2cb6f"}{"message":"Done.","opid":"4877a79a-0ad9-4e9e-a604-35ce26e42a80"}{"message":"Done.","opid":"75b34443-5b85-4d2f-8d4e-ef7d0eded8af"}{"message":"Done.","opid":"5a1871e0-bd9f-4b1e-8e43-af65ea8b43e5"}{"message":"Done.","opid":"f4689dca-95cd-499d-88e0-66935551682a"}{"message":"Done.","opid":"0d404e8c-31ea-4557-9df6-02dee64fd11f"}{"message":"Done.","opid":"a288cb2e-caf2-424e-aa9d-a7adb3f190ce"}{"message":"Done.","opid":"1d66e492-41d0-4a04-b020-f92266312262"}{"message":"Done.","opid":"afd0a65e-fbbd-4aa2-8d0f-e4cd1c6dd8f5"}{"message":"Done.","opid":"af56f09f-46d5-4bd7-91b2-541bbeeb40b0"}{"message":"Done.","opid":"df934e83-48c7-4c9e-8eb5-0794a33af05e"}{"message":"Done.","opid":"7fa90aea-d855-479d-b885-82e5e5f9a6f6"}{"message":"Done.","opid":"758fb444-9141-417f-a4f5-eba1a7d7b9b8"}{"message":"Done.","opid":"35c51cdd-028f-4ff3-aa01-647898bde599"}{"message":"Done.","opid":"9a4b8920-e132-41dd-ba97-34cea4ddeb39"}{"message":"Done.","opid":"c0502bfe-0384-4713-abc2-9da967ef7414"}{"message":"Done.","opid":"71101eca-b5a2-49fc-9321-da1571950448"}{"message":"Done.","opid":"179a4ce3-e3fc-4a39-a73e-60ad3d59e4cd"}{"message":"Done.","opid":"b3b56592-5516-4008-83c1-fb13739e0259"}{"message":"Done.","opid":"8fcb28e7-c7a9-4daf-9710-11b5ac054183"}{"message":"Done.","opid":"3b4c50cf-e181-40fb-a71f-b7c82e9a4bbf"}{"message":"Done.","opid":"5e59412d-bf48-4b1c-8cf1-c6fec49650ab"}{"message":"Done.","opid":"bb28a514-0710-48c7-9ad1-b1b0715c153c"}{"message":"Done.","opid":"7fe6db11-f1b1-4345-9917-cbf122b2f561"}{"message":"Done.","opid":"55941fce-98d2-4c15-8e6a-1209d8ed7533"}{"message":"Done.","opid":"e3e67a08-90e2-460c-a3da-840b5a24268b"}{"message":"Done.","opid":"e12a4c58-21f7-4e04-b923-ec7c918f367d"}{"message":"Done.","opid":"d1ea1447-ecb3-4432-ab4e-3c6c9e0d0551"}{"message":"Done.","opid":"8c4dec41-bb5e-4ee3-a927-290ce1900480"}{"message":"Done.","opid":"71198bfd-df65-40cf-bccd-24e38c8020b6"}{"message":"Done.","opid":"78820a5f-696c-4e31-aa74-5865eebc274e"}{"message":"Done.","opid":"b9cfe2f1-8f99-4dca-b466-de92e17e80c7"}{"message":"Done.","opid":"33ebca51-5f4b-418e-8523-b75567518ac3"}{"message":"Done.","opid":"af703904-b03f-4671-8f03-d7b9ed9c9855"}{"message":"Done.","opid":"7c8218fc-0351-4a1e-9e86-3197e9a3968f"}{"message":"Done.","opid":"1fbe70ad-a31b-478a-b25f-cda2b43c6383"}{"message":"Done.","opid":"754cfebf-bf78-438e-89ef-e10cfc926716"}{"message":"Done.","opid":"dc91c2a6-56a0-4369-b0bf-913cb635bb68"}{"message":"Done.","opid":"6294a88a-91e7-49f1-9371-79d320abca77"}{"message":"Done.","opid":"b06cbc7b-2a2c-4d04-9a8a-2635a81fb730"}{"message":"Done.","opid":"30a6da70-63d4-43ed-b247-d25d6f3f6744"}{"message":"Done.","opid":"055b0847-ed1d-4f12-ad1d-7958cf3512f9"}{"message":"Done.","opid":"02b530d9-3b38-4a41-85b4-de1af545c550"}{"message":"Done.","opid":"970c6129-194f-48b0-badb-f9050df3fdf4"}{"message":"Done.","opid":"3cbad937-4fd8-4fc4-9956-143ee17ccced"}{"message":"Done.","opid":"b3df4379-e41e-42d7-8df9-310f56d73ecb"}{"message":"Done.","opid":"bc4d27e9-3b95-41da-b5d2-69c7a63bd215"}{"message":"Done.","opid":"2307a5ef-0b7a-4b8b-89ee-9df06f5e734f"}{"message":"Done.","opid":"6ec4378d-b3a7-42ab-aa4d-67012a576204"}{"message":"Done.","opid":"2a715101-1d14-4440-af20-bdd64a52fd85"}{"message":"Done.","opid":"35751270-4449-4ab8-bd74-99d38538bbdb"}{"message":"Done.","opid":"4cd3dbee-179d-4e73-8641-6cbae1722535"}{"message":"Done.","opid":"addf8dad-35f5-4dd2-b1fd-2ffe6630d465"}{"message":"Done.","opid":"ab00a9a6-6640-451a-9d82-3ac15ca4c681"}{"message":"Done.","opid":"1d5b9d68-a76e-4bcd-a5bf-975e9843cf21"}{"message":"Done.","opid":"7bb1d5d6-0477-4a06-95cf-cdfdc7be155b"}{"message":"Done.","opid":"f8259c20-a8af-49ff-9540-505e0407f4f2"}{"message":"Done.","opid":"661ab643-0314-42e1-a504-c4dd1a42ecc6"}{"message":"Done.","opid":"a151800c-79f1-4df0-8011-3b19e8bc8ec7"}{"message":"Done.","opid":"ab8ca51f-b790-4d50-9ca4-8267eea21dd3"}{"message":"Done.","opid":"485d3344-6ab3-4063-b263-48ce8134aea3"}{"message":"Done.","opid":"756c5c31-68c9-4fd9-9e4b-e8c24d7bb1af"}{"message":"Done.","opid":"f12431d4-e776-4cf5-b573-a2e9c419145f"}{"message":"Done.","opid":"c9b7f06e-1ced-419a-9fa2-586f084f015c"}{"message":"Done.","opid":"bc9eea09-a99e-419a-8e42-02f46da3be39"}{"message":"Done.","opid":"e236e785-9078-4c90-bb89-cd486fbfa82f"}{"message":"Done.","opid":"79c2ea80-c009-4f8d-9f22-f19b6623016b"}{"message":"Done.","opid":"ad23453e-0895-4522-9cdb-5ab6cbba930d"}{"message":"Done.","opid":"c655e055-bb06-4756-9df4-3e8ca77b7e2f"}{"message":"Done.","opid":"4d6e6198-a747-4e3c-9646-abfe9b465ee8"}{"message":"Done.","opid":"35d03d2d-5fc1-490b-984b-5bdaa5aa8856"}{"message":"Done.","opid":"1500ffc6-a1bc-4e62-b923-9ab5566afbda"}{"message":"Done.","opid":"3af1692d-5c2e-4a1d-a4f7-14b8d57acc3f"}{"message":"Done.","opid":"d072d1f2-8803-40af-969c-9fdb9f9073d3"}{"message":"Done.","opid":"a3746a7f-8e40-472d-93df-2c86f8f53afd"}{"message":"Done.","opid":"8d078c57-94ca-464f-9d58-f917d35500cc"}{"message":"Done.","opid":"217e3b8a-83b1-47b1-ae75-067375dd99dd"}{"message":"Done.","opid":"91b62925-9b03-420d-9e98-329180ed36b9"}{"message":"Done.","opid":"81a7d54e-d1e4-44af-92df-4a996d529f21"}{"message":"Done.","opid":"c6412768-9f7e-4f0f-8765-28594d621a53"}{"message":"Done.","opid":"fdc2a655-9e40-4629-b6e6-05f19d770cf9"}{"message":"Done.","opid":"06cfcc93-978d-45bb-b5a1-d53b7724d876"}{"message":"Done.","opid":"2971036c-33c7-4d4d-b900-98542a80350b"}{"message":"Done.","opid":"9dd112b9-5e83-441e-afc0-ceaf79d00891"}{"message":"Done.","opid":"99e2edee-a27e-4255-83d0-d3d684fb9207"}{"message":"Done.","opid":"8741a88c-e360-4d66-9129-fcbfd9ef62dc"}{"message":"Done.","opid":"e47fa95d-7cdc-4b1d-8c90-da537be384e4"}{"message":"Done.","opid":"7a3e4273-dd0d-4fd0-962d-0ad8f01989a7"}{"message":"Done.","opid":"fc81cb9e-fd3c-4d74-9e92-411e0d6da4f0"}{"message":"Done.","opid":"8eaf01c8-5387-4415-94f3-7574c3d6186c"}{"message":"Done.","opid":"cb84c0ca-e3bd-4667-b2c3-2fdb779d0b88"}{"message":"Done.","opid":"f7decbe6-5a82-4c07-9434-cf86e817d5a4"}{"message":"Done.","opid":"20fedea4-1dd2-4843-90b0-57f787c9f703"}{"message":"Done.","opid":"56a0531d-4198-451a-9d99-d99679503cc4"}{"message":"Done.","opid":"0a4f7125-ef80-4da7-8ef1-7fae8afdd379"}{"message":"Done.","opid":"d1cd1c1b-46a4-493f-b1a2-2935b28e80b3"}{"message":"Done.","opid":"b23fd5d4-8edf-43bc-a89e-b295330350d3"}{"message":"Done.","opid":"7bdab542-d266-48c0-946c-c928f66b3a69"}{"message":"Done.","opid":"ef5f0d73-c7d8-4b22-9e67-2eeab5fa3119"}{"message":"Done.","opid":"6fcbe7e3-dee1-4e0e-a841-566150ac5c5d"}{"message":"Done.","opid":"3cd21353-c298-480a-9254-155e270ce189"}{"message":"Done.","opid":"56b4fe2f-5e88-43e1-895c-8ea4a51ac1ed"}{"message":"Done.","opid":"d62b6082-838d-4259-8a1d-b07f13a8ffb7"}{"message":"Done.","opid":"f4b46e7a-790c-48b4-816b-2c4aa1553309"}{"message":"Done.","opid":"59a97954-ac39-446b-b40b-e48338404392"}{"message":"Done.","opid":"26f1b3ad-23a9-480a-9686-e62faebd6bec"}{"message":"Done.","opid":"da705c48-f39d-4256-896c-1ee1fe1c70ca"}{"message":"Done.","opid":"4cad7c87-c4a8-4ea9-a572-38d4a1c648be"}{"message":"Done.","opid":"761fc76e-c833-43ac-ba07-9873a3b5297f"}{"message":"Done.","opid":"b6cd0aee-2c93-4486-b912-b670075d225e"}{"message":"Done.","opid":"b6ddfe33-3986-40e4-a130-a733459a226b"}{"message":"Done.","opid":"b2abd683-6433-4180-8714-eaf5a44b4c1c"}{"message":"Done.","opid":"d8a0f3f4-2f50-4cc3-869e-fbe5b3cae169"}{"message":"Done.","opid":"e047461e-ba8c-4dcf-b640-04b3af89ed5d"}{"message":"Done.","opid":"e8466bc2-994c-4b16-aa43-32cfb994c979"}{"message":"Done.","opid":"38598064-fac6-4308-b417-725c66d32c84"}{"message":"Done.","opid":"f9cc5266-5c59-4c42-858b-86d705b53bd2"}{"message":"Done.","opid":"af8f782d-202b-41da-81c8-b5bca3c1331c"}{"message":"Done.","opid":"210f5121-f52c-473b-8b17-629308313d36"}{"message":"Done.","opid":"1257c237-5b1b-4844-885c-8b9d68e72a3b"}{"message":"Done.","opid":"7d2cacf7-004d-4500-93b7-ef576f60facb"}{"message":"Done.","opid":"d53a7f9d-6a2a-4355-b288-98adf86abbda"}{"message":"Done.","opid":"164eef3e-ec2c-4480-bd63-80ae2b3cd8d6"}{"message":"Done.","opid":"cae18340-60f1-48d2-b10f-c2fb1f28db54"}{"message":"Done.","opid":"2fd03215-da60-47d6-9849-acbc1f2b1261"}{"message":"Done.","opid":"6878a29f-16df-450a-9a0e-c177dbdbec5f"}{"message":"Done.","opid":"afca6ca8-9393-4f87-8e79-bd81aff9faa8"}{"message":"Done.","opid":"3679f9cd-ac7f-4dc5-b70b-c1fcafdca88a"}{"message":"Done.","opid":"4fb72d65-4c92-49d0-b217-3c7aad0db7ed"}{"message":"Done.","opid":"8c4f4eed-5daa-419b-9f51-138c5d9b7255"}Elapsed call time is 48002(ms)
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Getting all objects in S3 bucket...
+Serverless: Removing objects in S3 bucket...
+Serverless: Removing Stack...
+Serverless: Checking Stack removal progress...
+CloudFormation - DELETE_IN_PROGRESS - AWS::CloudFormation::Stack - wt-full-flow-test
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590098269997
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - HelloLambdaVersiont0FiEo3eMjB5sfjy5tpd15bDJv77jfWHnZAdx6ubk
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WtDashmonitorDashtriggerLambdaVersionNjPGRniXcCqclj6x77qlJnKghawKJjLC33Ojw8GvU
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashmonitorLambdaVersionY7CDsyizFo8sCHWsZiohKWidHmOQJ0lIdS5tpuLbM
+CloudFormation - DELETE_SKIPPED - AWS::Lambda::Version - WatchtowerDashingestionLambdaVersionyNcANc1pwWlZbXruZawEVZHd1ekuabduLhVWZTZvy4
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Deployment - ApiGatewayDeployment1590098269997
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WtDashmonitorDashtriggerEventSourceMappingKinesisInvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::EventSourceMapping - WatchtowerDashingestionEventSourceMappingKinesisEventsStream
+CloudFormation - DELETE_COMPLETE - AWS::S3::BucketPolicy - ServerlessDeploymentBucketPolicy
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Method - ApiGatewayMethodMicrobmarkGet
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashingestionLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WtDashmonitorDashtriggerLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::Resource - ApiGatewayResourceMicrobmark
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashingestionLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WtDashmonitorDashtriggerLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventWriterRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - StateMachineListExec
+CloudFormation - DELETE_IN_PROGRESS - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_COMPLETE - AWS::StepFunctions::StateMachine - WtCheckerMachine
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - WtCheckerMachineRole
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Permission - HelloLambdaPermissionApiGateway
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_IN_PROGRESS - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - WatchtowerDashmonitorLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::Lambda::Function - HelloLambdaFunction
+CloudFormation - DELETE_COMPLETE - AWS::ApiGateway::RestApi - ApiGatewayRestApi
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - CheckpointsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_IN_PROGRESS - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_IN_PROGRESS - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - WatchtowerDashmonitorLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::Logs::LogGroup - HelloLogGroup
+CloudFormation - DELETE_COMPLETE - AWS::S3::Bucket - ServerlessDeploymentBucket
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - EventReaderRole
+CloudFormation - DELETE_COMPLETE - AWS::IAM::Role - IamRoleLambdaExecution
+CloudFormation - DELETE_IN_PROGRESS - AWS::DynamoDB::Table - EventsTable
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - EventsStream
+CloudFormation - DELETE_IN_PROGRESS - AWS::Kinesis::Stream - InvocationStream
+CloudFormation - DELETE_COMPLETE - AWS::DynamoDB::Table - CheckpointsTable
+Serverless: Stack removal finished...
+~/watchtower-experiments/scaling/scripts
+~/watchtower-experiments/scaling/app ~/watchtower-experiments/scaling/scripts
+Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+........
+Serverless: Stack create finished...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service wt-full-flow.zip file to S3 (865.92 KB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+........................
+Serverless: Operation failed!
+Serverless: View the full error output: https://eu-west-1.console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aeu-west-1%3A432356059652%3Astack%2Fwt-full-flow-test%2Fdbb13fb0-9baf-11ea-b336-0a2e85db59c6
+ 
+  Serverless Error ---------------------------------------
+ 
+  An error occurred: WatchtowerDashmonitorLogGroup - /aws/lambda/wt-full-flow-test-watchtower-monitor already exists.
+ 
+  Get Support --------------------------------------------
+     Docs:          docs.serverless.com
+     Bugs:          github.com/serverless/serverless/issues
+     Issues:        forum.serverless.com
+ 
+  Your Environment Information ---------------------------
+     Operating System:          linux
+     Node Version:              8.10.0
+     Framework Version:         1.71.1
+     Plugin Version:            3.6.12
+     SDK Version:               2.3.0
+     Components Version:        2.30.11
+ 
+~/watchtower-experiments/scaling/scripts
+Calling function at url: /microbmark
+Calling function at url: /microbmark
+Calling function at url: /microbmark
+Calling function at url: /microbmark
+Calling function at url: /microbmark
+Calling function at url: /microbmark
+Calling function at url: /microbmark
+Calling function at url: /microbmark
+Elapsed call time is 2500(ms)
