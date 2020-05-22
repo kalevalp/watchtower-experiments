@@ -1,6 +1,6 @@
 #! /bin/bash
 
-for kind in {app,../scripts}
+for kind in {shared-props,disj-prop,../scripts}
 do
     echo Cleaning ${kind}
 

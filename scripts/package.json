@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cloudwatch-log-scraper": "^1.2.2"
+    "cloudwatch-log-scraper": "^1.2.2",
+    "watchtower-anaysis-scripts": "^1.3.2"
   }
 }
