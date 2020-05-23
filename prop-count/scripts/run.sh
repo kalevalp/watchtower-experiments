@@ -20,15 +20,14 @@ do
         echo '######' Running ${kind} with ${props} properties
         echo '########'
 
-        export WATCHTOWER_MBMARK_ID_COUNT = ${props}
-        export WATCHTOWER_MBMARK_PROP_COUNT = ${props}
+        export WATCHTOWER_MBMARK_ID_COUNT=${props}
+        export WATCHTOWER_MBMARK_PROP_COUNT=${props}
 
         sleep 60
         sls deploy
         sleep 60
 
         API_URL=`serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'`; export API_URL=$API_URL/microbmark
-
 
         for i in {1..1000}
         do
