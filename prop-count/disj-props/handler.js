@@ -15,9 +15,9 @@ function sleep(ms) {
 
 module.exports.hello = async (event, context) => {
     // Randomly choose a scenario
-    const scenario = Math.floor(Math.random() * 20);
+    const scenario = Math.floor(Math.random() * 2);
 
-    // With a probabilty of 5%, run a failing run on a *new* random id, for a random prop.
+    // With a probabilty of 50%, run a failing run on a *new* random id, for a random prop.
     if (scenario === 0) {
         const id = uuidv4();
         const prop = Math.floor(Math.random() * propertyCount);
@@ -29,20 +29,14 @@ module.exports.hello = async (event, context) => {
         dummy('C', id, prop);
     }
 
-    // With a probabilty of 5%, run a terminating event on a random id, for a random prop.
-    else if (scenario === 1) {
-        await sleep(100);
-        const id = idPool[Math.floor(Math.random * idCount)];
-        dummy('C', id); // No need to specify a prop, it'll be automatically chosen
-        await sleep(100);
-    }
-
-    // With a probability of 90%, run a series of 3 random non-terminating events.
+    // With a probability of 50%, run a series of 3 random non-terminating events.
     else {
         for (let i = 0; i < 3; i++) {
             const id = idPool[Math.floor(Math.random * idCount)];
             await sleep(100);
-            dummy(Math.random() < 0.5 ? 'A' : 'B', id);
+            const choice = Math.floor(Math.random() * 3);
+            const op = choice === 0 ? 'A' : choice === 1 ? 'B' : 'C'
+            dummy(op, id);
         }
     }
 
