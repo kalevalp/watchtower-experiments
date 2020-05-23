@@ -2,11 +2,11 @@
 const dummy  = require('dummy');
 const uuidv4 = require('uuid/v4');
 
-const idCount       = Number(process.env['WATCHTOWER_MBMARK_ID_COUNT']);
+const idCount = Number(process.env['WATCHTOWER_MBMARK_ID_COUNT']);
 
-const idPool = [];
+let idPool = [];
 idPool.length = idCount;
-idPool.fill().map(() => uuidv4());
+idPool = idPool.fill().map(() => uuidv4());
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -14,38 +14,30 @@ function sleep(ms) {
 
 module.exports.hello = async (event, context) => {
     // Randomly choose a scenario
-    const scenario = Math.floor(Math.random() * 100);
+    const scenario = Math.floor(Math.random() * 2);
 
-    // With a probabilty of 1%, run a failing run on a *new* random id, for a random prop.
+    // With a probabilty of 50%, run a failing run on a *new* random id.
     if (scenario === 0) {
         const id = uuidv4();
-        const prop = Math.floor(Math.random() * propertyCount);
 
         dummy('D', id)
-        await sleep(250);
+        await sleep(50);
         dummy('A', id);
-        await sleep(250);
+        await sleep(50);
         dummy('B', id);
-        await sleep(250);
+        await sleep(50);
         dummy('C', id);
     }
 
-    // With a probabilty of 1%, run a terminating event on a random id, for a random prop.
-    else if (scenario === 1) {
-        await sleep(100);
-        dummy('C', id); // No need to specify a prop, it'll be automatically chosen
-        await sleep(100);
-    }
-
-    // With a probability of 98%, run a series of 50 random non-terminating events.
-    // Of these, with a 5% probability switch layers (event D)
+    // With a probability of 50%, run a series of 4 random events.
+    // Of these, with a 25% probability switch layers (event D)
     else {
-        for (const i = 0; i < 20; i++) {
-            const id = idPool[Math.floor(Math.random * idCount)];
-            await sleep(100);
+        for (let i = 0; i < 4; i++) {
+            const id = idPool[Math.floor(Math.random() * idCount)];
+            await sleep(50);
 
-            const toss = Math.floor(Math.random() * 20);
-            const ev = toss === 0 ? 'D' : toss < 11 ? 'A' : 'B'
+            const toss = Math.floor(Math.random() * 4);
+            const ev = toss === 0 ? 'D' : toss === 1 ? 'A' : toss === 2 ? 'B' : 'C';
 
             dummy(ev, id);
         }

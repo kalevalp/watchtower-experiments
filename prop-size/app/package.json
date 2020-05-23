@@ -10,9 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "uuid": "^3.3.3",
-    "watchtower-log-ingestion": "^1.7.7",
-    "watchtower-monitor": "^1.7.0",
-    "watchtower-recorder": "^1.5.6"
+    "watchtower-log-ingestion": "^1.10.2",
+    "watchtower-monitor": "^1.9.3",
+    "watchtower-recorder": "^2.7.3"
   },
   "devDependencies": {
     "serverless-step-functions": "^2.11.0"
