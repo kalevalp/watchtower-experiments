@@ -32,13 +32,14 @@ module.exports.hello = async (event, context) => {
     // With a probabilty of 5%, run a terminating event on a random id, for a random prop.
     else if (scenario === 1) {
         await sleep(100);
+        const id = idPool[Math.floor(Math.random * idCount)];
         dummy('C', id); // No need to specify a prop, it'll be automatically chosen
         await sleep(100);
     }
 
-    // With a probability of 90%, run a series of 20 random non-terminating events.
+    // With a probability of 90%, run a series of 3 random non-terminating events.
     else {
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 3; i++) {
             const id = idPool[Math.floor(Math.random * idCount)];
             await sleep(100);
             dummy(Math.random() < 0.5 ? 'A' : 'B', id);

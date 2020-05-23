@@ -18,7 +18,7 @@ module.exports.hello = async (event, context) => {
     const scenario = Math.floor(Math.random() * 20);
 
     // With a probabilty of 5%, run a failing run on a *new* random id, for a random prop.
-    // if (scenario === 0) {
+    if (scenario === 0) {
         const id = uuidv4();
         const prop = Math.floor(Math.random() * propertyCount);
 
@@ -27,23 +27,24 @@ module.exports.hello = async (event, context) => {
         dummy('B', id, prop);
         await sleep(250);
         dummy('C', id, prop);
-    // }
+    }
 
-    // // With a probabilty of 5%, run a terminating event on a random id, for a random prop.
-    // else if (scenario === 1) {
-    //     await sleep(100);
-    //     dummy('C', id); // No need to specify a prop, it'll be automatically chosen
-    //     await sleep(100);
-    // }
+    // With a probabilty of 5%, run a terminating event on a random id, for a random prop.
+    else if (scenario === 1) {
+        await sleep(100);
+        const id = idPool[Math.floor(Math.random * idCount)];
+        dummy('C', id); // No need to specify a prop, it'll be automatically chosen
+        await sleep(100);
+    }
 
-    // // With a probability of 90%, run a series of 20 random non-terminating events.
-    // else {
-    //     for (let i = 0; i < 20; i++) {
-    //         const id = idPool[Math.floor(Math.random * idCount)];
-    //         await sleep(100);
-    //         dummy(Math.random() < 0.5 ? 'A' : 'B', id);
-    //     }
-    // }
+    // With a probability of 90%, run a series of 3 random non-terminating events.
+    else {
+        for (let i = 0; i < 3; i++) {
+            const id = idPool[Math.floor(Math.random * idCount)];
+            await sleep(100);
+            dummy(Math.random() < 0.5 ? 'A' : 'B', id);
+        }
+    }
 
     return {
         statusCode: 200,
