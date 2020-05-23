@@ -15,6 +15,7 @@ let prop = {
 	    params: ['someid'],
 	},
         'EVENT_TYPE_D': { // Move to the next phase of the property
+            params: ['someid'],
             'INITIAL': { to: 'state-0-0', },
         }
     },
