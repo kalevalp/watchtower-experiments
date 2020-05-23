@@ -35,7 +35,7 @@ do
 
     sleep 180
 
-    node ../../scripts/get-wt-times.js ../${resdir}/checker-${propsize} ../${resdir}/ingest-${propsize}
+    node ../../scripts/get-wt-times.js ../scripts/${resdir}/checker-${propsize} ../scripts/${resdir}/ingest-${propsize}
 
     sls remove
 
