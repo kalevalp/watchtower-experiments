@@ -18,7 +18,6 @@ do
 
     export WATCHTOWER_MBMARK_PROP_SIZE=${propsize}
 
-    sleep 60
     sls deploy
     sleep 60
 
@@ -34,11 +33,13 @@ do
         curl ${API_URL}
     done
 
-    sleep 60
+    sleep 180
 
-    node ../../scripts/get-wt-times.js ${resdir}/checker-${propsize} ${resdir}/ingest-${propsize}
+    node ../../scripts/get-wt-times.js ../${resdir}/checker-${propsize} ../${resdir}/ingest-${propsize}
 
     sls remove
+
+    sleep 60
 
     unset WATCHTOWER_MBMARK_PROP_SIZE
 done
