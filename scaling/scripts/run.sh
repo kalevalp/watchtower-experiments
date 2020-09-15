@@ -7,7 +7,7 @@ mkdir ${resdir}
 
 sleep 2
 
-for parexec in {1,2,4,6,8,10}
+for parexec in 1 4 8 12 16 20
 do
     pushd ../app
 

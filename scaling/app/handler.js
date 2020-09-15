@@ -7,14 +7,13 @@ function sleep(ms) {
 }
 
 module.exports.hello = async (event, context) => {
-    let opid;
-    for (let i = 0; i < 25; i++) {
-	opid = uuidv4();
-	dummy.operationA(opid);
-        await sleep(20);
-    }
-    dummy.operationB(opid);
-    sleep(20);
+    let opid = uuidv4();
+
+    await dummy.operationA(opid);
+    await sleep(5);
+
+    await dummy.operationB(opid);
+
 
     return {
         statusCode: 200,
