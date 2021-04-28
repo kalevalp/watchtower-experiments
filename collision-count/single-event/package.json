@@ -1,0 +1,19 @@
+{
+  "name": "single-event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler-wrapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "watchtower-log-ingestion": "^1.10.2",
+    "watchtower-monitor": "^1.9.3",
+    "watchtower-recorder": "^2.7.3"
+  },
+  "devDependencies": {
+    "serverless-step-functions": "^2.11.0"
+  }
+}
