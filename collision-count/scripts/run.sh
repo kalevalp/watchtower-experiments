@@ -1,60 +1,49 @@
 #! /bin/bash
 
-export resdir=results`date +%Y%m%d%H%M%S`
-mkdir ${resdir}
+export resdir=results$(date +%Y%m%d%H%M%S)
+mkdir "${resdir}"
 
 echo '#####################################################'
-echo '#######' Running prop-count microbenchmark '    #######'
+echo '#######' Running collision count microbenchmark '#######'
 echo '#######  ' output dif is ${resdir}         '#######'
 echo '#####################################################'
 
+pushd ../single-event || exit
 
+for rate in {10,25,50,100}
+do
 
-#for kind in {shared-props,disj-props}
-#do
-export kind='shared-props'
-    pushd ../${kind}
+    echo '########'
+    echo '######' Running with rate "${rate}"
+    echo '########'
 
-    for props in {1,5,10,15,20,30,50}
+    sls deploy
+    sleep 60
+
+    API_URL=$(serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'); export API_URL=$API_URL/microbmark
+
+    for i in $(seq 1 "${rate}")
     do
-
-        echo '########'
-        echo '######' Running ${kind} with ${props} properties
-        echo '########'
-
-        export WATCHTOWER_MBMARK_ID_COUNT=${props}
-        export WATCHTOWER_MBMARK_PROP_COUNT=${props}
-
-        sls deploy
-        sleep 60
-
-        API_URL=`serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'`; export API_URL=$API_URL/microbmark
-
-        for i in {1..200}
-        do
-            if ((i % 25 == 0))
-            then
-                sleep 5
-            fi
-
-            curl ${API_URL}
-        done
-
-        sleep 240
-
-        node ../../scripts/get-wt-times.js ../scripts/${resdir}/${kind}-checker-${props} ../scripts/${resdir}/${kind}-ingest-${props}
-
-        sls remove
-
-	sleep 60
-
-        unset WATCHTOWER_MBMARK_ID_COUNT
-        unset WATCHTOWER_MBMARK_PROP_COUNT
+        curl "${API_URL}" &
     done
 
-    popd
+    for job in $(jobs -p)
+    do
+    echo "$job"
+      wait "$job" || echo Failed job "$job"
+    done
+
+    sleep 60
+
+    node ../../scripts/get-collision-report.js ../scripts/${resdir}/collision-report-${rate}
+
+    sls remove
+
+sleep 60
 
 done
+
+popd || exit
 
 
 echo '####################'
