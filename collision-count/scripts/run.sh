@@ -24,7 +24,7 @@ do
 
     for i in $(seq 1 "${rate}")
     do
-        curl "${API_URL}" &
+        curl -X POST -d "110" "${API_URL}" &
     done
 
     for job in $(jobs -p)
