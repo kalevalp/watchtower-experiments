@@ -3,7 +3,7 @@ const stateMachineArn = process.env['WATCHTOWER_CHECKER_SM_ARN'];
 const aws = require('aws-sdk');
 const sf = new aws.StepFunctions();
 
-const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 
 async function triggerCheckerStateMachine(event) {
     const execid = uuidv4();
