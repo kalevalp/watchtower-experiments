@@ -1,27 +1,27 @@
 const createProp = () => {
     const prop = {
         name: `dummy`,
-        quantifiedVariables: ['id'],
-        projections: [['id']],
+        quantifiedVariables: ['eventid'],
+        projections: [['eventid']],
         stateMachine: {}
     }
 
     prop.stateMachine[`EVENT_TYPE_A`] = {
-	    params: ['id'],
+	    params: ['eventid'],
 	    'INITIAL': { to: 'state1', },
 	    'state1':  { to: 'INITIAL', },
         'state2' : { to: 'state2', },
     }
 
     prop.stateMachine[`EVENT_TYPE_B`] = {
-        params: ['id'],
+        params: ['eventid'],
         'INITIAL': { to: 'INITIAL', },
         'state1':  { to: 'state1', },
         'state2' : { to: 'state2', },
     }
 
     prop.stateMachine[`EVENT_TYPE_C`] = {
-        params: ['id'],
+        params: ['eventid'],
         'INITIAL': { to: 'INITIAL', },
         'state1':  { to: 'state1', },
         'state2' : { to: 'FAILURE', },

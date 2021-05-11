@@ -6,11 +6,11 @@ function sleep(ms) {
 }
 
 module.exports.hello = async (event, context) => {
-    console.log(`Handling event with id ${event.body} at time ${Date.now()}`)
+    console.log(`Handling event with eventid ${event.body} at time ${Date.now()}`)
 
-    const id = event.body
+    const eventid = event.body
 
-    dummy(id)
+    dummy(eventid)
 
     return {
         statusCode: 200,

@@ -14,9 +14,9 @@ function updateContext(name, event, lambdaContext) {
 }
 
 const mock = {
-    'dummy': (id) => {
+    'dummy': (eventid) => {
         const op = Math.random() < 0.33 ? 'A' : Math.random() < 0.50 ? 'B' : 'C'
-        return publisher({name: `EVENT_TYPE_${op}`, params: {id: id}}, lambdaExecutionContext)
+        return publisher({name: `EVENT_TYPE_${op}`, params: {eventid: eventid}}, lambdaExecutionContext)
     },
 };
 
