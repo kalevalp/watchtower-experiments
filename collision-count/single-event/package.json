@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "uuid": "^8.3.2",
     "watchtower-log-ingestion": "^1.10.2",
     "watchtower-monitor": "^1.9.3",
     "watchtower-recorder": "^2.7.3"
