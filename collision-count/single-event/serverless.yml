@@ -14,14 +14,16 @@ provider:
 #    WATCHTOWER_MBMARK_PROP_COUNT: ${env:WATCHTOWER_MBMARK_PROP_COUNT}
 #    WATCHTOWER_MBMARK_ID_COUNT: ${env:WATCHTOWER_MBMARK_ID_COUNT}
 
-  iamRoleStatements:
-    - Effect: Allow             # Required for writing wt events
-      Action:
-        - 'kinesis:DescribeStream'
-        - 'kinesis:PutRecord'
-        - 'kinesis:PutRecords'
-      Resource:
-        Fn::GetAtt: [EventsStream, Arn]
+  iam:
+    role:
+      statements:
+      - Effect: Allow             # Required for writing wt events
+        Action:
+          - 'kinesis:DescribeStream'
+          - 'kinesis:PutRecord'
+          - 'kinesis:PutRecords'
+        Resource:
+          Fn::GetAtt: [EventsStream, Arn]
 
 custom:
   # handlerFilePostfix: '-wrapper'
