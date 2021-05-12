@@ -31,10 +31,6 @@ provider:
       - Effect: Allow
         Action:
           - 'dynamodb:BatchWriteItem'
-        Resource:
-          Fn::GetAtt: [EventsTable, Arn]
-      - Effect: Allow
-        Action:
           - 'dynamodb:Query'
         Resource:
           Fn::GetAtt: [EventsTable, Arn]
@@ -43,10 +39,6 @@ provider:
           - 'state:StartExecution'
         Resource:
           ${self:resources.Outputs.WTCheckerMachine.Value}
-
-
-
-
 
 custom:
   # handlerFilePostfix: '-wrapper'

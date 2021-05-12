@@ -11,8 +11,8 @@ watchtower-ingestion:
         type: kinesis
         enabled: true
         startingPosition: TRIM_HORIZON
-  role:
-    'Fn::GetAtt': [ EventWriterRole, Arn ]
+#  role:
+#    'Fn::GetAtt': [ EventWriterRole, Arn ]
   environment:
     WATCHTOWER_EVENT_TABLE:
       Ref: EventsTable
@@ -42,8 +42,8 @@ watchtower-monitor:
     WATCHTOWER_CHECKPOINT_TABLE:
       Ref: CheckpointsTable
     PROCESSING_LAMBDA_TIMEOUT: 6
-  role:
-    'Fn::GetAtt': [ EventReaderRole, Arn ]
+#  role:
+#    'Fn::GetAtt': [ EventReaderRole, Arn ]
 ##
 ##   Monitor state machine trigger
 wt-monitor-trigger:
@@ -59,8 +59,8 @@ wt-monitor-trigger:
     # WATCHTOWER_CHECKER_SM_ARN:
     #   'Fn::GetAtt': [ WtCheckerMachineArn, Arn ]
     WATCHTOWER_CHECKER_SM_ARN: ${self:resources.Outputs.WTCheckerMachine.Value}
-  role:
-    'Fn::GetAtt': [ StateMachineListExec, Arn ]
+#  role:
+#    'Fn::GetAtt': [ StateMachineListExec, Arn ]
 ##
 ## END of Watchtower Functions
 ########################################
