@@ -24,6 +24,29 @@ provider:
           - 'kinesis:PutRecords'
         Resource:
           Fn::GetAtt: [EventsStream, Arn]
+#      - Effect: Allow
+#        Action: sts:AssumeRole
+#        Principal:
+#          Service: lambda.amazonaws.com
+      - Effect: Allow
+        Action:
+          - 'dynamodb:BatchWriteItem'
+        Resource:
+          Fn::GetAtt: [EventsTable, Arn]
+      - Effect: Allow
+        Action:
+          - 'dynamodb:Query'
+        Resource:
+          Fn::GetAtt: [EventsTable, Arn]
+      - Effect: Allow
+        Action:
+          - 'state:StartExecution'
+        Resource:
+          ${self:resources.Outputs.WTCheckerMachine.Value}
+
+
+
+
 
 custom:
   # handlerFilePostfix: '-wrapper'
@@ -52,9 +75,9 @@ resources:
     CheckpointsTable:     ${file(watchtower/ddbTables.yml):Resources.CheckpointsTable}
     InvocationStream:     ${file(watchtower/kinesisStreams.yml):Resources.InvocationStream}
     EventsStream:         ${file(watchtower/kinesisStreams.yml):Resources.EventsStream}
-    EventWriterRole:      ${file(watchtower/iamRoles.yml):Resources.EventWriterRole}
-    EventReaderRole:      ${file(watchtower/iamRoles.yml):Resources.EventReaderRole}
-    StateMachineListExec: ${file(watchtower/iamRoles.yml):Resources.StateMachineListExec}
+#    EventWriterRole:      ${file(watchtower/iamRoles.yml):Resources.EventWriterRole}
+#    EventReaderRole:      ${file(watchtower/iamRoles.yml):Resources.EventReaderRole}
+#    StateMachineListExec: ${file(watchtower/iamRoles.yml):Resources.StateMachineListExec}
   Outputs:
     WTCheckerMachine: ${file(watchtower/outputs.yml):Outputs.WTCheckerMachine}
     WTEventsKinesisStream: ${file(watchtower/outputs.yml):Outputs.WTEventsKinesisStream}
