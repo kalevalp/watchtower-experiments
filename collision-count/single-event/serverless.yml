@@ -2,7 +2,8 @@ service: wt-collision-count
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs12.x
+#  runtime: nodejs10.x
   region: eu-west-1
   stage: test
   lambdaHashingVersion: 20201221
@@ -17,28 +18,30 @@ provider:
   iam:
     role:
       statements:
-      - Effect: Allow             # Required for writing wt events
-        Action:
-          - 'kinesis:DescribeStream'
-          - 'kinesis:PutRecord'
-          - 'kinesis:PutRecords'
-        Resource:
-          Fn::GetAtt: [EventsStream, Arn]
-#      - Effect: Allow
-#        Action: sts:AssumeRole
-#        Principal:
-#          Service: lambda.amazonaws.com
       - Effect: Allow
-        Action:
-          - 'dynamodb:BatchWriteItem'
-          - 'dynamodb:Query'
-        Resource:
-          Fn::GetAtt: [EventsTable, Arn]
-      - Effect: Allow
-        Action:
-          - 'state:StartExecution'
-        Resource:
-          ${self:resources.Outputs.WTCheckerMachine.Value}
+        Action: '*'
+        Resource: '*'
+#         Action:
+#           - 'kinesis:DescribeStream'
+#           - 'kinesis:PutRecord'
+#           - 'kinesis:PutRecords'
+#         Resource: '*'
+# #          Fn::GetAtt: [EventsStream, Arn]
+# #      - Effect: Allow
+# #        Action: sts:AssumeRole
+# #        Principal:
+# #          Service: lambda.amazonaws.com
+#       - Effect: Allow
+#         Action:
+#           - 'dynamodb:BatchWriteItem'
+#           - 'dynamodb:Query'
+#         Resource: '*'
+# #          Fn::GetAtt: [EventsTable, Arn]
+#       - Effect: Allow
+#         Action:
+#           - 'state:StartExecution'
+#         Resource: '*'
+# #          ${self:resources.Outputs.WTCheckerMachine.Value}
 
 custom:
   # handlerFilePostfix: '-wrapper'
