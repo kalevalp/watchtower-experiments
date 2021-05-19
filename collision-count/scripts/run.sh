@@ -9,9 +9,9 @@ echo '#######  ' output dir is ${resdir}         '#######'
 echo '#####################################################'
 
 pushd ../single-event || exit
-
-sls deploy
-sleep 60
+#
+#sls deploy
+#sleep 60
 
 for rate in {1,10,25,50,100}
 do
@@ -45,7 +45,7 @@ do
 
 done
 
-sls remove
+#sls remove
 
 popd || exit
 
