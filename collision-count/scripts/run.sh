@@ -35,7 +35,7 @@ do
     done
   done
 
-  sleep 30
+  sleep 1000
 
   node ../../scripts/get-collision-report.js ../scripts/${resdir}/collision-report-${rate}
 
