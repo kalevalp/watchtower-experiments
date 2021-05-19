@@ -5,46 +5,49 @@ mkdir "${resdir}"
 
 echo '#####################################################'
 echo '#######' Running collision count microbenchmark '#######'
-echo '#######  ' output dif is ${resdir}         '#######'
+echo '#######  ' output dir is ${resdir}         '#######'
 echo '#####################################################'
 
 pushd ../single-event || exit
 
-for rate in {10,25,50,100}
+sls deploy
+sleep 60
+
+for rate in {1,10,25,50,100}
 do
+  export iterations=$(( 100 / "$rate" ))
+  API_URL=$(serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'); export API_URL=$API_URL/microbmark
 
-    echo '########'
-    echo '######' Running with rate "${rate}"
-    echo '########'
+  echo '########'
+  echo '######' Running with rate "${rate}"
+  echo '######'   Starting "${iterations}" iterations of "${rate}" concurrent invocations
+  echo '########'
 
-    sls deploy
-    sleep 60
-
-    API_URL=$(serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'); export API_URL=$API_URL/microbmark
-
-    for i in $(seq 1 "${rate}")
+  for i in $(seq 1 "${iterations}")
+  do
+    for j in $(seq 1 "${rate}")
     do
-        curl -X POST -d "110" "${API_URL}" &
+      curl -X POST -d "110" "${API_URL}" &
     done
-
     for job in $(jobs -p)
     do
-    echo "$job"
       wait "$job" || echo Failed job "$job"
     done
+  done
 
-    sleep 60
+  sleep 30
 
-    node ../../scripts/get-collision-report.js ../scripts/${resdir}/collision-report-${rate}
+  node ../../scripts/get-collision-report.js ../scripts/${resdir}/collision-report-${rate}
 
-    sls remove
+  node ../../scripts/clear-deployment.js
 
-sleep 60
+  sleep 30
 
 done
 
-popd || exit
+sls remove
 
+popd || exit
 
 echo '####################'
 echo '#######' Done '#######'
