@@ -1,5 +1,8 @@
 const scripts = require('watchtower-anaysis-scripts');
 
+let outputfname = process.argv[2]
+let rate = process.argv[3]
+
 const log_scraper = require('cloudwatch-log-scraper');
 const fs = require('fs');
 
@@ -35,7 +38,7 @@ async function main() {
                 let invocation = report[1]
                 let executionTime = report[2]
                 let memoryUse = report[3]
-                let singleRes = {executionTime, memoryUse}
+                let singleRes = {concurrency:rate,executionTime, memoryUse}
 
                 let totalPaths = totalPathsReports.find(item => item[1] === invocation)
                 let maxPaths = maxPathsReports.find(item => item[1] === invocation)
@@ -58,25 +61,23 @@ async function main() {
         }
     });
 
+    console.log(`Writing JSON to file: ${outputfname}.json`)
 
-    let outputfname = getRandFname();
+    fs.writeFileSync(`${outputfname}.json`, JSON.stringify(reports));
 
-    if (process.argv[2]) {
-        outputfname = process.argv[2];
-    }
 
-    console.log(`Writing to file: ${outputfname}`)
+    console.log(`Writing csv to file: ${outputfname}.csv`)
 
     let reportStr = ""
-    reportStr += "cpuTime,mem,totalPaths,maxPaths,avgPaths\n"
+    reportStr += "concurrency,cpuTime,mem,totalPaths,maxPaths,avgPaths\n"
 
     for (const report of reports) {
-        reportStr += `${report.executionTime},${report.memoryUse},${report.totalPaths ? report.totalPaths : ''},${report.maxPaths ? report.maxPaths : ''},${report.avgPaths ? report.avgPaths : ''}\n`
+        reportStr += `${rate},${report.executionTime},${report.memoryUse},${report.totalPaths ? report.totalPaths : ''},${report.maxPaths ? report.maxPaths : ''},${report.avgPaths ? report.avgPaths : ''}\n`
     }
 
     console.log(reportStr)
 
-    fs.writeFileSync(outputfname, reportStr);
+    fs.writeFileSync(`${outputfname}.csv`, reportStr);
 }
 
 main();
