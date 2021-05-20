@@ -58,7 +58,6 @@ async function main() {
         }
     });
 
-    console.log(reports)
 
     let outputfname = getRandFname();
 
@@ -66,7 +65,18 @@ async function main() {
         outputfname = process.argv[2];
     }
 
-    fs.writeFileSync(outputfname, JSON.stringify(reports));
+    console.log(`Writing to file: ${outputfname}`)
+
+    let reportStr = ""
+    reportStr += "cpuTime,mem,totalPaths,maxPaths,avgPaths\n"
+
+    for (const report of reports) {
+        reportStr += `${report.executionTime},${report.memoryUse},${report.totalPaths ? report.totalPaths : ''},${report.maxPaths ? report.maxPaths : ''},${report.avgPaths ? report.avgPaths : ''}\n`
+    }
+
+    console.log(reportStr)
+
+    fs.writeFileSync(outputfname, reportStr);
 }
 
 main();
