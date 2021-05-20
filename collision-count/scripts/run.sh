@@ -13,9 +13,9 @@ pushd ../single-event || exit
 #sls deploy
 #sleep 60
 
-for rate in {1,10,25,50,100}
+for rate in {1,2,4,5,8,10,20,40}
 do
-  export iterations=$(( 100 / "$rate" ))
+  export iterations=$(( 40 / "$rate" ))
   API_URL=$(serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'); export API_URL=$API_URL/microbmark
 
   echo '########'
@@ -33,12 +33,16 @@ do
     do
       wait "$job" || echo Failed job "$job"
     done
+    echo
   done
 
+  echo '######' Sleeping for around 17 mins to ensure correct collection in case of timeout
   sleep 1000
 
+  echo '######' Reunning report collection script
   node ../../scripts/get-collision-report.js ../scripts/${resdir}/collision-report-${rate}
 
+  echo '######' Clearing deployment in prep for the next iteration
   node ../../scripts/clear-deployment.js
 
   sleep 30
