@@ -21,7 +21,7 @@ do
     API_URL=$(serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'); export API_URL=$API_URL/microbmark
 
     echo '########'
-    echo '######' Running with rate "${rate}"
+    echo '######' Running repeat "${repeat}" with rate "${rate}"
     echo '######'   Starting "${iterations}" iterations of "${rate}" concurrent invocations
     echo '########'
 
