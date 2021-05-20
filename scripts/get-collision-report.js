@@ -37,15 +37,15 @@ async function main() {
                 let memoryUse = report[3]
                 let singleRes = {executionTime, memoryUse}
 
-                let totalPaths = totalPathsReports.find(item => item[1] === invocation)[2]
-                let maxPaths = maxPathsReports.find(item => item[1] === invocation)[2]
-                let avgPaths = avgPathsReports.find(item => item[1] === invocation)[2]
+                let totalPaths = totalPathsReports.find(item => item[1] === invocation)
+                let maxPaths = maxPathsReports.find(item => item[1] === invocation)
+                let avgPaths = avgPathsReports.find(item => item[1] === invocation)
 
                 if (totalPaths && maxPaths && avgPaths) {
                     console.log(`Successful run, collecting report for stream ${stream} invocation ${invocation}`)
-                    singleRes.totalPaths = totalPaths
-                    singleRes.maxPaths = maxPaths
-                    singleRes.avgPaths = avgPaths
+                    singleRes.totalPaths = totalPaths[2]
+                    singleRes.maxPaths = maxPaths[2]
+                    singleRes.avgPaths = avgPaths[2]
                 } else {
                     console.log(`Failed run for stream ${stream} invocation ${invocation}`)
                 }
