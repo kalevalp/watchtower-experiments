@@ -45,8 +45,11 @@ async function main() {
                 if (!execReport.find(
                     item => item.message.match(runReportRE) && item.message.match(runReportRE)[1] === execID
                 )) {
+                    streamDone = false
                     console.log(`Checker still running in stream ${stream}. Sleeping for 1min.`)
                     await sleep(1000)
+                } else {
+                    streamDone = true
                 }
             }
         } while (!streamDone)
