@@ -47,7 +47,7 @@ async function main() {
                 )) {
                     streamDone = false
                     console.log(`Checker still running in stream ${stream}. Sleeping for 1min.`)
-                    await sleep(1000)
+                    await sleep(60000)
                 } else {
                     streamDone = true
                 }
