@@ -15,9 +15,11 @@ pushd ../single-event || exit
 
 for repeat in $(seq 1 10)
 do
-  for rate in {1,2,4,5,8,10,20,40}
+#  for rate in {1,2,4,5,8,10,20,40}
+#  for rate in {1,2,5,10,25,50}
+  for rate in {1,2,3,4,5,6,10,12,15,20,30,60}
   do
-    export iterations=$(( 40 / "$rate" ))
+    export iterations=$(( 60 / "$rate" ))
     API_URL=$(serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'); export API_URL=$API_URL/microbmark
 
     echo '########'
