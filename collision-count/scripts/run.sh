@@ -38,8 +38,10 @@ do
       echo
     done
 
-    echo '######' Sleeping for around 17 mins to ensure correct collection in case of timeout
-    sleep 1000
+    sleep 30
+
+#    echo '######' Sleeping for around 17 mins to ensure correct collection in case of timeout
+#    sleep 1000
 
     echo '######' Reunning report collection script
     node ../../scripts/get-collision-report.js ../scripts/${resdir}/collision-report-${rate}-repeat-${repeat} ${rate}

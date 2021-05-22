@@ -13,8 +13,14 @@ function getRandFname() {
     return `runResults-${fiveDigitID}`;
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function main() {
-    const reportPattern = 'REPORT';
+    const reportPattern = '?START ?REPORT';
+
+    const startRE = /START RequestId: ([0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})/
 
     const runReportRE = /REPORT RequestId: ([0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})\tDuration: ([0-9]*\.[0-9]*) ms.*Max Memory Used: ([0-9]*) MB/
     const totalPathsRE = /([0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})\tINFO\t@@@@WT_PROF: PATHS REPORT - TOTAL CHECKED PATHS: --(.*)--/
@@ -24,7 +30,31 @@ async function main() {
     const logGroup = '/aws/lambda/wt-collision-count-test-watchtower-monitor';
 
     const streams = await scraper.getAllLogStreamsOfGroup(logGroup)
-    const logItems = await Promise.all(streams.map(stream => scraper.getAllLogItemsForStreamMatching(logGroup,stream,reportPattern).then(execReport => ({stream, execReport}))))
+    let logItems = []
+
+    for (const stream of streams) {
+        let execReport;
+
+        let streamDone = true
+        do {
+            execReport = await scraper.getAllLogItemsForStreamMatching(logGroup, stream, reportPattern);
+
+            let execIDs = execReport.filter(item => item.message.match(startRE)).map(item => item.message.match(startRE)[1])
+
+            for (const execID of execIDs) {
+                if (!execReport.find(
+                    item => item.message.match(runReportRE) && item.message.match(runReportRE)[1] === execID
+                )) {
+                    console.log(`Checker still running in stream ${stream}. Sleeping for 1min.`)
+                    await sleep(1000)
+                }
+            }
+        } while (!streamDone)
+
+        logItems.push({stream,execReport})
+    }
+
+    // const logItems = await Promise.all(streams.map(stream => scraper.getAllLogItemsForStreamMatching(logGroup,stream,reportPattern).then(execReport => ({stream, execReport}))))
 
     let reports = logItems.flatMap(({stream, execReport}) => {
         if (execReport.length > 0) {
