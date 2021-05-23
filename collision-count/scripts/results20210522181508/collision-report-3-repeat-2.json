@@ -1,0 +1,1 @@
+[{"concurrency":"3","executionTime":"126.16","memoryUse":"33","totalPaths":"2048","maxPaths":"4","avgPaths":"1.7666666666666668"},{"concurrency":"3","executionTime":"216.97","memoryUse":"34","totalPaths":"75497472","maxPaths":"6","avgPaths":"2.65"},{"concurrency":"3","executionTime":"120.14","memoryUse":"34","totalPaths":"75497472","maxPaths":"6","avgPaths":"2.65"}]
