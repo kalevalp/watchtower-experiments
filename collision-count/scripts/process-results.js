@@ -28,8 +28,8 @@ let averageTotalPathsStr = ''
 let averageMaxPathsStr = ''
 let averageAvgPathsStr = ''
 
-for (let i = 0; i < 50; i++) {
-    const currentRunResults = runResults.filter(run => Number(run.concurrency) === i && run.totalPaths)
+for (let i = 0; i < 100; i++) {
+    const currentRunResults = runResults.filter(run => run && (Number(run.concurrency) === i) && run.totalPaths)
     if (currentRunResults.length > 0) {
         const averageExecutionTime = average(currentRunResults.map(run => Number(run.executionTime)))
         const averageMem = average(currentRunResults.map(run => Number(run.memoryUse)))
@@ -62,8 +62,8 @@ averageMemStr = ''
 const outfname = `${inputDir}/processed-run-w-to.csv`
 fs.writeFileSync(outfname, 'concurrency,executionTime,memoryUse\n')
 
-for (let i = 0; i < 50; i++) {
-    const currentRunResults = runResults.filter(run => Number(run.concurrency) === i)
+for (let i = 0; i < 100; i++) {
+    const currentRunResults = runResults.filter(run => run && (Number(run.concurrency) === i))
     if (currentRunResults.length > 0) {
         const averageExecutionTime = average(currentRunResults.map(run => Number(run.executionTime)))
         const averageMem = average(currentRunResults.map(run => Number(run.memoryUse)))
@@ -76,3 +76,21 @@ for (let i = 0; i < 50; i++) {
 }
 fs.appendFileSync(tikzformatoutfname, `    averageExecutionTimeStr:   ${averageExecutionTimeStr}\n`)
 fs.appendFileSync(tikzformatoutfname, `    averageMemStr:             ${averageMemStr}\n`)
+
+let successRateStr = ''
+
+for (let i = 0; i < 100; i++) {
+    let totalCount = 0;
+    let failedCount = 0;
+
+    const currentRunResults = runResults.filter(run => run && (Number(run.concurrency) === i))
+    totalCount = currentRunResults.length
+    failedCount = currentRunResults.filter(run => run.totalPaths).length
+
+    if (totalCount > 0) {
+        successRateStr = successRateStr + `(${i},${100 * (failedCount / totalCount)})`
+    }
+}
+
+fs.appendFileSync(tikzformatoutfname, `\n\nSuccess rates:\n`)
+fs.appendFileSync(tikzformatoutfname, `    success rate:             ${successRateStr}\n`)
