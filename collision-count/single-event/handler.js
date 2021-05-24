@@ -1,16 +1,12 @@
 'use strict'
-const dummy  = require('dummy')
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
-}
+const dummy = require('dummy')
 
 module.exports.hello = async (event, context) => {
-    console.log(`Handling event with eventid ${event.body} at time ${Date.now()}`)
+    console.log(`Handling event with input ${event.body} at time ${Date.now()}`)
 
-    const eventid = event.body
+    const input = Number(event.body)
 
-    dummy(eventid)
+    dummy(input === 200)
 
     return {
         statusCode: 200,

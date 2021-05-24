@@ -9,14 +9,9 @@ echo '#######  ' output dir is ${resdir}         '#######'
 echo '#####################################################'
 
 pushd ../single-event || exit
-#
-#sls deploy
-#sleep 60
 
 for repeat in $(seq 1 10)
 do
-#  for rate in {1,2,4,5,8,10,20,40}
-#  for rate in {1,2,5,10,25,50}
   for rate in {1,2,3,4,5,6,10,12,15,20,30,60}
   do
     export iterations=$(( 60 / "$rate" ))
@@ -31,7 +26,7 @@ do
     do
       for j in $(seq 1 "${rate}")
       do
-        curl -X POST -d "110" "${API_URL}" &
+        curl -X POST -d "100" "${API_URL}" &
       done
       for job in $(jobs -p)
       do
@@ -40,10 +35,11 @@ do
       echo
     done
 
-    sleep 30
+    sleep 10
 
-#    echo '######' Sleeping for around 17 mins to ensure correct collection in case of timeout
-#    sleep 1000
+    curl -X POST -d "200" "${API_URL}" &
+
+    sleep 30
 
     echo '######' Reunning report collection script
     node ../../scripts/get-collision-report.js ../scripts/${resdir}/collision-report-${rate}-repeat-${repeat} ${rate}
