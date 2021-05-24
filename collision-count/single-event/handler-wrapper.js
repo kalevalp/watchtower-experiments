@@ -17,7 +17,7 @@ const mock = {
     'dummy': (terminal) => {
         let op = terminal ? 'C' : Math.random() < 0.5 ? 'A' : 'B'
 
-        return publisher({name: `EVENT_TYPE_${op}`, params: {eventid: 111}}, lambdaExecutionContext)
+        return publisher({name: `EVENT_TYPE_${op}`, params: {eventid: '111'}}, lambdaExecutionContext)
     },
 };
 
