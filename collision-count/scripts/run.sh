@@ -10,13 +10,13 @@ echo '#####################################################'
 
 pushd ../single-event || exit
 
-for repeat in $(seq 1 10)
-do
-  for rate in {1,2,3,4,5,6,10,12,15,20,30,60}
-  do
-    export iterations=$(( 60 / "$rate" ))
-    API_URL=$(serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'); export API_URL=$API_URL/microbmark
+API_URL=$(serverless info --verbose | grep '^ServiceEndpoint:' | grep -o 'https://.*'); export API_URL=$API_URL/microbmark
 
+for rate in {1,2,3,4,5,6,10,12,15,20,30,60}
+do
+  export iterations=$(( 60 / "$rate" ))
+  for repeat in $(seq 1 10)
+  do
     echo '########'
     echo '######' Running repeat "${repeat}" with rate "${rate}"
     echo '######'   Starting "${iterations}" iterations of "${rate}" concurrent invocations
@@ -38,6 +38,7 @@ do
     sleep 10
 
     curl -X POST -d "200" "${API_URL}" &
+    echo
 
     sleep 30
 
