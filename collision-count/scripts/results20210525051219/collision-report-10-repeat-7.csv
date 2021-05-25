@@ -1,0 +1,2 @@
+concurrency,cpuTime,mem,totalPaths,maxPaths,avgPaths
+10,549.95,115,208971104256000000,952,77.18032786885246
